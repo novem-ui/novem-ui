@@ -1,7 +1,7 @@
 module.exports = {
   roots: ['packages'],
   transform: {
-    '^.+\\.tsx?$': 'ts-jest'
+    '^.+\\.tsx?$': 'ts-jest',
   },
   collectCoverage: true,
   coverageThreshold: {
@@ -12,13 +12,14 @@ module.exports = {
       statements: 82
     }
   },
+  transformIgnorePatterns: ['<rootDir>/node_modules/'],
   coverageReporters: ['json', 'lcov', 'text', 'clover'],
   moduleNameMapper: {
-    '\\.(css|less|scss|sss|styl)$': '<rootDir>/node_modules/jest-css-modules',
     '^packages/(.*)$': '<rootDir>/packages/$1',
   },
   globals: {
     'ts-jest': {
+      "babelConfig": true,
       tsconfig: './tsconfig.base.json'
     }
   }

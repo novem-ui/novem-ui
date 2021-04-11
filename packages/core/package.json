@@ -1,0 +1,24 @@
+{
+  "name": "core",
+  "version": "0.0.1",
+  "description": "Core components",
+  "homepage": "https://github.com/jdrets/novem-ui/tree/main/packages/core#readme",
+  "license": "ISC",
+  "directories": {
+    "lib": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdrets/novem-ui.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/jdrets/novem-ui/issues"
+  }
+}

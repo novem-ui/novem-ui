@@ -1,14 +1,18 @@
 import * as React from 'react'
+import { Global } from '@emotion/react'
+
 import IBadge from './types'
 
 import BadgeContainer from './styles'
+import GlobalStyles from './../../utils/globalStyles'
 
 const Badge: React.FunctionComponent<IBadge> = ({ variant, children }) => (
-  <BadgeContainer>
-    <div className={variant}>
+  <>
+    <Global styles={GlobalStyles}/>
+    <BadgeContainer className={variant}>
       {children}
-    </div>
-  </BadgeContainer>
+    </BadgeContainer>
+  </>
 );
 
 export default Badge

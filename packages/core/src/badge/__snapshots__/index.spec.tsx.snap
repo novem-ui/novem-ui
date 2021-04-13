@@ -3,13 +3,9 @@
 exports[`<Badge /> should match snapshot 1`] = `
 <div>
   <div
-    class="css-13w3vz"
+    class="primary css-19iiwc5"
   >
-    <div
-      class="primary"
-    >
-      Dummy text
-    </div>
+    Dummy text
   </div>
 </div>
 `;

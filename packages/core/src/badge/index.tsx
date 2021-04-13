@@ -5,7 +5,9 @@ import BadgeContainer from './styles'
 
 const Badge: React.FunctionComponent<IBadge> = ({ variant, children }) => (
   <BadgeContainer>
-    {children}
+    <div className={variant}>
+      {children}
+    </div>
   </BadgeContainer>
 );
 

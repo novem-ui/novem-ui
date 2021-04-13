@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Badge /> should match snapshot 1`] = `
+<div>
+  <div
+    class="css-13w3vz"
+  >
+    <div
+      class="primary"
+    >
+      Dummy text
+    </div>
+  </div>
+</div>
+`;

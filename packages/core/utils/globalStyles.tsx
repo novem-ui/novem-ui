@@ -1,6 +1,6 @@
 import { css } from '@emotion/react'
 
-import PALETTE from './../utils/palette'
+import PALETTE from "../utils/palette"
 
 const GlobalStyles = css`
   .primary {

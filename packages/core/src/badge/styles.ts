@@ -7,7 +7,6 @@ const Badge = styled.div`
   font-weight: 600;
   padding: 4px 12px;
   text-transform: uppercase;
-  border-radius: 16px;
 `
 
 export default Badge

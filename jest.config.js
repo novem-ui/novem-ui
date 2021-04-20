@@ -1,26 +1,27 @@
+const path = require('path')
+
 module.exports = {
-  roots: ['packages'],
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
   },
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   collectCoverage: true,
   coverageThreshold: {
     global: {
-      branches: 82,
-      functions: 82,
-      lines: 82,
-      statements: 82
-    }
+      branches: 95,
+      functions: 95,
+      lines: 95,
+      statements: 95,
+    },
   },
-  transformIgnorePatterns: ['<rootDir>/node_modules/'],
   coverageReporters: ['json', 'lcov', 'text', 'clover'],
-  moduleNameMapper: {
-    '^packages/(.*)$': '<rootDir>/packages/$1',
-  },
+  collectCoverageFrom: ['**/src/**/*.{ts,tsx}', '!**/node_modules/**', '!**/*.{spec,stories}.{ts,tsx}'],
+  coverageDirectory: path.resolve(__dirname, 'coverage'),
   globals: {
     'ts-jest': {
-      "babelConfig": true,
-      tsconfig: './tsconfig.base.json'
-    }
-  }
+      babelConfig: true,
+      tsconfig: path.resolve(__dirname, './tsconfig.json'),
+    },
+  },
+  snapshotSerializers: ['@emotion/jest/serializer'],
 }

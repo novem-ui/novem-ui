@@ -4,7 +4,7 @@
   "description": "NovemUI",
   "scripts": {
     "test": "lerna run test",
-    "test:update": "npm test -- -u",
+    "test:update": "lerna run test -- -u",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "eslint 'packages/**/*.{js,ts,tsx}' --no-error-on-unmatched-pattern",
@@ -60,7 +60,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint-fix",
-      "pre-push": "npm run test:update"
+      "pre-push": "npm run test"
     }
   },
   "dependencies": {

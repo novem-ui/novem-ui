@@ -4,8 +4,6 @@ import { getBackgroundColor, getColor } from '@novem-ui/utils'
 import { getFontSize, getPadding } from './utils'
 import { BadgeProps } from './types'
 
-export { BadgeProps }
-
 export const Badge = styled.span<BadgeProps>`
   background-color: ${getBackgroundColor};
   border-radius: ${({ theme }) => theme.size[4]}rem;

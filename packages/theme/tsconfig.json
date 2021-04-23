@@ -1,5 +1,5 @@
 {
   "extends": "../../tsconfig.json",
-  "files": [],
-  "include": [],
+  "files": ["../../emotion.d.ts"],
+  "include": []
 }

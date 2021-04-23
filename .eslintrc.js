@@ -2,40 +2,32 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-    'prettier',
-    'prettier/@typescript-eslint',
-    'prettier/react'
-  ],
+  extends: ['plugin:react/recommended', 'airbnb', 'prettier', 'prettier/@typescript-eslint', 'prettier/react'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 12,
-    sourceType: 'module'
+    sourceType: 'module',
   },
+  ignorePatterns: ['**/dist'],
   plugins: ['react', '@typescript-eslint'],
   overrides: [
     {
       files: '**/**/*.spec.{ts,tsx}',
       env: {
-        jest: true
+        jest: true,
       },
       rules: {
-        'react/jsx-props-no-spreading': [0]
-      }
+        'react/jsx-props-no-spreading': [0],
+      },
     },
   ],
   rules: {
-    'react/jsx-filename-extension': [
-      2,
-      { extensions: ['.js', '.jsx', '.ts', '.tsx'] }
-    ],
+    'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
     'max-len': ['error', { code: 120 }],
     'no-use-before-define': [0],
     'import/no-unresolved': [0],
@@ -51,6 +43,6 @@ module.exports = {
     'jsx-a11y/anchor-is-valid': [0],
     'no-unused-vars': [0],
     'no-shadow': [0],
-    '@typescript-eslint/no-unused-vars': [2]
+    '@typescript-eslint/no-unused-vars': [2],
   },
 }

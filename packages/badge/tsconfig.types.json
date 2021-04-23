@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "declarationDir": "dist/",
+    "declaration": true
+  },
+  "files": [],
+  "include": ["**/*.ts", "**/*.tsx", "../../emotion.d.ts"],
+  "exclude": ["**/dist", "**/*.stories.tsx", "**/*.spec.ts", "**/*.spec.tsx"]
+}

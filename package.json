@@ -3,13 +3,14 @@
   "version": "0.0.1",
   "description": "NovemUI",
   "scripts": {
-    "test": "lerna run test",
-    "test:update": "lerna run test -- -u",
+    "test": "lerna run test --stream",
+    "build": "lerna run build --stream",
+    "test:update": "lerna run test --stream -- -u",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "eslint 'packages/**/*.{js,ts,tsx}' --no-error-on-unmatched-pattern",
     "lint-fix": "npm run lint -- --fix",
-    "postinstall": "lerna bootstrap --hoist"
+    "postinstall": "lerna bootstrap"
   },
   "repository": {
     "type": "git",
@@ -22,13 +23,14 @@
   },
   "homepage": "https://github.com/jdrets/novem-ui#readme",
   "devDependencies": {
+    "@babel/cli": "^7.13.14",
     "@babel/core": "^7.13.15",
     "@babel/preset-env": "^7.13.15",
     "@babel/preset-react": "^7.13.13",
     "@babel/preset-typescript": "^7.13.0",
-    "@emotion/jest": "^11.3.0",
-    "@emotion/react": "^11.1.5",
-    "@emotion/styled": "^11.3.0",
+    "@emotion/jest": "11.2.1",
+    "@emotion/react": "11.1.5",
+    "@emotion/styled": "11.1.5",
     "@storybook/addon-actions": "^6.2.8",
     "@storybook/addon-essentials": "^6.2.8",
     "@storybook/addon-links": "^6.2.8",
@@ -38,9 +40,6 @@
     "@types/jest": "^26.0.22",
     "@typescript-eslint/eslint-plugin": "^4.11.1",
     "@typescript-eslint/parser": "^4.11.1",
-    "babel-cli": "^6.26.0",
-    "babel-jest": "^26.6.3",
-    "babel-loader": "^8.2.2",
     "emotion-theming": "^10.0.27",
     "eslint": "^7.24.0",
     "eslint-config-airbnb": "18.2.0",
@@ -64,6 +63,7 @@
     }
   },
   "dependencies": {
+    "babel-preset-minify": "^0.5.1",
     "storybook-addon-react-docgen": "^1.2.42"
   }
 }

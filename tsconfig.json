@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -14,16 +10,9 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react",
     "baseUrl": "."
   },
-  "include": [
-    "window.d.ts",
-    "**/*.ts",
-    "**/*.tsx", "server/index.js"
-  ],
-  "exclude": [
-    "node_modules",
-  ]
+  "include": ["window.d.ts", "emotion.d.ts", "**/*.ts", "**/*.tsx", "server/index.js"],
+  "exclude": ["node_modules"]
 }

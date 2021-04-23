@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Badge /> should match snapshot (alternative color) 1`] = `
+.emotion-0 {
+  background-color: #59BC6F;
+  border-radius: 1rem;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 0.25rem 0.75rem;
+  text-transform: uppercase;
+}
+
+<div>
+  <span
+    class="emotion-0"
+  >
+    Dummy text
+  </span>
+</div>
+`;
+
+exports[`<Badge /> should match snapshot (default) 1`] = `
+.emotion-0 {
+  background-color: #F1694B;
+  border-radius: 1rem;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 0.25rem 0.75rem;
+  text-transform: uppercase;
+}
+
+<div>
+  <span
+    class="emotion-0"
+  >
+    Dummy text
+  </span>
+</div>
+`;
+
+exports[`<Badge /> should match snapshot (quiet) 1`] = `
+.emotion-0 {
+  background-color: rgba(241,105,75,0.15);
+  border-radius: 1rem;
+  color: #F1694B;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 0.25rem 0.75rem;
+  text-transform: uppercase;
+}
+
+<div>
+  <span
+    class="emotion-0"
+  >
+    Dummy text
+  </span>
+</div>
+`;
+
+exports[`<Badge /> should match snapshot (small) 1`] = `
+.emotion-0 {
+  background-color: #F1694B;
+  border-radius: 1rem;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.125rem 0.5rem;
+  text-transform: uppercase;
+}
+
+<div>
+  <span
+    class="emotion-0"
+  >
+    Dummy text
+  </span>
+</div>
+`;

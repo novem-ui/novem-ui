@@ -1,9 +1,21 @@
 {
-  "name": "@novem-ui/core",
+  "name": "@novem-ui/badge",
   "version": "0.0.1",
-  "description": "Core components",
-  "homepage": "https://github.com/jdrets/novem-ui/tree/main/packages/core#readme",
+  "description": "Badge component from novem-ui",
+  "keywords": [
+    "badge",
+    "ui",
+    "component",
+    "react",
+    "orange"
+  ],
+  "author": "Leonel Vieyra <me@leonelv.com>",
+  "homepage": "https://github.com/jdrets/novem-ui/tree/main/packages/badge#readme",
   "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jdrets/novem-ui.git"
@@ -15,16 +27,12 @@
     "url": "https://github.com/jdrets/novem-ui/issues"
   },
   "dependencies": {
-    "@novem-ui/badge": "^0.0.1",
-    "@novem-ui/theme": "^0.0.1"
-  },
-  "devDependencies": {
-    "@types/react": "^17.0.3"
+    "@novem-ui/theme": "^0.0.1",
+    "@novem-ui/utils": "^0.0.1"
   },
   "peerDependencies": {
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.3.0",
-    "polished": "^4.1.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }

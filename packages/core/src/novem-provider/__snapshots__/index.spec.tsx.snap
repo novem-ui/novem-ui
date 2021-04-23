@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NovemProvider /> should match snapshot (with custom theme) 1`] = `
+<div>
+  <p>
+    children
+  </p>
+</div>
+`;
+
+exports[`<NovemProvider /> should match snapshot (with reset) 1`] = `
+<div>
+  <p>
+    children
+  </p>
+</div>
+`;
+
+exports[`<NovemProvider /> should match snapshot 1`] = `
+<div>
+  <p>
+    children
+  </p>
+</div>
+`;

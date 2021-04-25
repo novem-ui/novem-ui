@@ -9,11 +9,24 @@ const baseGrey = '#9A9897'
 // single colors
 const darkGrey = '#1F1A18'
 
+// disabled colors
+const disabledGrey = 'rgba(31, 26, 24, 0.08)'
+const disabledGreyFont = 'rgba(31, 26, 24, 0.25)'
+const disabled = {
+  background: {
+    link: 'transparent',
+    loud: disabledGrey,
+    quiet: disabledGrey
+  },
+  fontColor: disabledGreyFont
+}
+
 const colors = {
   orange: createColorMap(baseOrange),
   green: createColorMap(baseGreen),
   red: createColorMap(baseRed),
   grey: createColorMap(baseGrey),
+  disabled,
   darkGrey,
   base: 'orange',
 }

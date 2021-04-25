@@ -1,4 +1,4 @@
-const getBackgroundColor = ({ theme, hierarchy, baseColor }: Record<string, any>) => {
+const getBackgroundColor = ({ theme, hierarchy, baseColor, disabled }: Record<string, any>) => {
   const color = baseColor || theme.colors.base
   const colorGroup = theme.colors[color]
   const colorVariants = {
@@ -6,7 +6,7 @@ const getBackgroundColor = ({ theme, hierarchy, baseColor }: Record<string, any>
     quiet: colorGroup['100'],
     link: 'transparent',
   }
-  const backgroundColor = colorVariants[hierarchy]
+  const backgroundColor = disabled ? theme.colors.disabled.background[hierarchy] : colorVariants[hierarchy]
 
   return backgroundColor
 }

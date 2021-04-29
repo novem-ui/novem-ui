@@ -10,7 +10,8 @@
     "build-storybook": "build-storybook",
     "lint": "eslint 'packages/**/*.{js,ts,tsx}' --no-error-on-unmatched-pattern",
     "lint-fix": "npm run lint -- --fix",
-    "postinstall": "lerna bootstrap"
+    "postinstall": "lerna bootstrap",
+    "prepare": "yarn build"
   },
   "repository": {
     "type": "git",

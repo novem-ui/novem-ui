@@ -14,7 +14,8 @@
   "license": "ISC",
   "main": "index.js",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "directory": "../../dist/badge"
   },
   "repository": {
     "type": "git",

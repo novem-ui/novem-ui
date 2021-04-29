@@ -11,7 +11,13 @@
     "resolveJsonModule": true,
     "jsx": "react",
     "typeRoots": ["./types"],
-    "baseUrl": "."
+   /*  "baseUrl": "./packages/",
+    "paths": {
+      "@novem-ui/badge": ["./badge"],
+      "@novem-ui/core": ["./core"],
+      "@novem-ui/theme": ["./theme"],
+      "@novem-ui/utils": ["./utils"]
+    } */
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist/**"]
 }

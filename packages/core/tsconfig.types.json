@@ -8,6 +8,6 @@
     "declarationMap": true,
     "types": ["novem-theme"]
   },
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules/**", "dist/**", "**/*.spec.tsx", "**/*.stories.tsx"]
+  "include": ["src", "index.ts"],
+  "exclude": ["node_modules/**", "dist/**", "**/*.spec.tsx", "**/*.stories.tsx", "**/theme", "**/*.d.ts", "../../dist/"]
 }

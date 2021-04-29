@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import ThemeProvider from '@novem-ui/theme/theme-provider'
-import defaultTheme from '../../../theme'
+import defaultTheme from '@novem-ui/theme'
 
 import CSSReset from '../css-reset'
 

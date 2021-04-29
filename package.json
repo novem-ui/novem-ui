@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "NovemUI",
   "scripts": {
-    "test": "lerna run test --stream",
     "build": "lerna run build --stream",
+    "test": "lerna run test --stream",
     "test:update": "lerna run test --stream -- -u",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",

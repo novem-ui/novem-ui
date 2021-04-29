@@ -33,8 +33,8 @@ const cleanPackage = {
   bugs,
   peerDependencies,
   dependencies,
-  main: 'index.js',
-  types: 'index.d.ts',
+  main: './index.js',
+  types: './index.d.ts',
 }
 
 fs.writeFileSync(newPackageJsonPath, JSON.stringify(cleanPackage, null, 2))

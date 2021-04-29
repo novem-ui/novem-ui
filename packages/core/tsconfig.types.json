@@ -4,7 +4,7 @@
   "compilerOptions": {
     "emitDeclarationOnly": true,
     "declaration": true,
-    "declarationDir": "../../dist/",
+    "declarationDir": "../../dist/core",
     "declarationMap": true,
     "types": ["novem-theme"]
   },

@@ -1,1 +1,1 @@
-export { default as useTheme } from './src/utils/create-color-map'
+export { default } from './src/utils/create-color-map'

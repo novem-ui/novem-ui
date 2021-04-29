@@ -20,7 +20,7 @@ module.exports = {
   globals: {
     'ts-jest': {
       babelConfig: true,
-      tsconfig: path.resolve(__dirname, './tsconfig.json'),
+      tsconfig: path.resolve(__dirname, './tsconfig.spec.json'),
     },
   },
   snapshotSerializers: ['@emotion/jest/serializer'],

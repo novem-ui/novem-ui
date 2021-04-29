@@ -1,5 +1,9 @@
 {
   "extends": "../../tsconfig.json",
   "files": [],
-  "include": [],
+  "compilerOptions": {
+    "types": ["novem-theme"]
+  },
+  "include": ["**/*.ts", "**/*.tsx", "../../emotion.d.ts"],
+  "exclude": ["node_modules/**", "dist/**"]
 }

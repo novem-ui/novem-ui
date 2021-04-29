@@ -15,9 +15,10 @@
   },
   "scripts": {
     "test": "jest --env=jsdom --passWithNoTests",
-    "build": "yarn build:esm && yarn build:types",
-    "build:esm": "../../node_modules/.bin/babel . --root-mode upward --extensions .ts,.tsx -d dist --source-maps",
-    "build:types": "tsc --p ./tsconfig.types.json"
+    "build": "yarn build:esm && yarn build:types && yarn build:package-json",
+    "build:esm": "../../node_modules/.bin/babel . --root-mode upward --extensions .ts,.tsx -d ../../dist/utils --source-maps",
+    "build:types": "tsc -p ./tsconfig.types.json",
+    "build:package-json": "../../scripts/create-package.js"
   },
   "bugs": {
     "url": "https://github.com/jdrets/novem-ui/issues"

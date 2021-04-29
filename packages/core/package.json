@@ -1,6 +1,6 @@
 {
   "name": "@novem-ui/core",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.1",
   "description": "Core components",
   "homepage": "https://github.com/jdrets/novem-ui/tree/main/packages/core#readme",
   "license": "ISC",
@@ -23,11 +23,11 @@
     "url": "https://github.com/jdrets/novem-ui/issues"
   },
   "dependencies": {
-    "@novem-ui/badge": "^0.0.1-alpha.0",
-    "@novem-ui/theme": "^0.0.1-alpha.0"
+    "@novem-ui/badge": "^0.0.1-alpha.1",
+    "@novem-ui/theme": "^0.0.1-alpha.1"
   },
   "devDependencies": {
-    "@types/novem-theme": "^0.0.1-alpha.0",
+    "@types/novem-theme": "^0.0.1-alpha.1",
     "@types/react": "^17.0.3"
   },
   "peerDependencies": {

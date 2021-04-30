@@ -184,7 +184,7 @@ exports[`<Button /> should match snapshot (small) 1`] = `
   display: inline-block;
   font-size: 12px;
   font-weight: 600;
-  padding: 0.281rem 0.75rem;
+  padding: 0.28rem 0.75rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }

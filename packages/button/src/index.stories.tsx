@@ -18,7 +18,7 @@ export default {
     },
     baseColor: {
       type: 'radio',
-      options: ['red', 'green', 'orange', 'grey'],
+      options: ['red', 'green', 'orange', 'grey', 'yellow'],
     },
     as: {
       table: {

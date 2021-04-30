@@ -4,6 +4,7 @@ exports[`<Button /> should match snapshot (alternative color) 1`] = `
 .emotion-0 {
   background-color: #59BC6F;
   border-radius: 6.25rem;
+  border: none;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -20,19 +21,28 @@ exports[`<Button /> should match snapshot (alternative color) 1`] = `
   transition: 0.4s;
 }
 
+.emotion-0:disabled {
+  background-color: rgba(31, 26, 24, 0.08);
+}
+
+.emotion-0:disabled:hover {
+  box-shadow: 0 0 0.25rem rgba(31, 26, 24, 0.08);
+}
+
 <div>
-  <div
+  <button
     class="emotion-0"
   >
     Dummy text
-  </div>
+  </button>
 </div>
 `;
 
 exports[`<Button /> should match snapshot (alternative color) 2`] = `
 .emotion-0 {
-  background-color: rgba(31, 26, 24, 0.08);
+  background-color: #F1694B;
   border-radius: 6.25rem;
+  border: none;
   color: rgba(31, 26, 24, 0.25);
   cursor: auto;
   display: inline-block;
@@ -44,18 +54,26 @@ exports[`<Button /> should match snapshot (alternative color) 2`] = `
 }
 
 .emotion-0:hover {
-  box-shadow: 0 0 0.25rem rgba(31, 26, 24, 0.08);
+  box-shadow: 0 0 0.25rem #F1694B;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
+.emotion-0:disabled {
+  background-color: rgba(31, 26, 24, 0.08);
+}
+
+.emotion-0:disabled:hover {
+  box-shadow: 0 0 0.25rem rgba(31, 26, 24, 0.08);
+}
+
 <div>
-  <div
+  <button
     class="emotion-0"
     disabled=""
   >
     Dummy text
-  </div>
+  </button>
 </div>
 `;
 
@@ -63,6 +81,7 @@ exports[`<Button /> should match snapshot (default) 1`] = `
 .emotion-0 {
   background-color: #F1694B;
   border-radius: 6.25rem;
+  border: none;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -79,12 +98,20 @@ exports[`<Button /> should match snapshot (default) 1`] = `
   transition: 0.4s;
 }
 
+.emotion-0:disabled {
+  background-color: rgba(31, 26, 24, 0.08);
+}
+
+.emotion-0:disabled:hover {
+  box-shadow: 0 0 0.25rem rgba(31, 26, 24, 0.08);
+}
+
 <div>
-  <div
+  <button
     class="emotion-0"
   >
     Dummy text
-  </div>
+  </button>
 </div>
 `;
 
@@ -92,6 +119,7 @@ exports[`<Button /> should match snapshot (large) 1`] = `
 .emotion-0 {
   background-color: #F1694B;
   border-radius: 6.25rem;
+  border: none;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -108,12 +136,20 @@ exports[`<Button /> should match snapshot (large) 1`] = `
   transition: 0.4s;
 }
 
+.emotion-0:disabled {
+  background-color: rgba(31, 26, 24, 0.08);
+}
+
+.emotion-0:disabled:hover {
+  box-shadow: 0 0 0.25rem rgba(31, 26, 24, 0.08);
+}
+
 <div>
-  <div
+  <button
     class="emotion-0"
   >
     Dummy text
-  </div>
+  </button>
 </div>
 `;
 
@@ -121,6 +157,7 @@ exports[`<Button /> should match snapshot (medium) 1`] = `
 .emotion-0 {
   background-color: #F1694B;
   border-radius: 6.25rem;
+  border: none;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -137,12 +174,20 @@ exports[`<Button /> should match snapshot (medium) 1`] = `
   transition: 0.4s;
 }
 
+.emotion-0:disabled {
+  background-color: rgba(31, 26, 24, 0.08);
+}
+
+.emotion-0:disabled:hover {
+  box-shadow: 0 0 0.25rem rgba(31, 26, 24, 0.08);
+}
+
 <div>
-  <div
+  <button
     class="emotion-0"
   >
     Dummy text
-  </div>
+  </button>
 </div>
 `;
 
@@ -150,6 +195,7 @@ exports[`<Button /> should match snapshot (quiet) 1`] = `
 .emotion-0 {
   background-color: rgba(241,105,75,0.15);
   border-radius: 6.25rem;
+  border: none;
   color: #F1694B;
   cursor: pointer;
   display: inline-block;
@@ -166,12 +212,20 @@ exports[`<Button /> should match snapshot (quiet) 1`] = `
   transition: 0.4s;
 }
 
+.emotion-0:disabled {
+  background-color: rgba(31, 26, 24, 0.08);
+}
+
+.emotion-0:disabled:hover {
+  box-shadow: 0 0 0.25rem rgba(31, 26, 24, 0.08);
+}
+
 <div>
-  <div
+  <button
     class="emotion-0"
   >
     Dummy text
-  </div>
+  </button>
 </div>
 `;
 
@@ -179,6 +233,7 @@ exports[`<Button /> should match snapshot (small) 1`] = `
 .emotion-0 {
   background-color: #F1694B;
   border-radius: 6.25rem;
+  border: none;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -195,11 +250,19 @@ exports[`<Button /> should match snapshot (small) 1`] = `
   transition: 0.4s;
 }
 
+.emotion-0:disabled {
+  background-color: rgba(31, 26, 24, 0.08);
+}
+
+.emotion-0:disabled:hover {
+  box-shadow: 0 0 0.25rem rgba(31, 26, 24, 0.08);
+}
+
 <div>
-  <div
+  <button
     class="emotion-0"
   >
     Dummy text
-  </div>
+  </button>
 </div>
 `;

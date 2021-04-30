@@ -1,5 +1,3 @@
-import { getBackgroundColor as backgroundColor } from '@novem-ui/utils'
-
 export const getPadding = props => {
   const { size, theme } = props
   const { spacing } = theme;
@@ -18,12 +16,7 @@ export const getFontSize = props => `${props.theme.typography.textFontSizes[prop
 
 export const getCursor = props => props.disabled ? 'auto' : 'pointer'
 
-export const getBackgroundColor = props => {
-  const { disabled, theme, hierarchy } = props
-
-  if (disabled) {
-    return theme.colors.disabled.background[hierarchy]
-  }
-
-  return backgroundColor
+export const getDisabledBackgroundColor = props => {
+  const { theme, hierarchy } = props
+  return theme.colors.disabled.background[hierarchy]
 }

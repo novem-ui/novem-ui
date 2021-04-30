@@ -3,11 +3,19 @@ import React from 'react'
 import withTheme from '@novem-ui/theme/src/utils/with-theme'
 import { render } from '@testing-library/react'
 
-import Badge from '.'
+import Button from '.'
 
-describe('<Badge />', () => {
+describe('<Button />', () => {
   test('should match snapshot (default)', () => {
-    const Component = () => <Badge>Dummy text</Badge>
+    const Component = () => <Button>Dummy text</Button>
+    const WrappedComponent = withTheme(Component)
+    const { container } = render(<WrappedComponent />)
+
+    expect(container).toMatchSnapshot()
+  })
+
+  test('should match snapshot (medium)', () => {
+    const Component = () => <Button size="md">Dummy text</Button>
     const WrappedComponent = withTheme(Component)
     const { container } = render(<WrappedComponent />)
 
@@ -15,7 +23,15 @@ describe('<Badge />', () => {
   })
 
   test('should match snapshot (small)', () => {
-    const Component = () => <Badge size="sm">Dummy text</Badge>
+    const Component = () => <Button size="sm">Dummy text</Button>
+    const WrappedComponent = withTheme(Component)
+    const { container } = render(<WrappedComponent />)
+
+    expect(container).toMatchSnapshot()
+  })
+
+  test('should match snapshot (large)', () => {
+    const Component = () => <Button size="lg">Dummy text</Button>
     const WrappedComponent = withTheme(Component)
     const { container } = render(<WrappedComponent />)
 
@@ -23,7 +39,7 @@ describe('<Badge />', () => {
   })
 
   test('should match snapshot (quiet)', () => {
-    const Component = () => <Badge hierarchy="quiet">Dummy text</Badge>
+    const Component = () => <Button hierarchy="quiet">Dummy text</Button>
     const WrappedComponent = withTheme(Component)
     const { container } = render(<WrappedComponent />)
 
@@ -31,7 +47,15 @@ describe('<Badge />', () => {
   })
 
   test('should match snapshot (alternative color)', () => {
-    const Component = () => <Badge baseColor="green">Dummy text</Badge>
+    const Component = () => <Button baseColor="green">Dummy text</Button>
+    const WrappedComponent = withTheme(Component)
+    const { container } = render(<WrappedComponent />)
+
+    expect(container).toMatchSnapshot()
+  })
+
+  test('should match snapshot (alternative color)', () => {
+    const Component = () => <Button disabled>Dummy text</Button>
     const WrappedComponent = withTheme(Component)
     const { container } = render(<WrappedComponent />)
 

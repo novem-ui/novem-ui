@@ -73,7 +73,6 @@ Small.args = {
 
 export const Disabled = Template.bind({})
 Disabled.args = {
-  hierarchy: 'link',
   size: 'lg',
   disabled: true
 }

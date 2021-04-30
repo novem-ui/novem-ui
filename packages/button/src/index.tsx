@@ -4,7 +4,7 @@ import { getBackgroundColor, getColor } from '@novem-ui/utils'
 import { getFontSize, getPadding, getCursor } from './utils'
 import { ButtonProps } from './types'
 
-export const Button = styled.span<ButtonProps>`
+export const Button = styled.div<ButtonProps>`
   background-color: ${getBackgroundColor};
   border-radius: 6.25rem;
   color: ${getColor};
@@ -13,6 +13,12 @@ export const Button = styled.span<ButtonProps>`
   font-size: ${getFontSize};
   font-weight: 600;
   padding: ${getPadding};
+  transition: 0.4s;
+
+  &:hover {
+    box-shadow: 0 0 0.25rem ${getBackgroundColor};
+    transition: 0.4s;
+  }
 `
 
 Button.defaultProps = {

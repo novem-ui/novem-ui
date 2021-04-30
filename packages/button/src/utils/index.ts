@@ -1,4 +1,5 @@
-export const getPadding = ({ size }) => {
+export const getPadding = props => {
+  const { size } = props
   switch (size) {
     case 'lg':
       return '0.875rem 1.5rem'
@@ -9,6 +10,6 @@ export const getPadding = ({ size }) => {
   }
 }
 
-export const getFontSize = ({ theme, size }) => `${theme.typography.textFontSizes[size === 'lg' ? 'sm' : 'xs']}px`
+export const getFontSize = props => `${props.theme.typography.textFontSizes[props.size === 'lg' ? 'sm' : 'xs']}px`
 
-export const getCursor = ({ disabled }) => !disabled && 'pointer'
+export const getCursor = props => props.disabled ? 'auto' : 'pointer'

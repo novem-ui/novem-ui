@@ -1,12 +1,14 @@
 export const getPadding = props => {
-  const { size } = props
+  const { size, theme } = props
+  const { spacing } = theme;
+
   switch (size) {
     case 'lg':
-      return '0.875rem 1.5rem'
+      return `${spacing['3.5']}rem ${spacing['6']}rem`
     case 'md':
-      return '0.5rem 1rem'
+      return `${spacing['2']}rem ${spacing['4']}rem`
     case 'sm':
-      return '0.281rem 0.75rem'
+      return `${spacing['1.2']}rem ${spacing['3']}rem`
   }
 }
 

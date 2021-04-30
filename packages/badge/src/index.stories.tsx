@@ -8,18 +8,6 @@ export default {
   title: 'Badge',
   component: Badge,
   argTypes: {
-    hierarchy: {
-      type: 'radio',
-      options: ['loud', 'quiet'],
-    },
-    size: {
-      type: 'radio',
-      options: ['sm', 'lg'],
-    },
-    baseColor: {
-      type: 'radio',
-      options: ['red', 'green', 'orange', 'grey'],
-    },
     as: {
       table: {
         disable: true,

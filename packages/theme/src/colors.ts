@@ -5,6 +5,7 @@ const baseOrange = '#F1694B'
 const baseGreen = '#59BC6F'
 const baseRed = '#EB5757'
 const baseGrey = '#9A9897'
+const baseYellow = '#FF9900'
 
 // single colors
 const darkGrey = '#1F1A18'
@@ -27,6 +28,7 @@ const colors = {
   red: createColorMap(baseRed),
   grey: createColorMap(baseGrey),
   disabled,
+  yellow: createColorMap(baseYellow),
   darkGrey,
   base: 'orange',
 }

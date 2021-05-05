@@ -9,7 +9,7 @@ exports[`<Badge /> should match snapshot (alternative color) 1`] = `
   font-size: 14px;
   font-weight: 600;
   line-height: 1.2;
-  padding: 0.5rem 1.5rem;
+  padding: 0.25rem 0.75rem;
   text-transform: uppercase;
 }
 
@@ -31,7 +31,7 @@ exports[`<Badge /> should match snapshot (default) 1`] = `
   font-size: 14px;
   font-weight: 600;
   line-height: 1.2;
-  padding: 0.5rem 1.5rem;
+  padding: 0.25rem 0.75rem;
   text-transform: uppercase;
 }
 
@@ -53,7 +53,7 @@ exports[`<Badge /> should match snapshot (quiet) 1`] = `
   font-size: 14px;
   font-weight: 600;
   line-height: 1.2;
-  padding: 0.5rem 1.5rem;
+  padding: 0.25rem 0.75rem;
   text-transform: uppercase;
 }
 
@@ -75,7 +75,7 @@ exports[`<Badge /> should match snapshot (small) 1`] = `
   font-size: 12px;
   font-weight: 600;
   line-height: 1;
-  padding: 0.25rem 0.75rem;
+  padding: 0.125rem 0.5rem;
   text-transform: uppercase;
 }
 

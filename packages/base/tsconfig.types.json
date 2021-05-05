@@ -4,7 +4,7 @@
   "compilerOptions": {
     "emitDeclarationOnly": true,
     "declaration": true,
-    "declarationDir": "../../dist/utils",
+    "declarationDir": "../../dist/base",
     "declarationMap": true,
   },
   "include": ["**/*.ts", "**/*.tsx"],

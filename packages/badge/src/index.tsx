@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { getBackgroundColor, getColor } from '@novem-ui/utils'
+import { getBackgroundColor, getColor } from '@novem-ui/base'
 
 import { getFontSize, getPadding } from './utils'
 import { BadgeProps } from './types'

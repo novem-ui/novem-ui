@@ -1,11 +1,11 @@
-# `@novem-ui/utils`
+# `@novem-ui/base`
 
 > TODO: description
 
 ## Usage
 
 ```
-const utils = require('@novem-ui/utils');
+const base = require('@novem-ui/base');
 
 // TODO: DEMONSTRATE API
 ```

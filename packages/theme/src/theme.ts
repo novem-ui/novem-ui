@@ -1,12 +1,10 @@
 import colors from './colors'
-import size from './sizes'
-import spacing from './spacing'
 import * as typography from './typography'
+import spacing from './spacing'
 
 const theme = {
   colors,
   typography,
-  size,
   spacing,
 }
 

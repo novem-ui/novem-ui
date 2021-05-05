@@ -44,5 +44,7 @@ module.exports = {
     'no-unused-vars': [0],
     'no-shadow': [0],
     '@typescript-eslint/no-unused-vars': [2],
+    'consistent-return': [0],
+    'default-case': [0]
   },
 }

@@ -1,0 +1,268 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should match snapshot (alternative color) 1`] = `
+.emotion-0 {
+  background-color: #59BC6F;
+  color: rgba(255,255,255,1);
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0.375rem 1rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 0 0.25rem #59BC6F;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-0:disabled {
+  background-color: rgba(31, 26, 24, 0.08);
+}
+
+.emotion-0:disabled:hover {
+  box-shadow: 0 0 0.25rem rgba(31, 26, 24, 0.08);
+}
+
+<div>
+  <button
+    class="emotion-0"
+  >
+    Dummy text
+  </button>
+</div>
+`;
+
+exports[`<Button /> should match snapshot (alternative color) 2`] = `
+.emotion-0 {
+  background-color: #F1694B;
+  color: rgba(255,255,255,1);
+  border-radius: 3rem;
+  border: none;
+  cursor: auto;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0.375rem 1rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 0 0.25rem #F1694B;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-0:disabled {
+  background-color: rgba(31, 26, 24, 0.08);
+}
+
+.emotion-0:disabled:hover {
+  box-shadow: 0 0 0.25rem rgba(31, 26, 24, 0.08);
+}
+
+<div>
+  <button
+    class="emotion-0"
+    disabled=""
+  >
+    Dummy text
+  </button>
+</div>
+`;
+
+exports[`<Button /> should match snapshot (default) 1`] = `
+.emotion-0 {
+  background-color: #F1694B;
+  color: rgba(255,255,255,1);
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0.375rem 1rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 0 0.25rem #F1694B;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-0:disabled {
+  background-color: rgba(31, 26, 24, 0.08);
+}
+
+.emotion-0:disabled:hover {
+  box-shadow: 0 0 0.25rem rgba(31, 26, 24, 0.08);
+}
+
+<div>
+  <button
+    class="emotion-0"
+  >
+    Dummy text
+  </button>
+</div>
+`;
+
+exports[`<Button /> should match snapshot (large) 1`] = `
+.emotion-0 {
+  background-color: #F1694B;
+  color: rgba(255,255,255,1);
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0.875rem 1.5rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 0 0.25rem #F1694B;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-0:disabled {
+  background-color: rgba(31, 26, 24, 0.08);
+}
+
+.emotion-0:disabled:hover {
+  box-shadow: 0 0 0.25rem rgba(31, 26, 24, 0.08);
+}
+
+<div>
+  <button
+    class="emotion-0"
+  >
+    Dummy text
+  </button>
+</div>
+`;
+
+exports[`<Button /> should match snapshot (medium) 1`] = `
+.emotion-0 {
+  background-color: #F1694B;
+  color: rgba(255,255,255,1);
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0.375rem 1rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 0 0.25rem #F1694B;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-0:disabled {
+  background-color: rgba(31, 26, 24, 0.08);
+}
+
+.emotion-0:disabled:hover {
+  box-shadow: 0 0 0.25rem rgba(31, 26, 24, 0.08);
+}
+
+<div>
+  <button
+    class="emotion-0"
+  >
+    Dummy text
+  </button>
+</div>
+`;
+
+exports[`<Button /> should match snapshot (quiet) 1`] = `
+.emotion-0 {
+  background-color: rgba(241,105,75,0.15);
+  color: #F1694B;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0.375rem 1rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 0 0.25rem rgba(241,105,75,0.15);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-0:disabled {
+  background-color: rgba(31, 26, 24, 0.08);
+}
+
+.emotion-0:disabled:hover {
+  box-shadow: 0 0 0.25rem rgba(31, 26, 24, 0.08);
+}
+
+<div>
+  <button
+    class="emotion-0"
+  >
+    Dummy text
+  </button>
+</div>
+`;
+
+exports[`<Button /> should match snapshot (small) 1`] = `
+.emotion-0 {
+  background-color: #F1694B;
+  color: rgba(255,255,255,1);
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0.28rem 0.75rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-0:hover {
+  box-shadow: 0 0 0.25rem #F1694B;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-0:disabled {
+  background-color: rgba(31, 26, 24, 0.08);
+}
+
+.emotion-0:disabled:hover {
+  box-shadow: 0 0 0.25rem rgba(31, 26, 24, 0.08);
+}
+
+<div>
+  <button
+    class="emotion-0"
+  >
+    Dummy text
+  </button>
+</div>
+`;

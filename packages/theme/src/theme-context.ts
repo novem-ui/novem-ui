@@ -3,8 +3,7 @@
 
 import React from 'react'
 
-import theme from './theme'
-import { Theme } from '../types'
+import theme, { Theme } from './theme'
 
 const NovemThemeContext = React.createContext<Theme>(theme)
 

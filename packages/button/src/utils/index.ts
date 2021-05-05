@@ -1,8 +1,11 @@
 import { Theme } from '@novem-ui/theme'
-import { ButtonSize } from '../types'
+import { ButtonProps } from '../types'
 
-export const getPadding = (props) => {
-  const { size, theme } = props
+export interface ButtonUtilProps extends ButtonProps {
+  theme: Theme
+}
+
+export const getPadding = ({ size, theme }: ButtonUtilProps) => {
   const { spacing } = theme
 
   switch (size) {
@@ -15,7 +18,7 @@ export const getPadding = (props) => {
   }
 }
 
-export const getFontSize = ({ theme, size }: { theme: Theme; size: ButtonSize }) => {
+export const getFontSize = ({ theme, size }: ButtonUtilProps) => {
   const { textFontSizes } = theme.typography
   const variants = {
     lg: textFontSizes.md,
@@ -26,9 +29,8 @@ export const getFontSize = ({ theme, size }: { theme: Theme; size: ButtonSize })
   return `${variants[size]}px`
 }
 
-export const getCursor = (props) => (props.disabled ? 'auto' : 'pointer')
+export const getCursor = ({ disabled }: ButtonUtilProps) => (disabled ? 'auto' : 'pointer')
 
-export const getDisabledBackgroundColor = (props) => {
-  const { theme, hierarchy } = props
+export const getDisabledBackgroundColor = ({ theme, hierarchy }: ButtonUtilProps) => {
   return theme.colors.disabled.background[hierarchy]
 }

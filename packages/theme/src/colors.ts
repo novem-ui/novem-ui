@@ -1,5 +1,12 @@
 import createColorMap from './utils/create-color-map'
 
+export interface Colors {
+  disabled: typeof disabled
+  palette: typeof palette
+  darkGrey: string
+  base: keyof typeof palette
+}
+
 // colors to generate palettes
 const baseOrange = '#F1694B'
 const baseGreen = '#59BC6F'
@@ -22,15 +29,17 @@ const disabled = {
   fontColor: disabledGreyFont,
 }
 
-const colors = {
+const palette = {
+  orange: createColorMap(baseOrange),
+  green: createColorMap(baseGreen),
+  red: createColorMap(baseRed),
+  yellow: createColorMap(baseYellow),
+  grey: createColorMap(baseGrey),
+}
+
+const colors: Colors = {
   disabled,
-  palette: {
-    orange: createColorMap(baseOrange),
-    green: createColorMap(baseGreen),
-    red: createColorMap(baseRed),
-    grey: createColorMap(baseGrey),
-    yellow: createColorMap(baseYellow),
-  },
+  palette,
   darkGrey,
   base: 'orange',
 }

@@ -1,14 +1,13 @@
 import styled from '@emotion/styled'
-import { getColor, getBackgroundColor } from '@novem-ui/base'
+import { getBackgroundColor, colorWithHierarchy } from '@novem-ui/base'
 
 import { getFontSize, getPadding, getCursor, getDisabledBackgroundColor } from './utils'
 import { ButtonProps } from './types'
 
 export const Button = styled.button<ButtonProps>`
-  background-color: ${getBackgroundColor};
+  ${colorWithHierarchy}
   border-radius: ${({ theme }) => theme.spacing[12]}rem;
   border: none;
-  color: ${getColor};
   cursor: ${getCursor};
   display: inline-block;
   font-size: ${getFontSize};
@@ -17,7 +16,7 @@ export const Button = styled.button<ButtonProps>`
   transition: 0.4s;
 
   &:hover {
-    box-shadow: 0 0 0.25rem ${getBackgroundColor};
+    box-shadow: 0 0 ${({ theme }) => theme.spacing[1]}rem ${getBackgroundColor};
     transition: 0.4s;
   }
 
@@ -25,7 +24,7 @@ export const Button = styled.button<ButtonProps>`
     background-color: ${getDisabledBackgroundColor};
 
     &:hover {
-      box-shadow: 0 0 0.25rem ${getDisabledBackgroundColor};
+      box-shadow: 0 0 ${({ theme }) => theme.spacing[1]}rem ${getDisabledBackgroundColor};
     }
   }
 `

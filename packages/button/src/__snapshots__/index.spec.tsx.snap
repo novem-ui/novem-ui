@@ -3,9 +3,9 @@
 exports[`<Button /> should match snapshot (alternative color) 1`] = `
 .emotion-0 {
   background-color: #59BC6F;
+  color: rgba(255,255,255,1);
   border-radius: 3rem;
   border: none;
-  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
@@ -41,9 +41,9 @@ exports[`<Button /> should match snapshot (alternative color) 1`] = `
 exports[`<Button /> should match snapshot (alternative color) 2`] = `
 .emotion-0 {
   background-color: #F1694B;
+  color: rgba(255,255,255,1);
   border-radius: 3rem;
   border: none;
-  color: rgba(31, 26, 24, 0.25);
   cursor: auto;
   display: inline-block;
   font-size: 14px;
@@ -80,9 +80,9 @@ exports[`<Button /> should match snapshot (alternative color) 2`] = `
 exports[`<Button /> should match snapshot (default) 1`] = `
 .emotion-0 {
   background-color: #F1694B;
+  color: rgba(255,255,255,1);
   border-radius: 3rem;
   border: none;
-  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
@@ -118,9 +118,9 @@ exports[`<Button /> should match snapshot (default) 1`] = `
 exports[`<Button /> should match snapshot (large) 1`] = `
 .emotion-0 {
   background-color: #F1694B;
+  color: rgba(255,255,255,1);
   border-radius: 3rem;
   border: none;
-  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 16px;
@@ -156,9 +156,9 @@ exports[`<Button /> should match snapshot (large) 1`] = `
 exports[`<Button /> should match snapshot (medium) 1`] = `
 .emotion-0 {
   background-color: #F1694B;
+  color: rgba(255,255,255,1);
   border-radius: 3rem;
   border: none;
-  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
@@ -194,9 +194,9 @@ exports[`<Button /> should match snapshot (medium) 1`] = `
 exports[`<Button /> should match snapshot (quiet) 1`] = `
 .emotion-0 {
   background-color: rgba(241,105,75,0.15);
+  color: #F1694B;
   border-radius: 3rem;
   border: none;
-  color: #F1694B;
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
@@ -232,9 +232,9 @@ exports[`<Button /> should match snapshot (quiet) 1`] = `
 exports[`<Button /> should match snapshot (small) 1`] = `
 .emotion-0 {
   background-color: #F1694B;
+  color: rgba(255,255,255,1);
   border-radius: 3rem;
   border: none;
-  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 12px;

@@ -3,8 +3,8 @@
 exports[`<Badge /> should match snapshot (alternative color) 1`] = `
 .emotion-0 {
   background-color: #59BC6F;
+  color: rgba(255,255,255,1);
   border-radius: 1rem;
-  color: #fff;
   display: inline-block;
   font-size: 14px;
   font-weight: 600;
@@ -25,8 +25,8 @@ exports[`<Badge /> should match snapshot (alternative color) 1`] = `
 exports[`<Badge /> should match snapshot (default) 1`] = `
 .emotion-0 {
   background-color: #F1694B;
+  color: rgba(255,255,255,1);
   border-radius: 1rem;
-  color: #fff;
   display: inline-block;
   font-size: 14px;
   font-weight: 600;
@@ -47,8 +47,8 @@ exports[`<Badge /> should match snapshot (default) 1`] = `
 exports[`<Badge /> should match snapshot (quiet) 1`] = `
 .emotion-0 {
   background-color: rgba(241,105,75,0.15);
-  border-radius: 1rem;
   color: #F1694B;
+  border-radius: 1rem;
   display: inline-block;
   font-size: 14px;
   font-weight: 600;
@@ -69,8 +69,8 @@ exports[`<Badge /> should match snapshot (quiet) 1`] = `
 exports[`<Badge /> should match snapshot (small) 1`] = `
 .emotion-0 {
   background-color: #F1694B;
+  color: rgba(255,255,255,1);
   border-radius: 1rem;
-  color: #fff;
   display: inline-block;
   font-size: 12px;
   font-weight: 600;

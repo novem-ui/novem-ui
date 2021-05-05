@@ -1,1 +1,1 @@
-export { default, Theme } from './src/theme'
+export { default, Theme, BaseColor, Color, HeadingSizeValue, SpacingValue, TextSizeValue } from './src/theme'

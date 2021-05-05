@@ -1,13 +1,12 @@
 import styled from '@emotion/styled'
-import { getBackgroundColor, getColor } from '@novem-ui/base'
+import { colorWithHierarchy } from '@novem-ui/base'
 
 import { getFontSize, getPadding } from './utils'
 import { BadgeProps } from './types'
 
 export const Badge = styled.span<BadgeProps>`
-  background-color: ${getBackgroundColor};
+  ${colorWithHierarchy}
   border-radius: ${({ theme }) => theme.spacing[4]}rem;
-  color: ${getColor};
   display: inline-block;
   font-size: ${getFontSize};
   font-weight: 600;

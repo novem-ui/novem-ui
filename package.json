@@ -2,6 +2,7 @@
   "name": "novem-ui",
   "version": "0.0.1",
   "description": "NovemUI",
+  "private": true,
   "scripts": {
     "build": "lerna run build --stream",
     "test": "lerna run test --stream",
@@ -11,7 +12,7 @@
     "lint": "eslint 'packages/**/*.{js,ts,tsx}' --no-error-on-unmatched-pattern",
     "lint-fix": "npm run lint -- --fix",
     "postinstall": "lerna bootstrap",
-    "prepare": "yarn build"
+    "prepublishOnly": "yarn build"
   },
   "repository": {
     "type": "git",
@@ -57,7 +58,6 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
-    "storybook-addon-react-docgen": "^1.2.42",
     "ts-jest": "^26.5.4",
     "typescript": "^4.2.4"
   },
@@ -67,5 +67,10 @@
       "pre-push": "npm run test"
     }
   },
-  "dependencies": {}
+  "dependencies": {},
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
 }

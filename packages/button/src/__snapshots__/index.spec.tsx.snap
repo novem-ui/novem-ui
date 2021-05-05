@@ -3,14 +3,14 @@
 exports[`<Button /> should match snapshot (alternative color) 1`] = `
 .emotion-0 {
   background-color: #59BC6F;
-  border-radius: 6.25rem;
+  border-radius: 3rem;
   border: none;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  padding: 0.375rem 1rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -41,14 +41,14 @@ exports[`<Button /> should match snapshot (alternative color) 1`] = `
 exports[`<Button /> should match snapshot (alternative color) 2`] = `
 .emotion-0 {
   background-color: #F1694B;
-  border-radius: 6.25rem;
+  border-radius: 3rem;
   border: none;
   color: rgba(31, 26, 24, 0.25);
   cursor: auto;
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  padding: 0.375rem 1rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -80,14 +80,14 @@ exports[`<Button /> should match snapshot (alternative color) 2`] = `
 exports[`<Button /> should match snapshot (default) 1`] = `
 .emotion-0 {
   background-color: #F1694B;
-  border-radius: 6.25rem;
+  border-radius: 3rem;
   border: none;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  padding: 0.375rem 1rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -118,12 +118,12 @@ exports[`<Button /> should match snapshot (default) 1`] = `
 exports[`<Button /> should match snapshot (large) 1`] = `
 .emotion-0 {
   background-color: #F1694B;
-  border-radius: 6.25rem;
+  border-radius: 3rem;
   border: none;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   padding: 0.875rem 1.5rem;
   -webkit-transition: 0.4s;
@@ -156,14 +156,14 @@ exports[`<Button /> should match snapshot (large) 1`] = `
 exports[`<Button /> should match snapshot (medium) 1`] = `
 .emotion-0 {
   background-color: #F1694B;
-  border-radius: 6.25rem;
+  border-radius: 3rem;
   border: none;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  padding: 0.375rem 1rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -194,14 +194,14 @@ exports[`<Button /> should match snapshot (medium) 1`] = `
 exports[`<Button /> should match snapshot (quiet) 1`] = `
 .emotion-0 {
   background-color: rgba(241,105,75,0.15);
-  border-radius: 6.25rem;
+  border-radius: 3rem;
   border: none;
   color: #F1694B;
   cursor: pointer;
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  padding: 0.375rem 1rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -232,7 +232,7 @@ exports[`<Button /> should match snapshot (quiet) 1`] = `
 exports[`<Button /> should match snapshot (small) 1`] = `
 .emotion-0 {
   background-color: #F1694B;
-  border-radius: 6.25rem;
+  border-radius: 3rem;
   border: none;
   color: #fff;
   cursor: pointer;

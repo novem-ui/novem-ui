@@ -17,18 +17,20 @@ const disabled = {
   background: {
     link: 'transparent',
     loud: disabledGrey,
-    quiet: disabledGrey
+    quiet: disabledGrey,
   },
-  fontColor: disabledGreyFont
+  fontColor: disabledGreyFont,
 }
 
 const colors = {
-  orange: createColorMap(baseOrange),
-  green: createColorMap(baseGreen),
-  red: createColorMap(baseRed),
-  grey: createColorMap(baseGrey),
   disabled,
-  yellow: createColorMap(baseYellow),
+  palette: {
+    orange: createColorMap(baseOrange),
+    green: createColorMap(baseGreen),
+    red: createColorMap(baseRed),
+    grey: createColorMap(baseGrey),
+    yellow: createColorMap(baseYellow),
+  },
   darkGrey,
   base: 'orange',
 }

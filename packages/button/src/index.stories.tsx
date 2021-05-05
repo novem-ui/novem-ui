@@ -5,7 +5,7 @@ import Button from '.'
 import { ButtonProps } from './types'
 
 export default {
-  title: 'Button',
+  title: 'Components/Button',
   component: Button,
   argTypes: {
     hierarchy: {

@@ -6,7 +6,7 @@ import { ButtonProps } from './types'
 
 export const Button = styled.button<ButtonProps>`
   background-color: ${getBackgroundColor};
-  border-radius: 6.25rem;
+  border-radius: ${({ theme }) => theme.spacing[12]}rem;
   border: none;
   color: ${getColor};
   cursor: ${getCursor};

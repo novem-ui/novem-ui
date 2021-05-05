@@ -5,7 +5,7 @@ import Badge from '.'
 import { BadgeProps } from './types'
 
 export default {
-  title: 'Badge',
+  title: 'Components/Badge',
   component: Badge,
   argTypes: {
     as: {

@@ -1,6 +1,6 @@
 const getBackgroundColor = ({ theme, hierarchy, baseColor }: Record<string, any>) => {
   const color = baseColor || theme.colors.base
-  const colorGroup = theme.colors[color]
+  const colorGroup = theme.colors.palette[color]
   const colorVariants = {
     loud: colorGroup['500'],
     quiet: colorGroup['100'],

@@ -1,7 +1,7 @@
-import { Theme } from "@novem-ui/theme";
+import theme, { Theme } from "@novem-ui/theme";
 
 export interface NovemProviderProps {
   theme?: Theme;
   reset?: boolean;
-  baseColor?: string;
+  baseColor?: keyof typeof theme.colors.palette;
 }

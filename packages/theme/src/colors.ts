@@ -11,11 +11,13 @@ const baseYellow = '#FF9900'
 const darkGrey = '#1F1A18'
 
 const colors = {
-  orange: createColorMap(baseOrange),
-  green: createColorMap(baseGreen),
-  red: createColorMap(baseRed),
-  grey: createColorMap(baseGrey),
-  yellow: createColorMap(baseYellow),
+  palette: {
+    orange: createColorMap(baseOrange),
+    green: createColorMap(baseGreen),
+    red: createColorMap(baseRed),
+    grey: createColorMap(baseGrey),
+    yellow: createColorMap(baseYellow),
+  },
   darkGrey,
   base: 'orange',
 }

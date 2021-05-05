@@ -6,6 +6,6 @@ export type ButtonSize = 'sm' | 'md' | 'lg'
 export interface ButtonProps {
   hierarchy?: Hierarchy
   size?: ButtonSize
-  baseColor?: keyof Omit<Omit<typeof theme.colors, 'base'>, 'darkGrey'>
+  baseColor?: keyof typeof theme.colors.palette
   disabled?: boolean
 }

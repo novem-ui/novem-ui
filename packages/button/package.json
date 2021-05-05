@@ -1,6 +1,6 @@
 {
   "name": "@novem-ui/button",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha.1",
   "description": "Button component from novem-ui",
   "keywords": [
     "button",
@@ -9,12 +9,13 @@
     "react",
     "orange"
   ],
-  "author": "Julián Drets <juliandrets@gmail.com>",
+  "author": "Leonel Vieyra <me@leonelv.com>",
   "homepage": "https://github.com/jdrets/novem-ui/tree/main/packages/button#readme",
   "license": "ISC",
   "main": "index.js",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "directory": "../../dist/button"
   },
   "repository": {
     "type": "git",
@@ -22,16 +23,20 @@
   },
   "scripts": {
     "test": "jest --env=jsdom --passWithNoTests",
-    "build": "yarn build:esm && yarn build:types",
-    "build:esm": "../../node_modules/.bin/babel . --root-mode upward --extensions .ts,.tsx -d dist --source-maps",
-    "build:types": "tsc --p ./tsconfig.types.json"
+    "build": "yarn build:esm && yarn build:types && yarn build:package-json",
+    "build:esm": "../../node_modules/.bin/babel . --root-mode upward --extensions .ts,.tsx -d ../../dist/button --source-maps",
+    "build:types": "tsc -p ./tsconfig.types.json",
+    "build:package-json": "../../scripts/create-package.js"
   },
   "bugs": {
     "url": "https://github.com/jdrets/novem-ui/issues"
   },
+  "devDependencies": {
+    "@types/novem-theme": "^0.0.1-alpha.1"
+  },
   "dependencies": {
-    "@novem-ui/theme": "^0.0.1",
-    "@novem-ui/utils": "^0.0.1"
+    "@novem-ui/theme": "^0.0.1-alpha.1",
+    "@novem-ui/base": "^0.0.1"
   },
   "peerDependencies": {
     "@emotion/react": "^11.1.5",

@@ -1,11 +1,11 @@
-# `@novem-ui/button`
+# `@novem-ui/badge`
 
 > TODO: description
 
 ## Usage
 
 ```
-const Button = require('@novem-ui/button');
+const badge = require('@novem-ui/badge');
 
 // TODO: DEMONSTRATE API
 ```

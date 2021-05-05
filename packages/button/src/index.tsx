@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { getColor, getBackgroundColor } from '@novem-ui/utils'
+import { getColor, getBackgroundColor } from '@novem-ui/base'
 
 import { getFontSize, getPadding, getCursor, getDisabledBackgroundColor } from './utils'
 import { ButtonProps } from './types'

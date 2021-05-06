@@ -1,4 +1,6 @@
-const getBackgroundColor = ({ theme, hierarchy, baseColor }: Record<string, any>) => {
+import { ColorWithHierarchyProps } from '../color-with-hierarchy'
+
+const getBackgroundColor = ({ theme, hierarchy, baseColor }: ColorWithHierarchyProps) => {
   const color = baseColor || theme.colors.base
   const colorGroup = theme.colors.palette[color]
   const colorVariants = {

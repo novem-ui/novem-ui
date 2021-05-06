@@ -1,5 +1,7 @@
 const path = require('path')
 
+const basename = path.basename(process.cwd())
+
 module.exports = {
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
@@ -16,7 +18,7 @@ module.exports = {
   },
   coverageReporters: ['json', 'lcov', 'text', 'clover'],
   collectCoverageFrom: ['**/src/**/*.{ts,tsx}', '!**/node_modules/**', '!**/*.{spec,stories}.{ts,tsx}'],
-  coverageDirectory: path.resolve(__dirname, 'coverage'),
+  coverageDirectory: path.resolve(__dirname, 'coverage', basename),
   globals: {
     'ts-jest': {
       babelConfig: true,

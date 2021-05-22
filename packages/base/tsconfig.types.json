@@ -5,8 +5,8 @@
     "emitDeclarationOnly": true,
     "declaration": true,
     "declarationDir": "../../dist/base",
-    "declarationMap": true,
+    "declarationMap": true
   },
   "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules/**", "dist/**", "**/*.spec.tsx", "**/*.stories.tsx"]
+  "exclude": ["node_modules/**", "dist/**", "**/*.spec.tsx", "**/*.spec.ts", "**/*.stories.tsx"]
 }

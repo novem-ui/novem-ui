@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`colorWithHierarchy should read the baseColor from theme 1`] = `
+.emotion-0 {
+  background-color: #F1694B;
+  color: rgba(255,255,255,1);
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
+exports[`colorWithHierarchy should return a component with the corresponding colors to link 1`] = `
+.emotion-0 {
+  background-color: rgba(0,0,0,0);
+  color: #EB5757;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
+exports[`colorWithHierarchy should return a component with the corresponding colors to loud 1`] = `
+.emotion-0 {
+  background-color: #EB5757;
+  color: rgba(255,255,255,1);
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
+exports[`colorWithHierarchy should return a component with the corresponding colors to quiet 1`] = `
+.emotion-0 {
+  background-color: rgba(235,87,87,0.15);
+  color: #EB5757;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;

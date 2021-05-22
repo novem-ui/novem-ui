@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "build": "lerna run build --stream",
-    "test": "lerna run test --stream",
-    "test:update": "lerna run test --stream -- -u",
+    "test": "lerna run test --stream --parallel",
+    "test:update": "lerna run test --parallel --stream -- -u",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "eslint 'packages/**/*.{js,ts,tsx}' --no-error-on-unmatched-pattern",

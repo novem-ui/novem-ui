@@ -33,7 +33,7 @@ describe('spacing', () => {
       pr: 32,
       pt: '1px',
       px: 3,
-      py: 2,
+      py: 2
     }
 
     const { container } = render(<ComponentWithSpacingProps theme={theme} {...props} />)

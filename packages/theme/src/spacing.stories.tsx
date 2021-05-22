@@ -4,7 +4,7 @@ import colors from './colors'
 import spacing from './spacing'
 
 export default {
-  title: 'Theme/Spacing',
+  title: 'Theme/Spacing'
 } as Meta
 
 const SpacingRuler: VoidFunctionComponent<{ size: string; keyName: string }> = ({ size, keyName }) => {
@@ -23,7 +23,7 @@ export const Spacing: VoidFunctionComponent<{}> = () => {
   return (
     <>
       {spacingValues.map(([key, size]) => (
-        <SpacingRuler keyName={key} size={`${size}rem`} />
+        <SpacingRuler key={key} keyName={key} size={`${size}rem`} />
       ))}
     </>
   )

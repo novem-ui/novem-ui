@@ -1,7 +1,7 @@
 {
   "name": "novem-ui",
   "version": "0.0.1",
-  "description": "NovemUI",
+  "description": "novem-ui",
   "private": true,
   "scripts": {
     "build": "lerna run build --stream",
@@ -9,10 +9,12 @@
     "test:update": "lerna run test --parallel --stream -- -u",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "lint": "eslint 'packages/**/*.{js,ts,tsx}' --no-error-on-unmatched-pattern",
+    "lint": "eslint 'packages/**/*.{ts,tsx}' --no-error-on-unmatched-pattern",
+    "prettier": "prettier packages/**/*.{ts,tsx} --no-error-on-unmatched-pattern --write",
     "lint-fix": "npm run lint -- --fix",
     "postinstall": "lerna bootstrap",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -45,14 +47,16 @@
     "@typescript-eslint/parser": "^4.11.1",
     "babel-preset-minify": "^0.5.1",
     "emotion-theming": "^10.0.27",
-    "eslint": "^7.24.0",
-    "eslint-config-airbnb": "18.2.0",
-    "eslint-config-prettier": "^6.14.0",
-    "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-jsx-a11y": "6.3.1",
-    "eslint-plugin-react": "7.21.4",
-    "eslint-plugin-react-hooks": "4.1.2",
-    "husky": "^4.3.8",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.23.0",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-react": "^7.23.2",
+    "husky": "^6.0.0",
     "jest": "^26.6.3",
     "lerna": "^4.0.0",
     "react": "^17.0.2",
@@ -60,12 +64,6 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^26.5.4",
     "typescript": "^4.2.4"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint-fix",
-      "pre-push": "npm run test"
-    }
   },
   "dependencies": {},
   "workspaces": {

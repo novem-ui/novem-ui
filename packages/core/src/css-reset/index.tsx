@@ -1,5 +1,5 @@
-import React from "react";
-import { Global, css } from "@emotion/react";
+import React from 'react'
+import { Global, css } from '@emotion/react'
 
 const reset = css`
   /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -124,15 +124,15 @@ const reset = css`
   blockquote:after,
   q:before,
   q:after {
-    content: "";
+    content: '';
     content: none;
   }
   table {
     border-collapse: collapse;
     border-spacing: 0;
   }
-`;
+`
 
-const CSSReset = () => <Global styles={reset} />;
+const CSSReset = () => <Global styles={reset} />
 
-export default CSSReset;
+export default CSSReset

@@ -10,15 +10,15 @@ export default {
   argTypes: {
     as: {
       table: {
-        disable: true,
-      },
+        disable: true
+      }
     },
     theme: {
       table: {
-        disable: true,
-      },
-    },
-  },
+        disable: true
+      }
+    }
+  }
 } as Meta
 
 const Template: Story<BadgeProps> = (props) => <Badge {...props}>Badge</Badge>
@@ -26,24 +26,24 @@ const Template: Story<BadgeProps> = (props) => <Badge {...props}>Badge</Badge>
 export const Loud = Template.bind({})
 Loud.args = {
   hierarchy: 'loud',
-  size: 'lg',
+  size: 'lg'
 }
 
 export const Quiet = Template.bind({})
 Quiet.args = {
   hierarchy: 'quiet',
-  size: 'lg',
+  size: 'lg'
 }
 
 export const Small = Template.bind({})
 Small.args = {
   hierarchy: 'quiet',
-  size: 'sm',
+  size: 'sm'
 }
 
 export const CustomBaseColor = Template.bind({})
 CustomBaseColor.args = {
   hierarchy: 'quiet',
   size: 'sm',
-  baseColor: 'green',
+  baseColor: 'green'
 }

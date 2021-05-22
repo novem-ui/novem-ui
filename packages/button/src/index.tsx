@@ -33,7 +33,7 @@ export const Button = styled.button<ButtonProps & SpacingProps>`
 
 Button.defaultProps = {
   hierarchy: 'loud',
-  size: 'md',
+  size: 'md'
 }
 
 export default Button

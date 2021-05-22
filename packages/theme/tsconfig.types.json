@@ -1,12 +1,9 @@
 {
   "extends": "../../tsconfig.json",
-  "files": [],
   "compilerOptions": {
     "emitDeclarationOnly": true,
     "declaration": true,
     "declarationDir": "../../dist/theme",
-    "declarationMap": true,
-  },
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules/**", "dist/**", "**/*.spec.tsx", "**/*.stories.tsx"]
+    "declarationMap": true
+  }
 }

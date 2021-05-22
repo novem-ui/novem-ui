@@ -7,7 +7,7 @@ import colorList from './colors'
 import { WeightedColor, WeightedColorKey } from '../types'
 
 export default {
-  title: 'Theme/Colors',
+  title: 'Theme/Colors'
 } as Meta
 
 const Grid = styled.div`
@@ -38,7 +38,7 @@ function hexify(color) {
 }
 
 const PaletteElement: VoidFunctionComponent<{ colors: WeightedColor }> = ({ colors }) => {
-  const colorTuples: [WeightedColorKey] = Object.entries(colors)
+  const colorTuples: [WeightedColorKey, string][] = Object.entries(colors) as any
   return (
     <>
       {colorTuples.map(([weight, backgroundColor]) => {
@@ -46,7 +46,7 @@ const PaletteElement: VoidFunctionComponent<{ colors: WeightedColor }> = ({ colo
           getLuminance(backgroundColor.startsWith('rgba') ? hexify(backgroundColor) : backgroundColor) >= 0.3
 
         return (
-          <div>
+          <div key={backgroundColor}>
             <div
               style={{
                 backgroundColor,
@@ -55,7 +55,7 @@ const PaletteElement: VoidFunctionComponent<{ colors: WeightedColor }> = ({ colo
                 display: 'flex',
                 alignItems: 'center',
                 boxSizing: 'border-box',
-                padding: 8,
+                padding: 8
               }}
             >
               <p style={{ color: isLight ? 'black' : 'white' }}>{weight}</p>
@@ -72,7 +72,7 @@ export const Colors: VoidFunctionComponent<{}> = () => {
   return (
     <Grid>
       {palette.map(([colorName, colors]) => (
-        <div>
+        <div key={colorName}>
           <h1>{colorName}</h1>
           <PaletteElement colors={colors} />
         </div>

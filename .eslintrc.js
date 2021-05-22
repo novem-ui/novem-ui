@@ -1,10 +1,32 @@
 module.exports = {
-  root: true,
   env: {
     browser: true,
     es2021: true,
   },
-  extends: ['plugin:react/recommended', 'airbnb', 'prettier', 'prettier/@typescript-eslint', 'prettier/react'],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
+  overrides: [
+    {
+      files: ['packages/**/*.ts', 'packages/**/*.tsx'],
+      rules: {
+        'no-use-before-define': 'off',
+        'no-unused-vars': 'off',
+        '@typescript-eslint/no-use-before-define': ['error'],
+        '@typescript-eslint/no-unused-vars': ['error'],
+      },
+    },
+    {
+      env: {
+        'jest/globals': true,
+      },
+      files: ['packages/**/*.spec.ts', 'packages/**/*.spec.tsx'],
+      plugins: ['jest'],
+    },
+  ],
+  extends: ['plugin:react/recommended', 'standard', 'prettier'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -13,38 +35,9 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  ignorePatterns: ['**/dist'],
-  plugins: ['react', '@typescript-eslint'],
-  overrides: [
-    {
-      files: '**/**/*.spec.{ts,tsx}',
-      env: {
-        jest: true,
-      },
-      rules: {
-        'react/jsx-props-no-spreading': [0],
-      },
-    },
-  ],
+  plugins: ['react', '@typescript-eslint', 'jsx-a11y'],
   rules: {
-    'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
-    'max-len': ['error', { code: 120 }],
-    'no-use-before-define': [0],
-    'import/no-unresolved': [0],
-    'import/no-extraneous-dependencies': [0],
-    'import/extensions': [0],
-    'no-restricted-syntax': [0],
-    '@typescript-eslint/no-use-before-define': 'error',
-    'react/jsx-props-no-spreading': [0],
-    'import/prefer-default-export': [0],
-    'react/prop-types': [0],
-    'react/react-in-jsx-scope': [0],
-    'no-undef': [0],
-    'jsx-a11y/anchor-is-valid': [0],
-    'no-unused-vars': [0],
-    'no-shadow': [0],
-    '@typescript-eslint/no-unused-vars': [2],
-    'consistent-return': [0],
-    'default-case': [0]
+    'react/prop-types': 'off',
+    'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
   },
 }

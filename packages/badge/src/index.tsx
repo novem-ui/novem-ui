@@ -19,7 +19,7 @@ export const Badge = styled.span<BadgeProps & SpacingProps>`
 
 Badge.defaultProps = {
   hierarchy: 'loud',
-  size: 'lg',
+  size: 'lg'
 }
 
 export default Badge

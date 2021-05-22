@@ -1,5 +1,6 @@
 import { Property } from 'csstype'
-import { SpacingValue } from '@novem-ui/theme'
+import { Color, SpacingValue } from '@novem-ui/theme'
+import { Theme } from '@emotion/react'
 
 // Spacing types
 export type SpacingPropName =
@@ -45,17 +46,30 @@ export type CSSSpacingProps = Omit<
 
 // Text types
 
-export interface FontProps<T> {
-  color: Property.Color
-  fontFamily: Property.FontFamily
-  fontSize: T | Property.FontSize
-  fontWeight: Property.FontWeight
-  lineHeight: Property.LineHeight
+export interface TypographyProps<As, Size> {
+  align: Property.TextAlign
+  as: As
+  color: Color | Property.Color
+  decoration: Property.TextDecoration
+  direction: Property.Direction
+  family: Property.FontFamily
+  kerning: Property.FontKerning
   letterSpacing: Property.LetterSpacing
-  textAlign: Property.TextAlign
-  fontStyle: Property.FontStyle
-  textTransform: Property.TextTransform
-  textDecoration: Property.TextDecoration
+  lineHeight: Property.LineHeight
+  orientation: Property.TextOrientation
+  transform: Property.TextTransform
+  size: Size | Property.FontSize
+  shadow: Property.TextShadow
+  stretch: Property.FontStretch
+  style: Property.FontStyle
+  theme: Theme
+  variantCaps: Property.FontVariantCaps
+  variantNumeric: Property.FontVariantNumeric
+  weight: Property.FontWeight
+  whiteSpace: Property.FontWeight
+  wordBreak: Property.FontWeight
+  wordSpacing: Property.WordSpacing
+  writingMode: Property.WritingMode
 }
 
 // Hierarchy

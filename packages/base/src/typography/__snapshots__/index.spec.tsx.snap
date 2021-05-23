@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`typography should create a css fragment with the mapped props (partial with size) 1`] = `
+.emotion-0 {
+  color: #EB5757;
+  font-size: 14px;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+<div>
+  <p
+    class="emotion-0"
+    color="red.500"
+  >
+    test
+  </p>
+</div>
+`;
+
+exports[`typography should create a css fragment with the mapped props (partial) 1`] = `
+.emotion-0 {
+  color: #EB5757;
+  font-size: 56px;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+<div>
+  <h1
+    class="emotion-0"
+    color="red.500"
+  >
+    test
+  </h1>
+</div>
+`;
+
+exports[`typography should create a css fragment with the mapped props 1`] = `
+.emotion-0 {
+  color: #FF9900;
+  font-size: 12px;
+  font-weight: bolder;
+  margin: 0;
+  text-align: right;
+  -webkit-text-decoration: dotted;
+  text-decoration: dotted;
+  text-direction: rtl;
+  font-family: monospace;
+  font-kerning: auto;
+  letter-spacing: normal;
+  line-height: 2;
+  -webkit-text-orientation: revert;
+  -moz-text-orientation: revert;
+  -ms-text-orientation: revert;
+  text-orientation: revert;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
+  : font-stretchextra-expanded;
+  font-style: italic;
+  font-variant-caps: small-caps;
+  font-variant-numeric: slashed-zero;
+  whiteSpace: normal;
+  word-break: break-word;
+  word-spacing: unset;
+  -webkit-writing-mode: sideways-lr;
+  -ms-writing-mode: tb;
+  writing-mode: sideways-lr;
+}
+
+<div>
+  <b
+    class="emotion-0"
+    color="yellow.500"
+    direction="rtl"
+    font-style="italic"
+    kerning="auto"
+    letter-spacing="normal"
+    orientation="revert"
+    transform="uppercase"
+    word-spacing="unset"
+    writing-mode="sideways-lr"
+  >
+    test
+  </b>
+</div>
+`;

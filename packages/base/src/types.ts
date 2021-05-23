@@ -47,30 +47,33 @@ export type CSSSpacingProps = Omit<
 // Text types
 
 export interface TypographyProps<As, Size> {
-  align: Property.TextAlign
-  as: As
-  color: Color | Property.Color
-  decoration: Property.TextDecoration
-  direction: Property.Direction
-  family: Property.FontFamily
-  kerning: Property.FontKerning
-  letterSpacing: Property.LetterSpacing
-  lineHeight: Property.LineHeight
-  orientation: Property.TextOrientation
-  transform: Property.TextTransform
-  size: Size | Property.FontSize
-  shadow: Property.TextShadow
-  stretch: Property.FontStretch
-  style: Property.FontStyle
-  theme: Theme
-  variantCaps: Property.FontVariantCaps
-  variantNumeric: Property.FontVariantNumeric
-  weight: Property.FontWeight
-  whiteSpace: Property.FontWeight
-  wordBreak: Property.FontWeight
-  wordSpacing: Property.WordSpacing
-  writingMode: Property.WritingMode
+  align?: Property.TextAlign
+  as?: As
+  color?: Color | Property.Color
+  decoration?: Property.TextDecoration
+  direction?: Property.Direction
+  family?: Property.FontFamily
+  kerning?: Property.FontKerning
+  letterSpacing?: Property.LetterSpacing
+  lineHeight?: Property.LineHeight
+  orientation?: Property.TextOrientation
+  transform?: Property.TextTransform
+  size?: Size | Property.FontSize
+  shadow?: Property.TextShadow
+  stretch?: Property.FontStretch
+  fontStyle?: Property.FontStyle
+  theme?: Theme
+  variantCaps?: Property.FontVariantCaps
+  variantNumeric?: Property.FontVariantNumeric
+  weight?: Property.FontWeight
+  whiteSpace?: Property.FontWeight
+  wordBreak?: Property.WordBreak
+  wordSpacing?: Property.WordSpacing
+  writingMode?: Property.WritingMode
 }
+
+export type TextComponentType = 'heading' | 'text'
+export type HeadingTags = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 
 // Hierarchy
 export type Hierarchy = 'loud' | 'quiet' | 'link'

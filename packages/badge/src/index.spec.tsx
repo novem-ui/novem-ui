@@ -4,11 +4,12 @@ import withTheme from '@novem-ui/theme/src/utils/with-theme'
 import { render } from '@testing-library/react'
 
 import Badge from '.'
+import theme from '@novem-ui/theme'
 
 describe('<Badge />', () => {
   test('should match snapshot (default)', () => {
     const Component = () => <Badge>Dummy text</Badge>
-    const WrappedComponent = withTheme(Component)
+    const WrappedComponent = withTheme(Component, theme)
     const { container } = render(<WrappedComponent />)
 
     expect(container).toMatchSnapshot()

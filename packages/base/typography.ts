@@ -1,2 +1,2 @@
-export { default as typography, HeadingTags } from './src/typography'
-export { TypographyProps } from './src/types'
+export { default as typography } from './src/typography'
+export { TypographyProps, HeadingTags } from './src/types'

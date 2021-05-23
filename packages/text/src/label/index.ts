@@ -3,7 +3,7 @@ import { Theme } from '@novem-ui/theme'
 import { typography, TypographyProps } from '@novem-ui/base/typography'
 import { spacing, SpacingProps } from '@novem-ui/base/spacing'
 
-export type LabelProps = TypographyProps<'label', Theme['typography']['textFontSizes']>
+export type LabelProps = TypographyProps<'label', keyof Theme['typography']['textFontSizes']>
 
 const Label = styled.label<LabelProps & SpacingProps>`
   ${(props) => typography<'label', Theme['typography']['textFontSizes']>(props, 'text')}

@@ -3,7 +3,5 @@
   "files": [],
   "compilerOptions": {
     "types": ["novem-theme"]
-  },
-  "include": ["**/*.ts", "**/*.tsx", "../../emotion.d.ts"],
-  "exclude": ["node_modules/**", "dist/**"]
+  }
 }

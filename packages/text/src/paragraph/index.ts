@@ -5,7 +5,7 @@ import { spacing, SpacingProps } from '@novem-ui/base/spacing'
 
 type ParagraphTags = 'p' | 'strong' | 'span' | 'mark' | 'ins' | 'del' | 'sup' | 'small' | 'i' | 'b'
 
-export type ParagraphProps = TypographyProps<ParagraphTags, Theme['typography']['textFontSizes']>
+export type ParagraphProps = TypographyProps<ParagraphTags, keyof Theme['typography']['textFontSizes']>
 
 const Paragraph = styled.h1<ParagraphProps & SpacingProps>`
   ${(props) => typography<ParagraphTags, Theme['typography']['textFontSizes']>(props, 'heading')}

@@ -13,10 +13,10 @@ export default {
     align: { control: 'radio', options: ['left', 'right', 'center', 'justify', 'initial', 'inherit'] },
     theme: {
       table: {
-        disable: true,
-      },
-    },
-  },
+        disable: true
+      }
+    }
+  }
 } as Meta
 
 const Template: Story<ParagraphProps> = (props) => (

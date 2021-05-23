@@ -1,5 +1,5 @@
 import colors from './colors'
-import * as typography from './typography'
+import typography from './typography'
 import spacing from './spacing'
 import { WeightedColorKey } from '../types'
 

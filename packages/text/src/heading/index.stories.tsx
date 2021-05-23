@@ -13,13 +13,17 @@ export default {
     align: { control: 'radio', options: ['left', 'right', 'center', 'justify', 'initial', 'inherit'] },
     theme: {
       table: {
-        disable: true,
-      },
-    },
-  },
+        disable: true
+      }
+    }
+  }
 } as Meta
 
-const Template: Story<HeadingProps> = (props) => <HeadingComponent color="red" {...props}>Text</HeadingComponent>
+const Template: Story<HeadingProps> = (props) => (
+  <HeadingComponent color="red" {...props}>
+    Text
+  </HeadingComponent>
+)
 
 export const Heading = Template.bind({})
 Heading.args = {}

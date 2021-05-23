@@ -49,6 +49,8 @@ const PaletteElement: VoidFunctionComponent<{ colors: WeightedColor }> = ({ colo
           <div key={backgroundColor}>
             <div
               style={{
+                borderRadius: '4px',
+                marginBottom: '4px',
                 backgroundColor,
                 width: '100%',
                 height: 48,

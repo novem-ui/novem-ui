@@ -7,6 +7,7 @@ const theme = {
   colors,
   typography,
   spacing,
+  baseColor: 'orange'
 }
 
 export type BaseColor = `${keyof typeof colors.palette}`
@@ -15,6 +16,5 @@ export type HeadingSizeValue = keyof typeof typography.headingFontSizes
 export type SpacingValue = keyof typeof spacing
 export type TextSizeValue = keyof typeof typography.textFontSizes
 export type Theme = typeof theme
-
 
 export default theme

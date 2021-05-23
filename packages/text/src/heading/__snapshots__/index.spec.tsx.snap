@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Text/Heading should match snapshot 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-size: 48px;
+  margin: 0;
+}
+
+<h2
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;

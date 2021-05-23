@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Text/Label should match snapshot 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-size: 16px;
+  margin: 0;
+}
+
+<label
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;

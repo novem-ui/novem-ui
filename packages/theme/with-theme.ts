@@ -1,1 +1,1 @@
-export { default } from './src/utils/create-color-map'
+export { default } from './src/utils/with-theme'

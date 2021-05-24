@@ -19,7 +19,7 @@ const spacing = ({ theme, ...spacingProps }: { theme: Theme } & CSSSpacingProps)
     paddingBottom,
     paddingLeft,
     paddingRight,
-    paddingTop,
+    paddingTop
   } = SpacingUtils.validateProps(spacingProps)
   const getPropertyValue = (value: SpacingPropValue) =>
     typeof value === 'string' ? value : `${theme.spacing[value]}rem`

@@ -5,7 +5,7 @@ const Input = styled.input`
   border-radius: ${({ theme }) => theme.spacing['4']}rem;
   box-sizing: border-box;
   height: ${({ theme }) => theme.spacing['12']}rem;
-  font-size: ${({ theme }) => theme.typography.textFontSizes.md}px∆;
+  font-size: ${({ theme }) => theme.typography.textFontSizes.md}px;
   padding: ${({ theme }) => theme.spacing['4']}rem;
   transition: border ease-in 0.25s;
 
@@ -14,18 +14,15 @@ const Input = styled.input`
     outline: unset;
     border-color: ${({
       theme: {
-        colors: { palette },
-        baseColor
+        colors: { palette, base }
       }
-    }) => palette[baseColor][500]};
-
+    }) => palette[base][500]};
     box-shadow: 0 2px 4px 0
       ${({
         theme: {
-          colors: { palette },
-          baseColor
+          colors: { palette, base }
         }
-      }) => palette[baseColor][100]};
+      }) => palette[base][100]};
   }
 `
 

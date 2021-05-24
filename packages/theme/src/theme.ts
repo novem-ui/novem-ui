@@ -6,8 +6,7 @@ import { WeightedColorKey } from '../types'
 const theme = {
   colors,
   typography,
-  spacing,
-  baseColor: 'orange'
+  spacing
 }
 
 export type BaseColor = `${keyof typeof colors.palette}`

@@ -23,7 +23,7 @@ export const getFontSize = ({ theme, size }: ButtonUtilProps) => {
   const variants = {
     lg: textFontSizes.md,
     md: textFontSizes.sm,
-    sm: textFontSizes.xs,
+    sm: textFontSizes.xs
   }
 
   return `${variants[size]}px`

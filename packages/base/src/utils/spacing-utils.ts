@@ -35,7 +35,7 @@ class SpacingUtils {
     marginTop,
     marginRight,
     marginBottom,
-    marginLeft,
+    marginLeft
   }: SpacingProps & Record<any, any>): SpacingProps => ({
     p,
     px,
@@ -64,7 +64,7 @@ class SpacingUtils {
     marginTop,
     marginRight,
     marginBottom,
-    marginLeft,
+    marginLeft
   })
 
   /**
@@ -122,7 +122,7 @@ class SpacingUtils {
         marginTop: validatedProps.mt || validatedProps.marginTop,
         marginRight: validatedProps.mr || validatedProps.marginRight,
         marginBottom: validatedProps.mb || validatedProps.marginBottom,
-        marginLeft: validatedProps.ml || validatedProps.marginLeft,
+        marginLeft: validatedProps.ml || validatedProps.marginLeft
       })
     )
   }

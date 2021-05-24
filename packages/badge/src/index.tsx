@@ -13,7 +13,6 @@ export const Badge = styled.span<BadgeProps & SpacingProps>`
   line-height: ${({ size }) => (size === 'lg' ? 1.2 : 1)};
   padding: ${getPadding};
   text-transform: uppercase;
-
   ${spacing}
 `
 

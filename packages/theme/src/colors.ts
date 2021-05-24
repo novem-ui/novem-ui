@@ -25,6 +25,8 @@ const disabled = {
   fontColor: disabledGreyFont
 }
 
+const base = 'orange' as keyof typeof palette
+
 const palette = {
   orange: createColorMap(baseOrange),
   green: createColorMap(baseGreen),
@@ -38,7 +40,7 @@ const colors = {
   palette,
   darkGrey,
   gray25,
-  base: 'orange'
+  base
 }
 
 export default colors

@@ -1,6 +1,6 @@
-import { ColorWithHierarchyProps } from '../color-with-hierarchy'
+import { SolidColorWithHierarchyProps } from '../solid-color-with-hierarchy'
 
-const getColor = ({ theme, hierarchy, baseColor, disabled }: ColorWithHierarchyProps & { disabled?: boolean }) => {
+const getColor = ({ theme, hierarchy, baseColor, disabled }: SolidColorWithHierarchyProps & { disabled?: boolean }) => {
   const color = baseColor || theme.colors.base
   const colorGroup = theme.colors.palette[color]
   const disabledColor = theme.colors.disabled.fontColor

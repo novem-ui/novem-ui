@@ -20,7 +20,7 @@ export default {
 } as Meta
 
 const Template: Story<HeadingProps> = (props) => (
-  <HeadingComponent color="red" {...props}>
+  <HeadingComponent color="" {...props}>
     Text
   </HeadingComponent>
 )

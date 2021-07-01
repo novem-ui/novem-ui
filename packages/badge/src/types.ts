@@ -11,4 +11,4 @@ export interface BadgeProps {
   baseColor?: keyof Omit<Omit<typeof theme.colors.palette, 'base'>, 'darkGrey'>
 }
 
-export type BadgeUtilsFunction = (props: BadgeProps & { theme: Theme }) => string
+export type BadgeUtilsFunction = (props: BadgeProps & { theme?: Theme }) => string

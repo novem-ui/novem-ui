@@ -2,7 +2,7 @@ import { Theme } from '@novem-ui/theme'
 import { ButtonProps } from '../types'
 
 export interface ButtonUtilProps extends ButtonProps {
-  theme: Theme
+  theme?: Theme
 }
 
 export const getPadding = ({ size, theme }: ButtonUtilProps) => {

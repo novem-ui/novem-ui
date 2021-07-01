@@ -1,11 +1,11 @@
 import styled from '@emotion/styled'
-import { getBackgroundColor, colorWithHierarchy, spacing, SpacingProps } from '@novem-ui/base'
+import { getBackgroundColor, solidColorWithHierarchy, spacing, SpacingProps } from '@novem-ui/base'
 
 import { getFontSize, getPadding, getCursor, getDisabledBackgroundColor } from './utils'
 import { ButtonProps } from './types'
 
 export const Button = styled.button<ButtonProps & SpacingProps>`
-  ${colorWithHierarchy}
+  ${solidColorWithHierarchy}
   border-radius: ${({ theme }) => theme.spacing[12]}rem;
   border: none;
   cursor: ${getCursor};

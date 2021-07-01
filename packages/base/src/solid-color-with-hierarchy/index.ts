@@ -3,7 +3,7 @@ import { Theme, BaseColor } from '@novem-ui/theme'
 import { Hierarchy } from '../types'
 
 export interface SolidColorWithHierarchyProps {
-  theme: Theme
+  theme?: Theme
   hierarchy?: Hierarchy
   baseColor?: BaseColor
 }

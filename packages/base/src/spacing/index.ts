@@ -4,7 +4,7 @@ import { Theme } from '@novem-ui/theme'
 import SpacingUtils from '../utils/spacing-utils'
 import { CSSSpacingProps, SpacingPropValue } from '../types'
 
-const spacing = ({ theme, ...spacingProps }: { theme: Theme } & CSSSpacingProps) => {
+const spacing = ({ theme, ...spacingProps }: { theme?: Theme } & CSSSpacingProps) => {
   const {
     margin,
     marginX,

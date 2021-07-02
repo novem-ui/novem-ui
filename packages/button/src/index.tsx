@@ -1,10 +1,10 @@
 import styled from '@emotion/styled'
-import { getBackgroundColor, colorWithHierarchy, spacing, SpacingProps } from '@novem-ui/base'
+import { getBackgroundColor, colorWithHierarchy, spacing } from '@novem-ui/base'
 
 import { getFontSize, getPadding, getCursor, getDisabledBackgroundColor } from './utils'
 import { ButtonProps } from './types'
 
-export const Button = styled.button<ButtonProps & SpacingProps>`
+export const Button = styled.button<ButtonProps>`
   ${colorWithHierarchy}
   border-radius: ${({ theme }) => theme.spacing[12]}rem;
   border: none;
@@ -36,4 +36,5 @@ Button.defaultProps = {
   size: 'md'
 }
 
+export { ButtonProps }
 export default Button

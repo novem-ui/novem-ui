@@ -3,6 +3,7 @@ const path = require('path')
 const basename = path.basename(process.cwd())
 
 module.exports = {
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   transform: {
     '^.+\\.tsx?$': 'ts-jest'
   },

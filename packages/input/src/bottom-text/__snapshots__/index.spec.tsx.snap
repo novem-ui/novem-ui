@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`input/bottom-text should render a helper 1`] = `
+.emotion-0 {
+  color: rgba(154,152,151,0.85);
+  font-size: 12px;
+  margin: 0;
+  margin-left: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+<div>
+  <p
+    class="emotion-0"
+    color="grey.400"
+  >
+    Helper text
+  </p>
+</div>
+`;
+
+exports[`input/bottom-text should render an error message (from object) 1`] = `
+.emotion-0 {
+  color: #EB5757;
+  font-size: 12px;
+  margin: 0;
+  margin-left: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+<div>
+  <p
+    class="emotion-0"
+    color="red.500"
+  >
+    Error text
+  </p>
+</div>
+`;
+
+exports[`input/bottom-text should render an error message (from string) 1`] = `
+.emotion-0 {
+  color: #EB5757;
+  font-size: 12px;
+  margin: 0;
+  margin-left: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+<div>
+  <p
+    class="emotion-0"
+    color="red.500"
+  >
+    Error text
+  </p>
+</div>
+`;
+
+exports[`input/bottom-text should render nothing 1`] = `<div />`;

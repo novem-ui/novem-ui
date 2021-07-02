@@ -6,6 +6,14 @@ export interface ExtendedInputProps {
   valid?: boolean
 }
 
+/**
+ * Styled input element
+ *  #### Usage:
+    ```tsx
+    <Input {...props} />
+    ```
+ *  
+ */
 const Input = styled.input<ExtendedInputProps>`
   position: relative;
   ${inputElement}

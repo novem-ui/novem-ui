@@ -6,6 +6,14 @@ export interface BotttomTextProps {
   helper?: string
 }
 
+/**
+ *  BottomText component for the TextField component
+ *  #### Usage:
+    ```tsx
+    <BottomText error={error} helper={helper} />
+    ```
+ *  
+ */
 const BottomText: VoidFunctionComponent<BotttomTextProps> = ({ error, helper = '' }) => {
   const errorMessage = useMemo(() => {
     if (typeof error === 'string') {

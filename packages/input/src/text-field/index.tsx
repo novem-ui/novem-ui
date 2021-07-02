@@ -6,14 +6,16 @@ import TextFieldWrapper from '../text-field-wrapper'
 import BottomText from '../bottom-text'
 import InputWrapper from '../input-wrapper'
 
-export interface TextFieldProps {
+export interface ExtendedTextFieldProps {
   label?: string
   count?: boolean
   error?: boolean | Error | string
   valid?: boolean
-  helper: string
+  helper?: string
   readOnly?: boolean
 }
+
+export type TextFieldProps = ExtendedTextFieldProps & Omit<HTMLProps<HTMLInputElement>, 'as'>
 
 const InputLabel = ({ children, htmlFor }) =>
   !!children && (
@@ -22,7 +24,7 @@ const InputLabel = ({ children, htmlFor }) =>
     </Label>
   )
 
-const TextField = forwardRef<HTMLInputElement, TextFieldProps & Omit<HTMLProps<HTMLInputElement>, 'as'>>(
+const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
   ({ label, maxLength, count, onChange, error, helper, id, valid, disabled, ...props }, ref) => {
     const [valueLength, setValueLength] = useState((props.value as string)?.length || 0)
 
@@ -37,6 +39,7 @@ const TextField = forwardRef<HTMLInputElement, TextFieldProps & Omit<HTMLProps<H
 
     const shouldCount = !!(count || maxLength)
     const onChangeFunction = shouldCount ? onChangeWithLength : onChange
+    const shouldShowBottomTextContent = !!(shouldCount || count || maxLength)
 
     return (
       <TextFieldWrapper>
@@ -53,17 +56,19 @@ const TextField = forwardRef<HTMLInputElement, TextFieldProps & Omit<HTMLProps<H
             onChange={onChangeFunction}
           />
         </InputWrapper>
-        <div style={{ display: 'flex' }}>
-          <div style={{ flex: 1 }}>
-            <BottomText error={error} helper={helper} />
+        {shouldShowBottomTextContent && (
+          <div style={{ display: 'flex' }}>
+            <div style={{ flex: 1 }}>
+              <BottomText error={error} helper={helper} />
+            </div>
+            {shouldCount && (
+              <Paragraph size="xs" align="right" mx={2} mt={1} color="grey.400">
+                {valueLength}
+                {!!maxLength && `/${maxLength}`}
+              </Paragraph>
+            )}
           </div>
-          {shouldCount && (
-            <Paragraph size="xs" align="right" mx={2} mt={1} color="grey.400">
-              {valueLength}
-              {!!maxLength && `/${maxLength}`}
-            </Paragraph>
-          )}
-        </div>
+        )}
       </TextFieldWrapper>
     )
   }

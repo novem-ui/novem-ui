@@ -12,5 +12,6 @@
     "jsx": "react",
     "typeRoots": ["./types"],
     "downlevelIteration": true
-  }
+  },
+  "include": ["./jest.setup.ts"]
 }

@@ -5,6 +5,7 @@ import Input from '../input'
 import TextFieldWrapper from '../text-field-wrapper'
 import BottomText from '../bottom-text'
 import InputWrapper from '../input-wrapper'
+import { SpacingProps } from '@novem-ui/base'
 
 export interface ExtendedTextFieldProps {
   label?: string
@@ -15,7 +16,7 @@ export interface ExtendedTextFieldProps {
   readOnly?: boolean
 }
 
-export type TextFieldProps = ExtendedTextFieldProps & Omit<HTMLProps<HTMLInputElement>, 'as'>
+export type TextFieldProps = ExtendedTextFieldProps & Omit<HTMLProps<HTMLInputElement> & SpacingProps, 'as'>
 
 const InputLabel = ({ children, htmlFor }) =>
   !!children && (
@@ -39,10 +40,10 @@ const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
 
     const shouldCount = !!(count || maxLength)
     const onChangeFunction = shouldCount ? onChangeWithLength : onChange
-    const shouldShowBottomTextContent = !!(shouldCount || count || maxLength)
+    const shouldShowBottomTextContent = !!(shouldCount || count || maxLength || helper || error)
 
     return (
-      <TextFieldWrapper>
+      <TextFieldWrapper {...props}>
         <InputLabel htmlFor={id}>{label}</InputLabel>
         <InputWrapper error={error} valid={valid} disabled={disabled}>
           <Input

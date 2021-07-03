@@ -12,9 +12,10 @@ beforeAll(() => {
 })
 
 const setup = (props: PropsWithRef<TextFieldProps> = {}) => {
+  const innerProps = { onChange: () => null, ...props }
   const result = render(
     <NovemProvider>
-      <TextField {...props} />
+      <TextField {...innerProps} />
     </NovemProvider>
   )
 
@@ -70,5 +71,38 @@ describe('input/text-field', () => {
 
     expect(container).toMatchSnapshot()
     expect(screen.queryByText('5/10')).toBeInTheDocument()
+  })
+
+  test('should render a TextField with a helper', () => {
+    const { container } = setup({ value: 'value', helper: 'This is a helper text' })
+
+    expect(container).toMatchSnapshot()
+    expect(screen.queryByText('This is a helper text')).toBeInTheDocument()
+  })
+
+  test('should render a TextField with an error message (from string)', () => {
+    const { container } = setup({ value: 'value', error: 'This is an error message' })
+
+    expect(container).toMatchSnapshot()
+    expect(screen.queryByText('This is an error message')).toBeInTheDocument()
+  })
+
+  test('should render a TextField with an error message (from error object)', () => {
+    const { container } = setup({ value: 'value', error: new Error('This is an error message') })
+
+    expect(container).toMatchSnapshot()
+    expect(screen.queryByText('This is an error message')).toBeInTheDocument()
+  })
+
+  test('should render a TextField with a valid state', () => {
+    const { container } = setup({ value: 'value', valid: true })
+
+    expect(container).toMatchSnapshot()
+  })
+
+  test('should render a disabled TextField', () => {
+    const { container } = setup({ value: 'value', disabled: true })
+
+    expect(container).toMatchSnapshot()
   })
 })

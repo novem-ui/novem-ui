@@ -1,14 +1,38 @@
-import React from 'react'
+import React, { PropsWithRef } from 'react'
 import { Story, Meta } from '@storybook/react/types-6-0'
 
 import TextFieldComponent, { TextFieldProps } from '.'
 
 export default {
   title: 'Components/Input/TextField',
-  component: TextFieldComponent
+  component: TextFieldComponent,
+  argTypes: {
+    label: {
+      type: 'string'
+    },
+    placeholder: {
+      type: 'string'
+    },
+    count: {
+      type: 'boolean'
+    },
+    maxLength: { type: 'number' },
+    error: {
+      type: 'string'
+    },
+    valid: {
+      type: 'boolean'
+    },
+    helper: {
+      type: 'string'
+    },
+    readOnly: { type: 'boolean' },
+    disabled: { type: 'boolean' },
+    value: { type: 'string' }
+  }
 } as Meta
 
-const Template: Story<TextFieldProps> = (props) => <TextFieldComponent {...props} />
+const Template: Story<PropsWithRef<TextFieldProps>> = (props) => <TextFieldComponent {...props} />
 
 export const Default = Template.bind({})
 
@@ -87,5 +111,14 @@ ReadOnly.args = {
   label: 'Full Name',
   value: 'John Doe',
   readOnly: true,
+  helper: 'Name cannot be changed'
+}
+
+export const Disabled = Template.bind({})
+
+Disabled.args = {
+  label: 'Full Name',
+  value: 'John Doe',
+  disabled: true,
   helper: 'Name cannot be changed'
 }

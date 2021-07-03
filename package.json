@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "build": "lerna run build --stream",
-    "test": "jest --coverage",
-    "test:update": "jest --coverage -u",
+    "test": "jest --coverage -o",
+    "test:update": "jest --coverage -u -o",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "eslint 'packages/**/*.{ts,tsx}' --no-error-on-unmatched-pattern",
@@ -35,6 +35,7 @@
     "@emotion/jest": "11.2.1",
     "@emotion/react": "11.1.5",
     "@emotion/styled": "11.1.5",
+    "@storybook/addon-a11y": "^6.3.2",
     "@storybook/addon-actions": "^6.3.2",
     "@storybook/addon-essentials": "^6.3.2",
     "@storybook/addon-links": "^6.3.2",

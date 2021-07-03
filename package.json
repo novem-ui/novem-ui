@@ -6,7 +6,7 @@
   "scripts": {
     "build": "lerna run build --stream",
     "test": "jest --coverage",
-    "test:update": "jest --coverage -u ",
+    "test:update": "jest --coverage -u",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "eslint 'packages/**/*.{ts,tsx}' --no-error-on-unmatched-pattern",

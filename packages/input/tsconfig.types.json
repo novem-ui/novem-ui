@@ -9,5 +9,5 @@
     "types": ["novem-theme"]
   },
   "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules/**", "dist/**", "**/*.spec.tsx", "**/*.stories.tsx"]
+  "exclude": ["node_modules/**", "dist/**", "**/*.spec.ts", "**/*.spec.tsx", "**/*.stories.tsx"]
 }

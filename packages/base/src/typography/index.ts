@@ -27,7 +27,7 @@ function typography<As = string, Size = string>(
     wordBreak,
     wordSpacing,
     writingMode
-  }: TypographyProps<As, Size> & { theme: Theme },
+  }: TypographyProps<As, Size> & { theme?: Theme },
   component: TextComponentType
 ) {
   const { fontSize, defaultFontSize } = getFontSizes({ size, component, theme, as })

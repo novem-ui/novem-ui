@@ -3,11 +3,11 @@
 exports[`components/Text/Paragraph should match snapshot 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  font-size: 56px;
+  font-size: 16px;
   margin: 0;
 }
 
-<h1
+<p
     class="emotion-0"
   />
 </DocumentFragment>

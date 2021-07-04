@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`spacing should create a css fragment the correct styles (with custom color) 1`] = `
+.emotion-0 {
+  border: 1px solid rgba(0, 0, 0, .25);
+  border-radius: 1rem;
+  box-sizing: border-box;
+  height: 3rem;
+  font-size: 16px;
+  padding: 1rem;
+  -webkit-transition: border ease-in 0.25s;
+  transition: border ease-in 0.25s;
+}
+
+.emotion-0:focus,
+.emotion-0:hover {
+  outline: unset;
+  border-color: #EB5757;
+  box-shadow: 0 2px 4px 0 rgba(235,87,87,0.15);
+}
+
+.emotion-0:disabled {
+  pointer-events: none;
+  background-color: rgba(154,152,151,0.15);
+}
+
+.emotion-0:-moz-read-only {
+  background-color: white;
+  border-color: white;
+  margin-left: -2px;
+  padding: 0.5rem;
+  pointer-events: none;
+}
+
+.emotion-0:read-only {
+  background-color: white;
+  border-color: white;
+  margin-left: -2px;
+  padding: 0.5rem;
+  pointer-events: none;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
+exports[`spacing should create a css fragment the correct styles 1`] = `
+.emotion-0 {
+  border: 1px solid rgba(0, 0, 0, .25);
+  border-radius: 1rem;
+  box-sizing: border-box;
+  height: 3rem;
+  font-size: 16px;
+  padding: 1rem;
+  -webkit-transition: border ease-in 0.25s;
+  transition: border ease-in 0.25s;
+}
+
+.emotion-0:focus,
+.emotion-0:hover {
+  outline: unset;
+  border-color: #F1694B;
+  box-shadow: 0 2px 4px 0 rgba(241,105,75,0.15);
+}
+
+.emotion-0:disabled {
+  pointer-events: none;
+  background-color: rgba(154,152,151,0.15);
+}
+
+.emotion-0:-moz-read-only {
+  background-color: white;
+  border-color: white;
+  margin-left: -2px;
+  padding: 0.5rem;
+  pointer-events: none;
+}
+
+.emotion-0:read-only {
+  background-color: white;
+  border-color: white;
+  margin-left: -2px;
+  padding: 0.5rem;
+  pointer-events: none;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;

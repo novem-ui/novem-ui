@@ -31,6 +31,6 @@ export function getFontSizes({ size, component, theme, as }) {
 
 export function getColor({ theme, color }: TypographyProps<string, string>) {
   const colorValue = get(theme.colors.palette, color)
-  
+
   return colorValue || color
 }

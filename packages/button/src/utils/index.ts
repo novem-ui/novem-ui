@@ -2,7 +2,7 @@ import { Theme } from '@novem-ui/theme'
 import { ButtonProps } from '../types'
 
 export interface ButtonUtilProps extends ButtonProps {
-  theme: Theme
+  theme?: Theme
 }
 
 export const getPadding = ({ size, theme }: ButtonUtilProps) => {
@@ -23,7 +23,7 @@ export const getFontSize = ({ theme, size }: ButtonUtilProps) => {
   const variants = {
     lg: textFontSizes.md,
     md: textFontSizes.sm,
-    sm: textFontSizes.xs,
+    sm: textFontSizes.xs
   }
 
   return `${variants[size]}px`

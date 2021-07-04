@@ -7,8 +7,8 @@ type ParagraphTags = 'p' | 'strong' | 'span' | 'mark' | 'ins' | 'del' | 'sup' | 
 
 export type ParagraphProps = TypographyProps<ParagraphTags, keyof Theme['typography']['textFontSizes']>
 
-const Paragraph = styled.h1<ParagraphProps & SpacingProps>`
-  ${(props) => typography<ParagraphTags, Theme['typography']['textFontSizes']>(props, 'heading')}
+const Paragraph = styled.p<ParagraphProps & SpacingProps>`
+  ${(props) => typography<ParagraphTags, Theme['typography']['textFontSizes']>(props, 'text')}
   ${spacing}
 `
 

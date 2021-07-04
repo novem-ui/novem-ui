@@ -1,5 +1,5 @@
 import { Property } from 'csstype'
-import { Color, SpacingValue } from '@novem-ui/theme'
+import { BaseColor, Color, SpacingValue } from '@novem-ui/theme'
 import { Theme } from '@emotion/react'
 
 // Spacing types
@@ -45,7 +45,6 @@ export type CSSSpacingProps = Omit<
 >
 
 // Text types
-
 export interface TypographyProps<As, Size> {
   align?: Property.TextAlign
   as?: As
@@ -77,3 +76,13 @@ export type HeadingTags = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 
 // Hierarchy
 export type Hierarchy = 'loud' | 'quiet' | 'link'
+
+// InputElement
+export interface InputElementProps {
+  theme?: Theme
+  baseColor?: BaseColor
+  error?: boolean | string | Error
+  valid?: boolean
+  disabled?: boolean
+  readOnly?: boolean
+}

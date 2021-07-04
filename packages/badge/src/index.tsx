@@ -1,11 +1,11 @@
 import styled from '@emotion/styled'
-import { colorWithHierarchy, SpacingProps, spacing } from '@novem-ui/base'
+import { solidColorWithHierarchy, SpacingProps, spacing } from '@novem-ui/base'
 
 import { getFontSize, getPadding } from './utils'
 import { BadgeProps } from './types'
 
 export const Badge = styled.span<BadgeProps & SpacingProps>`
-  ${colorWithHierarchy}
+  ${solidColorWithHierarchy}
   border-radius: ${({ theme }) => theme.spacing[4]}rem;
   display: inline-block;
   font-size: ${getFontSize};
@@ -13,7 +13,6 @@ export const Badge = styled.span<BadgeProps & SpacingProps>`
   line-height: ${({ size }) => (size === 'lg' ? 1.2 : 1)};
   padding: ${getPadding};
   text-transform: uppercase;
-
   ${spacing}
 `
 

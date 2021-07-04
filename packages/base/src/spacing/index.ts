@@ -4,7 +4,7 @@ import { Theme } from '@novem-ui/theme'
 import SpacingUtils from '../utils/spacing-utils'
 import { CSSSpacingProps, SpacingPropValue } from '../types'
 
-const spacing = ({ theme, ...spacingProps }: { theme: Theme } & CSSSpacingProps) => {
+const spacing = ({ theme, ...spacingProps }: { theme?: Theme } & CSSSpacingProps) => {
   const {
     margin,
     marginX,
@@ -19,7 +19,7 @@ const spacing = ({ theme, ...spacingProps }: { theme: Theme } & CSSSpacingProps)
     paddingBottom,
     paddingLeft,
     paddingRight,
-    paddingTop,
+    paddingTop
   } = SpacingUtils.validateProps(spacingProps)
   const getPropertyValue = (value: SpacingPropValue) =>
     typeof value === 'string' ? value : `${theme.spacing[value]}rem`

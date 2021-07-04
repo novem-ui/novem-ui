@@ -1,12 +1,12 @@
-import { ColorWithHierarchyProps } from '../color-with-hierarchy'
+import { SolidColorWithHierarchyProps } from '../solid-color-with-hierarchy'
 
-const getBackgroundColor = ({ theme, hierarchy, baseColor }: ColorWithHierarchyProps) => {
+const getBackgroundColor = ({ theme, hierarchy, baseColor }: SolidColorWithHierarchyProps) => {
   const color = baseColor || theme.colors.base
   const colorGroup = theme.colors.palette[color]
   const colorVariants = {
     loud: colorGroup['500'],
     quiet: colorGroup['100'],
-    link: 'transparent',
+    link: 'transparent'
   }
   const backgroundColor = colorVariants[hierarchy]
 

@@ -43,7 +43,7 @@ exports[`input/input should render a themed input 1`] = `
 
 <div>
   <input
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   />
 </div>
 `;

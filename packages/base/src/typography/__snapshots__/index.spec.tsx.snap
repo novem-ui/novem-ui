@@ -10,7 +10,7 @@ exports[`typography should create a css fragment with the mapped props (partial 
 
 <div>
   <p
-    class="emotion-0"
+    class="emotion-0 emotion-1"
     color="red.500"
   >
     test
@@ -28,7 +28,7 @@ exports[`typography should create a css fragment with the mapped props (partial)
 
 <div>
   <h1
-    class="emotion-0"
+    class="emotion-0 emotion-1"
     color="red.500"
   >
     test
@@ -70,7 +70,7 @@ exports[`typography should create a css fragment with the mapped props 1`] = `
 
 <div>
   <b
-    class="emotion-0"
+    class="emotion-0 emotion-1"
     color="yellow.500"
     direction="rtl"
     font-style="italic"

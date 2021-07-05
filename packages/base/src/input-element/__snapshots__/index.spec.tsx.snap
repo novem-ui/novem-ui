@@ -42,7 +42,7 @@ exports[`spacing should create a css fragment the correct styles (with custom co
 
 <div>
   <div
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   />
 </div>
 `;
@@ -89,7 +89,7 @@ exports[`spacing should create a css fragment the correct styles 1`] = `
 
 <div>
   <div
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   />
 </div>
 `;

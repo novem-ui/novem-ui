@@ -15,7 +15,7 @@ exports[`<Badge /> should match snapshot (alternative color) 1`] = `
 
 <div>
   <span
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   >
     Dummy text
   </span>
@@ -37,7 +37,7 @@ exports[`<Badge /> should match snapshot (default) 1`] = `
 
 <div>
   <span
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   >
     Dummy text
   </span>
@@ -59,7 +59,7 @@ exports[`<Badge /> should match snapshot (quiet) 1`] = `
 
 <div>
   <span
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   >
     Dummy text
   </span>
@@ -81,7 +81,7 @@ exports[`<Badge /> should match snapshot (small) 1`] = `
 
 <div>
   <span
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   >
     Dummy text
   </span>

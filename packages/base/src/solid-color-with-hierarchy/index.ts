@@ -26,6 +26,7 @@ const solidColorWithHierarchy = ({ theme: { colors }, hierarchy, baseColor }: So
     background-color: ${backgroundColor[hierarchy]};
     color: ${color[hierarchy]};
   `
+
   return style
 }
 

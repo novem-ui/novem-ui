@@ -5,7 +5,7 @@ const basename = path.basename(process.cwd())
 module.exports = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   transform: {
-    '^.+\\.tsx?$': 'ts-jest'
+    '^.+\\.tsx?$': ['babel-jest', { configFile: './packages/babel.config.js' }]
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   collectCoverage: true,
@@ -31,7 +31,10 @@ module.exports = {
     '!packages/button/*.ts',
     '!packages/core/*.ts',
     '!packages/base/*.ts',
-    '!packages/text/*.ts'
+    '!packages/text/*.ts',
+    '!packages/input/*.ts',
+    '!packages/switch/*.ts',
+    '!packages/**/types.ts',
   ],
 
   coverageDirectory: path.resolve(__dirname, 'coverage', basename),

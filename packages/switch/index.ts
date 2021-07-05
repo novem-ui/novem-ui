@@ -1,2 +1,1 @@
-export { default } from './src'
-export * from './src/types'
+export { default, SwitchProps } from './src'

@@ -8,7 +8,7 @@ exports[`components/Text/Paragraph should match snapshot 1`] = `
 }
 
 <p
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   />
 </DocumentFragment>
 `;

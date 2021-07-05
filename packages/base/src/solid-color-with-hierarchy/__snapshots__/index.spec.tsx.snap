@@ -8,7 +8,7 @@ exports[`solidColorWithHierarchy should read the baseColor from theme 1`] = `
 
 <div>
   <div
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   />
 </div>
 `;
@@ -21,7 +21,7 @@ exports[`solidColorWithHierarchy should return a component with the correspondin
 
 <div>
   <div
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   />
 </div>
 `;
@@ -34,7 +34,7 @@ exports[`solidColorWithHierarchy should return a component with the correspondin
 
 <div>
   <div
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   />
 </div>
 `;
@@ -47,7 +47,7 @@ exports[`solidColorWithHierarchy should return a component with the correspondin
 
 <div>
   <div
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   />
 </div>
 `;

@@ -8,7 +8,7 @@ exports[`components/Text/Label should match snapshot 1`] = `
 }
 
 <label
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   />
 </DocumentFragment>
 `;

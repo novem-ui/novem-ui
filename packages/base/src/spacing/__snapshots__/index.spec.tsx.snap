@@ -23,7 +23,7 @@ exports[`spacing should create a css fragment with the mapped props (including a
 
 <div>
   <div
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   />
 </div>
 `;
@@ -37,7 +37,7 @@ exports[`spacing should create a css fragment with the mapped props (partial) 1`
 
 <div>
   <div
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   />
 </div>
 `;

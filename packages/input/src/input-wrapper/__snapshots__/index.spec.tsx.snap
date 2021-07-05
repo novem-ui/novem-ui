@@ -45,7 +45,7 @@ exports[`input/input should render an input wrapper with a valid state 1`] = `
 
 <div>
   <div
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   />
 </div>
 `;
@@ -64,7 +64,7 @@ exports[`input/input should render an input wrapper with an disabled state 1`] =
 
 <div>
   <div
-    class="emotion-0"
+    class="emotion-0 emotion-1"
     disabled=""
   />
 </div>
@@ -115,7 +115,7 @@ exports[`input/input should render an input wrapper with an error state 1`] = `
 
 <div>
   <div
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   />
 </div>
 `;

@@ -31,7 +31,7 @@ exports[`<Button /> should match snapshot (alternative color) 1`] = `
 
 <div>
   <button
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   >
     Dummy text
   </button>
@@ -69,7 +69,7 @@ exports[`<Button /> should match snapshot (alternative color) 2`] = `
 
 <div>
   <button
-    class="emotion-0"
+    class="emotion-0 emotion-1"
     disabled=""
   >
     Dummy text
@@ -108,7 +108,7 @@ exports[`<Button /> should match snapshot (default) 1`] = `
 
 <div>
   <button
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   >
     Dummy text
   </button>
@@ -146,7 +146,7 @@ exports[`<Button /> should match snapshot (large) 1`] = `
 
 <div>
   <button
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   >
     Dummy text
   </button>
@@ -184,7 +184,7 @@ exports[`<Button /> should match snapshot (medium) 1`] = `
 
 <div>
   <button
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   >
     Dummy text
   </button>
@@ -222,7 +222,7 @@ exports[`<Button /> should match snapshot (quiet) 1`] = `
 
 <div>
   <button
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   >
     Dummy text
   </button>
@@ -260,7 +260,7 @@ exports[`<Button /> should match snapshot (small) 1`] = `
 
 <div>
   <button
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   >
     Dummy text
   </button>

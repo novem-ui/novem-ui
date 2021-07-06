@@ -3,7 +3,9 @@ import React from 'react'
 import { render } from '@testing-library/react'
 import styled from '@emotion/styled'
 import theme, { Theme } from '@novem-ui/theme'
-import { typography, TypographyProps } from '@novem-ui/base/typography'
+
+import typography from '.'
+import { TypographyProps } from '../types'
 
 describe('typography', () => {
   test('should create a css fragment with the mapped props (partial)', () => {

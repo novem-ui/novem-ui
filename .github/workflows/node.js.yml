@@ -18,8 +18,6 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
     - uses: actions/checkout@v2
-    - name: Commit Linter
-      uses: wagoid/commitlint-github-action@v2.0.3
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:

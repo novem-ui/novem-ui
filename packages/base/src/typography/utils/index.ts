@@ -1,6 +1,11 @@
 import { Theme } from '@emotion/react'
 import get from 'lodash.get'
-import { HeadingTags, TypographyProps } from '../../types'
+import { HeadingTags, TextComponentType, TypographyProps } from '../../types'
+
+export interface GetFontSizesConfig {
+  component: TextComponentType
+  theme: Theme
+}
 
 export function getHeadingFontSize(level: HeadingTags = 'h1', sizes: Theme['typography']['headingFontSizes']) {
   const mappedSizes = {
@@ -15,7 +20,12 @@ export function getHeadingFontSize(level: HeadingTags = 'h1', sizes: Theme['typo
   return mappedSizes[level]
 }
 
-export function getFontSizes({ size, component, theme, as }) {
+export function getFontSizes<As, Size>({
+  size,
+  component,
+  theme,
+  as
+}: Pick<TypographyProps<As, Size>, 'size' | 'as'> & GetFontSizesConfig) {
   const isHeading = component === 'heading'
   const { typography } = theme
   const fontSizes = typography[isHeading ? 'headingFontSizes' : 'textFontSizes']

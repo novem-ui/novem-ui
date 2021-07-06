@@ -5,7 +5,7 @@ import styled from '@emotion/styled'
 import theme, { Theme } from '@novem-ui/theme'
 
 import typography from '.'
-import { TypographyProps } from '../types'
+import type { TypographyProps } from '../types'
 
 describe('typography', () => {
   test('should create a css fragment with the mapped props (partial)', () => {

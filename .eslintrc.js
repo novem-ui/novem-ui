@@ -41,7 +41,10 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'jsx-a11y'],
   rules: {
+    'import/order': ['error', { groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'type'] }],
     'react/prop-types': 'off',
-    'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }]
+    'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
+    'no-unneeded-ternary': ['error'],
+    indent: ['error', 2]
   }
 }

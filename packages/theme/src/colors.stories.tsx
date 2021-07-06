@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import { getLuminance } from 'polished'
 
 import colorList from './colors'
-import { WeightedColor, WeightedColorKey } from '../types'
+import type { WeightedColor, WeightedColorKey } from '../types'
 
 export default {
   title: 'Theme/Colors'

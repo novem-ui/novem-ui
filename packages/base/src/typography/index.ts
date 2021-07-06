@@ -30,7 +30,7 @@ function typography<As = string, Size = string>(
   }: TypographyProps<As, Size> & { theme?: Theme },
   component: TextComponentType
 ) {
-  const { fontSize, defaultFontSize } = getFontSizes({ size, component, theme, as })
+  const { fontSize, defaultFontSize } = getFontSizes<As, Size>({ size, component, theme, as })
   const styles = css`
     color: ${getColor({ theme, color })};
     font-size: ${fontSize || defaultFontSize};

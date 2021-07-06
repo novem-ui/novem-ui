@@ -1,7 +1,7 @@
 import { SpacingValue } from '@novem-ui/theme'
 
 import { units } from './constants'
-import { SpacingPropEntry, SpacingProps, CSSSpacingProps } from '../types'
+import type { SpacingPropEntry, SpacingProps, CSSSpacingProps } from '../types'
 
 class SpacingUtils {
   /**

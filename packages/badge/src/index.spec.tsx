@@ -1,10 +1,9 @@
 import React from 'react'
 
-import withTheme from '@novem-ui/theme/src/utils/with-theme'
+import theme, { withTheme } from '@novem-ui/theme'
 import { render } from '@testing-library/react'
 
 import Badge from '.'
-import theme from '@novem-ui/theme'
 
 describe('<Badge />', () => {
   test('should match snapshot (default)', () => {

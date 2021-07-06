@@ -5,7 +5,7 @@ import styled from '@emotion/styled'
 
 import theme from '@novem-ui/theme'
 import spacing from '.'
-import { SpacingProps } from '../types'
+import type { SpacingProps } from '../types'
 
 const ComponentWithSpacingProps = styled.div<SpacingProps>`
   ${spacing}

@@ -1,7 +1,7 @@
 import colors from './colors'
 import typography from './typography'
 import spacing from './spacing'
-import { WeightedColorKey } from '../types'
+import type { WeightedColorKey } from '../types'
 
 const theme = {
   colors,

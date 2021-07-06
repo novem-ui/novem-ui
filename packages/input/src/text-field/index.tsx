@@ -1,11 +1,12 @@
-import React, { forwardRef, HTMLProps, useState } from 'react'
-import { Label, Paragraph } from '@novem-ui/text'
+import React, { ChangeEventHandler, forwardRef, HTMLProps, useState } from 'react'
+import { SpacingProps } from '@novem-ui/base'
+import { Paragraph } from '@novem-ui/text'
 
 import Input from '../input'
 import TextFieldWrapper from '../text-field-wrapper'
 import BottomText from '../bottom-text'
 import InputWrapper from '../input-wrapper'
-import { SpacingProps } from '@novem-ui/base'
+import InputLabel from '../input-label'
 
 export interface ExtendedTextFieldProps {
   label?: string
@@ -18,18 +19,11 @@ export interface ExtendedTextFieldProps {
 
 export type TextFieldProps = ExtendedTextFieldProps & Omit<HTMLProps<HTMLInputElement> & SpacingProps, 'as'>
 
-const InputLabel = ({ children, htmlFor }) =>
-  !!children && (
-    <Label size="xs" ml={2} mb={1} htmlFor={htmlFor} style={{ display: 'block' }}>
-      {children}
-    </Label>
-  )
-
 const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
   ({ label, maxLength, count, onChange, error, helper, id, valid, disabled, ...props }, ref) => {
     const [valueLength, setValueLength] = useState((props.value as string)?.length || 0)
 
-    const onChangeWithLength = (event) => {
+    const onChangeWithLength: ChangeEventHandler<HTMLInputElement> = (event) => {
       const { length } = event.target.value
       setValueLength(length)
 

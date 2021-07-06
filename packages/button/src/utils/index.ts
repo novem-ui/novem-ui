@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 import { Theme } from '@novem-ui/theme'
 import { ButtonProps } from '../types'
 

@@ -1,5 +1,5 @@
 import SpacingUtils from './spacing-utils'
-import { SpacingPropEntry } from '../types'
+import type { SpacingPropEntry } from '../types'
 
 describe('SpacingUtils::filterSpacingProps', () => {
   test('should remove unrequired props', () => {

@@ -1,8 +1,7 @@
 import styled from '@emotion/styled'
 import { css } from '@emotion/react'
 import { Theme } from '@novem-ui/theme'
-
-import getIcon from './get-icon'
+import { getIcon } from '@novem-ui/base'
 
 export interface InputWrapperProps {
   disabled?: boolean

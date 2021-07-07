@@ -14,18 +14,18 @@ const setup = (props: SwitchProps = {}) => {
   return result
 }
 
-describe('<Switch />', () => {
-  test('should render a switch component', () => {
+describe('<Checkbox />', () => {
+  test('should render a checkbox component', () => {
     const { container } = setup()
     expect(container).toMatchSnapshot()
   })
 
-  test('should render a switch component (checked)', () => {
+  test('should render a checkbox component (checked)', () => {
     const { container } = setup({ checked: true })
     expect(container).toMatchSnapshot()
   })
 
-  test('should render a switch component (custom color)', () => {
+  test('should render a checkbox component (custom color)', () => {
     const { container } = setup({ baseColor: 'red' })
     expect(container).toMatchSnapshot()
   })

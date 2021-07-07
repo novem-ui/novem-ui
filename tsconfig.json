@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "types": ["jest", "node"],
+    "types": ["node", "jest", "@testing-library/jest-dom"],
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "skipLibCheck": true,
@@ -12,7 +12,7 @@
     "jsx": "react",
     "typeRoots": ["./types"],
     "downlevelIteration": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
   },
   "include": ["./jest.setup.ts"]
 }

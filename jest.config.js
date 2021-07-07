@@ -21,6 +21,14 @@ module.exports = {
       branches: 88
     }
   },
+  testPathIgnorePatterns: [
+    '/node_modules/',
+    '/cypress/'
+  ],
+  coveragePathIgnorePatterns: [
+    '/node_modules/',
+    '/cypress/'
+  ],
   coverageReporters: ['json', 'lcov', 'text', 'clover'],
   collectCoverageFrom: [
     '**/src/**/*.{ts,tsx}',
@@ -36,7 +44,6 @@ module.exports = {
     '!packages/switch/*.ts',
     '!packages/**/types.ts',
   ],
-
   coverageDirectory: path.resolve(__dirname, 'coverage', basename),
   globals: {
     'ts-jest': {

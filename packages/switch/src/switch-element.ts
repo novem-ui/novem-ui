@@ -1,9 +1,8 @@
 import styled from '@emotion/styled'
-import { solidColorWithHierarchy, SolidColorWithHierarchyProps } from '@novem-ui/base'
 import { transparentize } from 'polished'
 
-const SwitchElement = styled.span<Omit<SolidColorWithHierarchyProps, 'hierarchy'>>`
-  ${({ theme, baseColor }) => solidColorWithHierarchy({ theme, baseColor, hierarchy: 'loud' })}
+const SwitchElement = styled.span`
+  background-color: ${({ theme }) => theme.colors.gray25};
   bottom: 0;
   cursor: pointer;
   left: 0;

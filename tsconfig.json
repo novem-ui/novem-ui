@@ -12,7 +12,7 @@
     "jsx": "react",
     "typeRoots": ["./types"],
     "downlevelIteration": true,
-    "noImplicitAny": true,
+    "noImplicitAny": true
   },
   "include": ["./jest.setup.ts"]
 }

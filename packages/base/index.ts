@@ -1,6 +1,7 @@
 export { default as getBackgroundColor } from './src/get-background-color'
 export { default as getColor } from './src/get-color'
 export { default as solidColorWithHierarchy, SolidColorWithHierarchyProps } from './src/solid-color-with-hierarchy'
+export { default as borderColor, BorderColorProps } from './src/border-color'
 export { default as getIcon, GetIconProps } from './src/get-icon'
 export { default as spacing } from './src/spacing'
 export { default as separateSpacingProps } from './src/spacing/separate-props'

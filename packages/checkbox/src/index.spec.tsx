@@ -3,35 +3,30 @@ import React from 'react'
 import { render } from '@testing-library/react'
 import { NovemProvider } from '@novem-ui/core'
 
-import Switch, { SwitchProps } from '.'
+import Checkbox, { CheckboxProps } from '.'
 
-const setup = (props: SwitchProps = {}) => {
+const setup = (props: CheckboxProps = {}) => {
   const result = render(
     <NovemProvider>
-      <Switch {...props} />
+      <Checkbox {...props} />
     </NovemProvider>
   )
   return result
 }
 
-describe('<Switch />', () => {
-  test('should render a switch component', () => {
+describe('<Checkbox />', () => {
+  test('should render a checkbox component', () => {
     const { container } = setup()
     expect(container).toMatchSnapshot()
   })
 
-  test('should render a switch component (checked)', () => {
+  test('should render a checkbox component (checked)', () => {
     const { container } = setup({ checked: true })
     expect(container).toMatchSnapshot()
   })
 
-  test('should render a switch component (custom color)', () => {
+  test('should render a checkbox component (custom color)', () => {
     const { container } = setup({ baseColor: 'red' })
-    expect(container).toMatchSnapshot()
-  })
-
-  test('should render a badge component (disabled)', () => {
-    const { container } = setup({ disabled: true })
     expect(container).toMatchSnapshot()
   })
 })

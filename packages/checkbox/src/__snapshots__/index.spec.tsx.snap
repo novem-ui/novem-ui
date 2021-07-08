@@ -4,7 +4,7 @@ exports[`<Checkbox /> should render a checkbox component (checked) 1`] = `
 .emotion-0 {
   position: relative;
   display: inline-block;
-  width: 2rem;
+  width: 1.25rem;
   height: 1.25rem;
 }
 
@@ -14,39 +14,32 @@ exports[`<Checkbox /> should render a checkbox component (checked) 1`] = `
   height: 0;
 }
 
+.emotion-2:checked+.emotion-5 {
+  background-color: #F1694B;
+  color: rgba(255,255,255,1);
+}
+
 .emotion-2:checked+.emotion-5::after {
-  -webkit-transform: translate3d(12px, 0, 0);
-  -moz-transform: translate3d(12px, 0, 0);
-  -ms-transform: translate3d(12px, 0, 0);
-  transform: translate3d(12px, 0, 0);
+  content: '';
+  display: block;
 }
 
 .emotion-4 {
-  background-color: #F1694B;
-  color: rgba(255,255,255,1);
+  background-color: white;
   bottom: 0;
   cursor: pointer;
   left: 0;
   right: 0;
   box-sizing: border-box;
   top: 0;
-  -webkit-transition: all ease-in 0.25s;
-  transition: all ease-in 0.25s;
+  -webkit-transition: all ease-in 0.15s;
+  transition: all ease-in 0.15s;
   position: absolute;
-  border-radius: 0.625rem;
-  padding: 0.125rem;
-}
-
-.emotion-4::after {
-  content: '';
-  background-color: white;
   border-radius: 0.5rem;
-  display: block;
-  height: 1rem;
-  -webkit-transition: -webkit-transform ease 0.25s;
-  transition: transform ease 0.25s;
-  width: 1rem;
-  box-shadow: 0px 1px 2px 2px rgba(51,50,50,0.1);
+  border-width: 2px;
+  border-style: solid;
+  overflow: hidden;
+  border-color: #F1694B;
 }
 
 <div>
@@ -69,7 +62,7 @@ exports[`<Checkbox /> should render a checkbox component (custom color) 1`] = `
 .emotion-0 {
   position: relative;
   display: inline-block;
-  width: 2rem;
+  width: 1.25rem;
   height: 1.25rem;
 }
 
@@ -79,39 +72,32 @@ exports[`<Checkbox /> should render a checkbox component (custom color) 1`] = `
   height: 0;
 }
 
+.emotion-2:checked+.emotion-5 {
+  background-color: #EB5757;
+  color: rgba(255,255,255,1);
+}
+
 .emotion-2:checked+.emotion-5::after {
-  -webkit-transform: translate3d(12px, 0, 0);
-  -moz-transform: translate3d(12px, 0, 0);
-  -ms-transform: translate3d(12px, 0, 0);
-  transform: translate3d(12px, 0, 0);
+  content: '';
+  display: block;
 }
 
 .emotion-4 {
-  background-color: #EB5757;
-  color: rgba(255,255,255,1);
+  background-color: white;
   bottom: 0;
   cursor: pointer;
   left: 0;
   right: 0;
   box-sizing: border-box;
   top: 0;
-  -webkit-transition: all ease-in 0.25s;
-  transition: all ease-in 0.25s;
+  -webkit-transition: all ease-in 0.15s;
+  transition: all ease-in 0.15s;
   position: absolute;
-  border-radius: 0.625rem;
-  padding: 0.125rem;
-}
-
-.emotion-4::after {
-  content: '';
-  background-color: white;
   border-radius: 0.5rem;
-  display: block;
-  height: 1rem;
-  -webkit-transition: -webkit-transform ease 0.25s;
-  transition: transform ease 0.25s;
-  width: 1rem;
-  box-shadow: 0px 1px 2px 2px rgba(51,50,50,0.1);
+  border-width: 2px;
+  border-style: solid;
+  overflow: hidden;
+  border-color: #EB5757;
 }
 
 <div>
@@ -133,7 +119,7 @@ exports[`<Checkbox /> should render a checkbox component 1`] = `
 .emotion-0 {
   position: relative;
   display: inline-block;
-  width: 2rem;
+  width: 1.25rem;
   height: 1.25rem;
 }
 
@@ -143,39 +129,32 @@ exports[`<Checkbox /> should render a checkbox component 1`] = `
   height: 0;
 }
 
+.emotion-2:checked+.emotion-5 {
+  background-color: #F1694B;
+  color: rgba(255,255,255,1);
+}
+
 .emotion-2:checked+.emotion-5::after {
-  -webkit-transform: translate3d(12px, 0, 0);
-  -moz-transform: translate3d(12px, 0, 0);
-  -ms-transform: translate3d(12px, 0, 0);
-  transform: translate3d(12px, 0, 0);
+  content: '';
+  display: block;
 }
 
 .emotion-4 {
-  background-color: #F1694B;
-  color: rgba(255,255,255,1);
+  background-color: white;
   bottom: 0;
   cursor: pointer;
   left: 0;
   right: 0;
   box-sizing: border-box;
   top: 0;
-  -webkit-transition: all ease-in 0.25s;
-  transition: all ease-in 0.25s;
+  -webkit-transition: all ease-in 0.15s;
+  transition: all ease-in 0.15s;
   position: absolute;
-  border-radius: 0.625rem;
-  padding: 0.125rem;
-}
-
-.emotion-4::after {
-  content: '';
-  background-color: white;
   border-radius: 0.5rem;
-  display: block;
-  height: 1rem;
-  -webkit-transition: -webkit-transform ease 0.25s;
-  transition: transform ease 0.25s;
-  width: 1rem;
-  box-shadow: 0px 1px 2px 2px rgba(51,50,50,0.1);
+  border-width: 2px;
+  border-style: solid;
+  overflow: hidden;
+  border-color: #F1694B;
 }
 
 <div>

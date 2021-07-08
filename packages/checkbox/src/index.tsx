@@ -2,22 +2,24 @@ import React, { HTMLProps, useMemo, VoidFunctionComponent } from 'react'
 import { separateSpacingProps, SolidColorWithHierarchyProps, SpacingProps } from '@novem-ui/base'
 
 import HiddenInput from './hidden-input'
-import SwitchElement from './switch-element'
-import SwitchLabel from './switch-label'
+import CheckboxElement from './checkbox-element'
+import CheckboxLabel from './checkbox-label'
 
-export type SwitchProps = Omit<HTMLProps<HTMLInputElement>, 'type' | 'as'> &
+export type CheckboxProps = Omit<HTMLProps<HTMLInputElement>, 'type' | 'as'> &
   Omit<SolidColorWithHierarchyProps, 'hierarchy' | 'theme'> &
   SpacingProps
 
-const Switch: VoidFunctionComponent<SwitchProps> = ({ baseColor, ...inputProps }) => {
-  const { props, spacingProps } = useMemo(() => separateSpacingProps<typeof inputProps>(inputProps), [inputProps])
+const Checkbox: VoidFunctionComponent<CheckboxProps> = ({ baseColor, ...checkboxProps }) => {
+  const { props, spacingProps } = useMemo(() => separateSpacingProps<typeof checkboxProps>(checkboxProps), [
+    checkboxProps
+  ])
 
   return (
-    <SwitchLabel {...spacingProps}>
-      <HiddenInput type="checkbox" {...props} />
-      <SwitchElement baseColor={baseColor} />
-    </SwitchLabel>
+    <CheckboxLabel {...spacingProps}>
+      <HiddenInput type="checkbox" {...props} baseColor={baseColor} />
+      <CheckboxElement baseColor={baseColor} />
+    </CheckboxLabel>
   )
 }
 
-export default Switch
+export default Checkbox

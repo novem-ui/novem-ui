@@ -3,12 +3,12 @@ import React from 'react'
 import { render } from '@testing-library/react'
 import { NovemProvider } from '@novem-ui/core'
 
-import Switch, { SwitchProps } from '.'
+import Checkbox, { CheckboxProps } from '.'
 
-const setup = (props: SwitchProps = {}) => {
+const setup = (props: CheckboxProps = {}) => {
   const result = render(
     <NovemProvider>
-      <Switch {...props} />
+      <Checkbox {...props} />
     </NovemProvider>
   )
   return result

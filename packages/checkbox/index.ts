@@ -1,1 +1,1 @@
-export { default, SwitchProps } from './src'
+export { default, CheckboxProps } from './src'

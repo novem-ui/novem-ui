@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { solidColorWithHierarchy, SolidColorWithHierarchyProps } from '@novem-ui/base'
+import { solidColorWithHierarchy, SolidColorWithHierarchyProps, getIcon } from '@novem-ui/base'
 import CheckboxElement from './checkbox-element'
 
 const HiddenInput = styled.input<Omit<SolidColorWithHierarchyProps, 'hierarchy'>>`
@@ -13,6 +13,9 @@ const HiddenInput = styled.input<Omit<SolidColorWithHierarchyProps, 'hierarchy'>
     &::after {
       content: '';
       display: block;
+      background-image: url(${getIcon({ valid: true })});
+      height: ${({ theme }) => theme.spacing[4]}rem;
+      width: ${({ theme }) => theme.spacing[4]}rem;
     }
   }
 `

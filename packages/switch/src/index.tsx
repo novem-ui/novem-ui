@@ -9,13 +9,13 @@ export type SwitchProps = Omit<HTMLProps<HTMLInputElement>, 'type' | 'as'> &
   Omit<SolidColorWithHierarchyProps, 'hierarchy' | 'theme'> &
   SpacingProps
 
-const Switch: VoidFunctionComponent<SwitchProps> = ({ baseColor, ...inputProps }) => {
-  const { props, spacingProps } = useMemo(() => separateSpacingProps<typeof inputProps>(inputProps), [inputProps])
+const Switch: VoidFunctionComponent<SwitchProps> = (props) => {
+  const { props: inputProps, spacingProps } = useMemo(() => separateSpacingProps<typeof props>(props), [props])
 
   return (
     <SwitchLabel {...spacingProps}>
-      <HiddenInput type="checkbox" {...props} />
-      <SwitchElement baseColor={baseColor} />
+      <HiddenInput {...inputProps} type="checkbox" />
+      <SwitchElement />
     </SwitchLabel>
   )
 }

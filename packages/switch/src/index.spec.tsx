@@ -29,4 +29,9 @@ describe('<Switch />', () => {
     const { container } = setup({ baseColor: 'red' })
     expect(container).toMatchSnapshot()
   })
+
+  test('should render a badge component (disabled)', () => {
+    const { container } = setup({ disabled: true })
+    expect(container).toMatchSnapshot()
+  })
 })

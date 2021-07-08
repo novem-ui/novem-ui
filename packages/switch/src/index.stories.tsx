@@ -14,3 +14,9 @@ export const CustomColor: Story<SwitchProps> = (args) => <Switch {...args} />
 CustomColor.args = {
   baseColor: 'grey'
 }
+
+export const Disabled: Story<SwitchProps> = (args) => <Switch {...args} />
+
+Disabled.args = {
+  disabled: true
+}

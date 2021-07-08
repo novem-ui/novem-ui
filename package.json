@@ -6,6 +6,7 @@
   "scripts": {
     "build": "lerna run build --stream",
     "test": "jest --coverage",
+    "test-e2e": "npx cypress open",
     "test:update": "jest --coverage -u",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
@@ -54,6 +55,7 @@
     "babel-jest": "^27.0.6",
     "babel-plugin-emotion": "10",
     "babel-preset-minify": "^0.5.1",
+    "cypress": "^7.6.0",
     "emotion-theming": "^10.0.27",
     "eslint": "^7.26.0",
     "eslint-config-prettier": "^8.3.0",

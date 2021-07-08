@@ -1,5 +1,79 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Switch /> should render a badge component (disabled) 1`] = `
+.emotion-0 {
+  position: relative;
+  display: inline-block;
+  width: 2rem;
+  height: 1.25rem;
+}
+
+.emotion-2 {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.emotion-2:disabled+.emotion-5 {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.emotion-2:checked+.emotion-5 {
+  background-color: #F1694B;
+  color: rgba(255,255,255,1);
+}
+
+.emotion-2:checked+.emotion-5::after {
+  -webkit-transform: translate3d(12px, 0, 0);
+  -moz-transform: translate3d(12px, 0, 0);
+  -ms-transform: translate3d(12px, 0, 0);
+  transform: translate3d(12px, 0, 0);
+}
+
+.emotion-4 {
+  background-color: rgba(0, 0, 0, .25);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  top: 0;
+  -webkit-transition: all ease-in 0.25s;
+  transition: all ease-in 0.25s;
+  position: absolute;
+  border-radius: 0.625rem;
+  padding: 0.125rem;
+}
+
+.emotion-4::after {
+  content: '';
+  background-color: white;
+  border-radius: 0.5rem;
+  display: block;
+  height: 1rem;
+  -webkit-transition: -webkit-transform ease 0.25s;
+  transition: transform ease 0.25s;
+  width: 1rem;
+  box-shadow: 0px 1px 2px 2px rgba(51,50,50,0.1);
+}
+
+<div>
+  <label
+    class="emotion-0 emotion-1"
+  >
+    <input
+      class="emotion-2 emotion-3"
+      disabled=""
+      type="checkbox"
+    />
+    <span
+      class="emotion-4 emotion-5"
+    />
+  </label>
+</div>
+`;
+
 exports[`<Switch /> should render a switch component (checked) 1`] = `
 .emotion-0 {
   position: relative;
@@ -14,6 +88,16 @@ exports[`<Switch /> should render a switch component (checked) 1`] = `
   height: 0;
 }
 
+.emotion-2:disabled+.emotion-5 {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.emotion-2:checked+.emotion-5 {
+  background-color: #F1694B;
+  color: rgba(255,255,255,1);
+}
+
 .emotion-2:checked+.emotion-5::after {
   -webkit-transform: translate3d(12px, 0, 0);
   -moz-transform: translate3d(12px, 0, 0);
@@ -22,8 +106,7 @@ exports[`<Switch /> should render a switch component (checked) 1`] = `
 }
 
 .emotion-4 {
-  background-color: #F1694B;
-  color: rgba(255,255,255,1);
+  background-color: rgba(0, 0, 0, .25);
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -79,6 +162,16 @@ exports[`<Switch /> should render a switch component (custom color) 1`] = `
   height: 0;
 }
 
+.emotion-2:disabled+.emotion-5 {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.emotion-2:checked+.emotion-5 {
+  background-color: #EB5757;
+  color: rgba(255,255,255,1);
+}
+
 .emotion-2:checked+.emotion-5::after {
   -webkit-transform: translate3d(12px, 0, 0);
   -moz-transform: translate3d(12px, 0, 0);
@@ -87,8 +180,7 @@ exports[`<Switch /> should render a switch component (custom color) 1`] = `
 }
 
 .emotion-4 {
-  background-color: #EB5757;
-  color: rgba(255,255,255,1);
+  background-color: rgba(0, 0, 0, .25);
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -143,6 +235,16 @@ exports[`<Switch /> should render a switch component 1`] = `
   height: 0;
 }
 
+.emotion-2:disabled+.emotion-5 {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.emotion-2:checked+.emotion-5 {
+  background-color: #F1694B;
+  color: rgba(255,255,255,1);
+}
+
 .emotion-2:checked+.emotion-5::after {
   -webkit-transform: translate3d(12px, 0, 0);
   -moz-transform: translate3d(12px, 0, 0);
@@ -151,8 +253,7 @@ exports[`<Switch /> should render a switch component 1`] = `
 }
 
 .emotion-4 {
-  background-color: #F1694B;
-  color: rgba(255,255,255,1);
+  background-color: rgba(0, 0, 0, .25);
   bottom: 0;
   cursor: pointer;
   left: 0;

@@ -1,14 +1,33 @@
 import React, { FunctionComponent } from 'react'
 import Button from '@novem-ui/button'
+import { Close as CloseIcon, CloseSmall, Check, Attention, Info } from '@icon-park/react'
 
-import { Wrapper, Content, Actions, Icon, Text, Title, ContentWrapper, Close } from './styles'
+import { Wrapper, Content, Actions, IconWrapper, Text, Title, ContentWrapper, CloseWrapper } from './styles'
 import { MessageTypes } from './types'
 
 const Message: FunctionComponent<MessageTypes> = ({ title, message, onClose, button, baseColor }) => {
+  const Icon = () => {
+    if (baseColor === 'red') {
+      return <CloseSmall />
+    }
+
+    if (baseColor === 'yellow') {
+      return <Attention className="remove-circle" />
+    }
+
+    if (baseColor === 'green') {
+      return <Check />
+    }
+
+    return <Info className="remove-circle" />
+  }
+
   return (
     <Wrapper baseColor={baseColor}>
       <Content>
-        <Icon />
+        <IconWrapper baseColor={baseColor}>
+          <Icon />
+        </IconWrapper>
         <ContentWrapper>
           {title ? (
             <>
@@ -26,7 +45,11 @@ const Message: FunctionComponent<MessageTypes> = ({ title, message, onClose, but
             {button.text}
           </Button>
         )}
-        {onClose && <Close onClick={onClose}>x</Close>}
+        {onClose && (
+          <CloseWrapper onClick={onClose}>
+            <CloseIcon />
+          </CloseWrapper>
+        )}
       </Actions>
     </Wrapper>
   )

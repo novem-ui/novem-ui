@@ -7,13 +7,22 @@ export default {
   title: 'Components/Message',
   component: Message,
   argTypes: {
-    hierarchy: {
-      type: 'radio',
-      options: ['loud', 'quiet']
-    },
     baseColor: {
       type: 'radio',
-      options: ['red', 'green', 'orange', 'grey', 'yellow']
+      options: ['red', 'green', 'orange', 'grey', 'yellow'],
+      defaultValue: 'grey'
+    },
+    button: {
+      type: 'raw',
+      defaultValue: null
+    },
+    onClose: {
+      type: 'raw',
+      defaultValue: null
+    },
+    message: {
+      type: 'string',
+      defaultValue: 'message'
     },
     as: {
       table: {
@@ -32,29 +41,33 @@ const Template: Story<any> = (props) => <Message {...props}>Button</Message>
 
 export const WithTitle = Template.bind({})
 WithTitle.args = {
-  title: 'Dummy title',
-  message: 'Dummy message'
-}
-
-export const Default = Template.bind({})
-Default.args = {
-  message: 'Dummy message'
-}
-
-export const Closable = Template.bind({})
-Closable.args = {
-  title: 'Dummy title',
-  message: 'Dummy message',
-  onClose: (f) => f
-}
-
-export const WithButton = Template.bind({})
-WithButton.args = {
-  title: 'Dummy title',
-  message: 'Dummy message',
+  baseColor: 'green',
+  title: 'Success title',
+  message: 'Success message',
   onClose: (f) => f,
   button: {
     text: 'Button',
     action: (f) => f
   }
+}
+
+export const Default = Template.bind({})
+Default.args = {
+  baseColor: 'green',
+  message: 'Success message'
+}
+
+export const Closable = Template.bind({})
+Closable.args = {
+  baseColor: 'red',
+  title: 'Error title',
+  message: 'Error message',
+  onClose: (f) => f
+}
+
+export const WithButton = Template.bind({})
+WithButton.args = {
+  baseColor: 'grey',
+  title: 'Info title',
+  message: 'Info message'
 }

@@ -1,38 +1,40 @@
 import styled from '@emotion/styled'
-
-import { BaseColorTypes } from './types'
-
-export interface WrapperTypes {
-  baseColor: BaseColorTypes
-}
+import { borderColor, BorderColorProps } from '@novem-ui/base'
 
 export interface TextTypes {
   withTitle?: boolean
 }
 
-export const Wrapper = styled.div<WrapperTypes>`
-  padding: 1rem;
-  box-sizing: border-box;
-  border: 1px solid ${(props) => props.theme.colors.palette.orange[500]};
+export interface IconWrapperTypes {
+  baseColor: string | number | symbol
+}
+
+export const Wrapper = styled.div<BorderColorProps>`
+  align-items: center;
   border-radius: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 1rem;
+  ${({ theme, baseColor }) => borderColor({ theme, baseColor })};
 `
 
 export const Content = styled.div`
-  display: flex;
   align-items: center;
+  display: flex;
 `
 
 export const Actions = styled.div`
+  align-items: center;
   display: flex;
 `
 
 export const Text = styled.p<TextTypes>`
-  margin: 0;
   font-size: ${(props) =>
     props.withTitle ? props.theme.typography.textFontSizes.xs : props.theme.typography.textFontSizes.sm}px;
+  margin: 0;
 `
 
 export const Title = styled.p`
@@ -41,20 +43,46 @@ export const Title = styled.p`
   margin: 0;
 `
 
-export const Icon = styled.div`
+export const IconWrapper = styled.div<IconWrapperTypes>`
   width: 1.25rem;
   height: 1.25rem;
-  background-color: #f6c6ce;
-  border-radius: 1.24rem;
+  background-color: ${(props) => props.theme.colors.palette[props.baseColor || 'grey'][500]};
+  border-radius: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  svg path {
+    color: white;
+  }
+
+  .remove-circle path :first-child {
+    color: transparent;
+  }
 `
 
 export const ContentWrapper = styled.div`
-  margin: 0 0 0 1rem;
   display: grid;
   gap: 0.25rem;
+  margin: 0 0 0 1rem;
 `
 
-export const Close = styled.div`
+export const CloseWrapper = styled.div`
+  align-items: center;
   cursor: pointer;
+  display: flex;
+  height: 0.75rem;
   margin-left: 1rem;
+  width: 0.75rem;
+
+  svg {
+    height: 0.75rem;
+    width: 0.75rem;
+  }
 `

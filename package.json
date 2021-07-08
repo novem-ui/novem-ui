@@ -76,7 +76,9 @@
     "ts-jest": "^26.5.4",
     "typescript": "^4.2.4"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@icon-park/react": "^1.3.3"
+  },
   "workspaces": {
     "packages": [
       "packages/*"

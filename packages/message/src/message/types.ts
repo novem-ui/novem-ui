@@ -1,6 +1,4 @@
-export interface BaseColorTypes {
-  baseColor: 'orange' | 'red' | 'grey' | 'green'
-}
+import theme from "@novem-ui/theme";
 
 export interface ButtonActionTypes {
   text: string
@@ -12,5 +10,5 @@ export interface MessageTypes {
   message: string
   onClose?: () => void
   button?: ButtonActionTypes
-  baseColor?: BaseColorTypes
+  baseColor?: keyof typeof theme.colors.palette
 }

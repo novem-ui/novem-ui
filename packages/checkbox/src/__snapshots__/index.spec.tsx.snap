@@ -14,14 +14,36 @@ exports[`<Checkbox /> should render a checkbox component (checked) 1`] = `
   height: 0;
 }
 
+.emotion-2:indeterminate+.emotion-5,
 .emotion-2:checked+.emotion-5 {
   background-color: #F1694B;
   color: rgba(255,255,255,1);
 }
 
+.emotion-2:indeterminate+.emotion-5::after,
 .emotion-2:checked+.emotion-5::after {
   content: '';
   display: block;
+}
+
+.emotion-2:indeterminate+.emotion-5::after {
+  background-color: white;
+  border-radius: 0.125rem;
+  height: 0.125rem;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  position: absolute;
+  width: 0.5rem;
+}
+
+.emotion-2:checked+.emotion-5::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 0H0V16H16V0Z' fill='white' fill-opacity='0.01'/%3E%3Cpath d='M3.33301 7.99996L6.66634 11.3333L13.333 4.66663' stroke='white' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  height: 1rem;
+  width: 1rem;
 }
 
 .emotion-4 {
@@ -72,14 +94,36 @@ exports[`<Checkbox /> should render a checkbox component (custom color) 1`] = `
   height: 0;
 }
 
+.emotion-2:indeterminate+.emotion-5,
 .emotion-2:checked+.emotion-5 {
   background-color: #EB5757;
   color: rgba(255,255,255,1);
 }
 
+.emotion-2:indeterminate+.emotion-5::after,
 .emotion-2:checked+.emotion-5::after {
   content: '';
   display: block;
+}
+
+.emotion-2:indeterminate+.emotion-5::after {
+  background-color: white;
+  border-radius: 0.125rem;
+  height: 0.125rem;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  position: absolute;
+  width: 0.5rem;
+}
+
+.emotion-2:checked+.emotion-5::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 0H0V16H16V0Z' fill='white' fill-opacity='0.01'/%3E%3Cpath d='M3.33301 7.99996L6.66634 11.3333L13.333 4.66663' stroke='white' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  height: 1rem;
+  width: 1rem;
 }
 
 .emotion-4 {
@@ -115,6 +159,85 @@ exports[`<Checkbox /> should render a checkbox component (custom color) 1`] = `
 </div>
 `;
 
+exports[`<Checkbox /> should render a checkbox component (indeterminate) 1`] = `
+.emotion-0 {
+  position: relative;
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.emotion-2 {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.emotion-2:indeterminate+.emotion-5,
+.emotion-2:checked+.emotion-5 {
+  background-color: #F1694B;
+  color: rgba(255,255,255,1);
+}
+
+.emotion-2:indeterminate+.emotion-5::after,
+.emotion-2:checked+.emotion-5::after {
+  content: '';
+  display: block;
+}
+
+.emotion-2:indeterminate+.emotion-5::after {
+  background-color: white;
+  border-radius: 0.125rem;
+  height: 0.125rem;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  position: absolute;
+  width: 0.5rem;
+}
+
+.emotion-2:checked+.emotion-5::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 0H0V16H16V0Z' fill='white' fill-opacity='0.01'/%3E%3Cpath d='M3.33301 7.99996L6.66634 11.3333L13.333 4.66663' stroke='white' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  height: 1rem;
+  width: 1rem;
+}
+
+.emotion-4 {
+  background-color: white;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  top: 0;
+  -webkit-transition: all ease-in 0.15s;
+  transition: all ease-in 0.15s;
+  position: absolute;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  border-style: solid;
+  overflow: hidden;
+  border-color: #F1694B;
+}
+
+<div>
+  <label
+    class="emotion-0 emotion-1"
+  >
+    <input
+      class="emotion-2 emotion-3"
+      type="checkbox"
+    />
+    <span
+      class="emotion-4 emotion-5"
+    />
+  </label>
+</div>
+`;
+
 exports[`<Checkbox /> should render a checkbox component 1`] = `
 .emotion-0 {
   position: relative;
@@ -129,14 +252,36 @@ exports[`<Checkbox /> should render a checkbox component 1`] = `
   height: 0;
 }
 
+.emotion-2:indeterminate+.emotion-5,
 .emotion-2:checked+.emotion-5 {
   background-color: #F1694B;
   color: rgba(255,255,255,1);
 }
 
+.emotion-2:indeterminate+.emotion-5::after,
 .emotion-2:checked+.emotion-5::after {
   content: '';
   display: block;
+}
+
+.emotion-2:indeterminate+.emotion-5::after {
+  background-color: white;
+  border-radius: 0.125rem;
+  height: 0.125rem;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  position: absolute;
+  width: 0.5rem;
+}
+
+.emotion-2:checked+.emotion-5::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 0H0V16H16V0Z' fill='white' fill-opacity='0.01'/%3E%3Cpath d='M3.33301 7.99996L6.66634 11.3333L13.333 4.66663' stroke='white' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  height: 1rem;
+  width: 1rem;
 }
 
 .emotion-4 {

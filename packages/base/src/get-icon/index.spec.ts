@@ -1,6 +1,6 @@
-import getIcon from './get-icon'
+import getIcon from '.'
 
-describe('input/get-icon', () => {
+describe('get-icon', () => {
   test('should return error icon', () => {
     const icon = getIcon({ error: true })
 

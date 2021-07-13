@@ -2,11 +2,11 @@ import React, { ChangeEventHandler, forwardRef, HTMLProps, useMemo, useState } f
 import { SpacingProps } from '@novem-ui/base'
 import { Paragraph } from '@novem-ui/text'
 
+import { FeedbackBadge } from '@novem-ui/badge'
 import Input from '../input'
 import TextFieldWrapper from '../text-field-wrapper'
 import BottomText from '../bottom-text'
 import InputLabel from '../input-label'
-import FeedbackBadge from '../../../badge/src/feedback-badge'
 
 export interface ExtendedTextFieldProps {
   label?: string

@@ -16,6 +16,7 @@ export interface ExtendedInputProps {
  */
 const Input = styled.input<ExtendedInputProps>`
   position: relative;
+  flex: 1;
   ${inputElement}
 `
 

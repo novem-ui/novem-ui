@@ -1,12 +1,12 @@
-import React, { ChangeEventHandler, forwardRef, HTMLProps, useState } from 'react'
+import React, { ChangeEventHandler, forwardRef, HTMLProps, useMemo, useState } from 'react'
 import { SpacingProps } from '@novem-ui/base'
 import { Paragraph } from '@novem-ui/text'
 
 import Input from '../input'
 import TextFieldWrapper from '../text-field-wrapper'
 import BottomText from '../bottom-text'
-import InputWrapper from '../input-wrapper'
 import InputLabel from '../input-label'
+import FeedbackBadge from '../../../badge/src/feedback-badge'
 
 export interface ExtendedTextFieldProps {
   label?: string
@@ -22,6 +22,20 @@ export type TextFieldProps = ExtendedTextFieldProps & Omit<HTMLProps<HTMLInputEl
 const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
   ({ label, maxLength, count, onChange, error, helper, id, valid, disabled, ...props }, ref) => {
     const [valueLength, setValueLength] = useState((props.value as string)?.length || 0)
+    const feedbackBadgeVariant = useMemo(() => {
+      const hasError = !!error
+      const isValid = !!valid
+
+      if (hasError) {
+        return 'error'
+      }
+
+      if (isValid) {
+        return 'success'
+      }
+
+      return null
+    }, [error, valid])
 
     const onChangeWithLength: ChangeEventHandler<HTMLInputElement> = (event) => {
       const { length } = event.target.value
@@ -39,7 +53,7 @@ const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
     return (
       <TextFieldWrapper {...props}>
         <InputLabel htmlFor={id}>{label}</InputLabel>
-        <InputWrapper error={error} valid={valid} disabled={disabled}>
+        <div style={{ position: 'relative', display: 'flex', width: '100%' }}>
           <Input
             {...props}
             ref={ref}
@@ -50,7 +64,10 @@ const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
             disabled={disabled}
             onChange={onChangeFunction}
           />
-        </InputWrapper>
+          {feedbackBadgeVariant && (
+            <FeedbackBadge variant={feedbackBadgeVariant} position="absolute" top="1.5rem" right="1rem" />
+          )}
+        </div>
         {shouldShowBottomTextContent && (
           <div style={{ display: 'flex' }}>
             <div style={{ flex: 1 }}>

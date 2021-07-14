@@ -33,22 +33,22 @@ exports[`<Message /> should match snapshot with different baseColors 1`] = `
 }
 
 .emotion-4 {
-  width: 1.25rem;
-  height: 1.25rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #F1694B;
   border-radius: 1.25rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  height: 1.25rem;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  width: 1.25rem;
 }
 
 .emotion-4 span {
@@ -289,22 +289,22 @@ exports[`<Message /> should match snapshot with different baseColors 2`] = `
 }
 
 .emotion-4 {
-  width: 1.25rem;
-  height: 1.25rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #EB5757;
   border-radius: 1.25rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  height: 1.25rem;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  width: 1.25rem;
 }
 
 .emotion-4 span {
@@ -532,22 +532,22 @@ exports[`<Message /> should match snapshot with different baseColors 3`] = `
 }
 
 .emotion-4 {
-  width: 1.25rem;
-  height: 1.25rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #FF9900;
   border-radius: 1.25rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  height: 1.25rem;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  width: 1.25rem;
 }
 
 .emotion-4 span {
@@ -781,22 +781,22 @@ exports[`<Message /> should match snapshot with different baseColors 4`] = `
 }
 
 .emotion-4 {
-  width: 1.25rem;
-  height: 1.25rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #59BC6F;
   border-radius: 1.25rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  height: 1.25rem;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  width: 1.25rem;
 }
 
 .emotion-4 span {
@@ -1017,22 +1017,22 @@ exports[`<Message /> should not render title if prop is null 1`] = `
 }
 
 .emotion-4 {
-  width: 1.25rem;
-  height: 1.25rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #9A9897;
   border-radius: 1.25rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  height: 1.25rem;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  width: 1.25rem;
 }
 
 .emotion-4 span {

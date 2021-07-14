@@ -44,13 +44,13 @@ export const Title = styled.p`
 `
 
 export const IconWrapper = styled.div<IconWrapperTypes>`
-  width: 1.25rem;
-  height: 1.25rem;
+  align-items: center;
   background-color: ${(props) => props.theme.colors.palette[props.baseColor || 'grey'][500]};
   border-radius: 1.25rem;
   display: flex;
-  align-items: center;
+  height: 1.25rem;
   justify-content: center;
+  width: 1.25rem;
 
   span {
     align-items: center;

@@ -42,7 +42,6 @@
     "@types/novem-theme": "^0.0.1-alpha.1"
   },
   "dependencies": {
-    "@novem-ui/base": "^0.0.1",
-    "@novem-ui/text": "^0.0.1"
+    "@novem-ui/base": "^0.0.1"
   }
 }

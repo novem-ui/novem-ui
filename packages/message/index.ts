@@ -1,1 +1,1 @@
-export { default as Input } from './src'
+export { default as Message } from './src'

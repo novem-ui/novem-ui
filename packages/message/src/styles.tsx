@@ -1,12 +1,13 @@
 import styled from '@emotion/styled'
 import { borderColor, BorderColorProps } from '@novem-ui/base'
+import theme from '@novem-ui/theme'
 
 export interface TextTypes {
   withTitle?: boolean
 }
 
 export interface IconWrapperTypes {
-  baseColor: string | number | symbol
+  baseColor: keyof typeof theme.colors.palette
 }
 
 export const Wrapper = styled.div<BorderColorProps>`

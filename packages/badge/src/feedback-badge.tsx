@@ -1,20 +1,12 @@
 import React, { useMemo, VoidFunctionComponent } from 'react'
 import styled from '@emotion/styled'
 import { Check, Close } from '@icon-park/react'
-import { layout, LayoutProps, spacing, SpacingProps } from '@novem-ui/base'
-import { IIconProps } from '@icon-park/react/lib/runtime'
+import { iconProps, layout, LayoutProps, spacing, SpacingProps } from '@novem-ui/base'
 
 export type FeedbackBadgeProps = SpacingProps &
   Omit<LayoutProps, 'display'> & {
     variant: 'error' | 'success'
   }
-
-const iconProps: IIconProps = {
-  theme: 'outline',
-  size: '10',
-  strokeWidth: 8,
-  fill: '#fff'
-}
 
 const ColoredCircle = styled.div<FeedbackBadgeProps>`
   ${spacing}

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`borderColor should return a component with the borderColor 1`] = `
+.emotion-0 {
+  border-color: #59BC6F;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  />
+</div>
+`;
+
+exports[`borderColor should return a component with the correct border color 1`] = `
+.emotion-0 {
+  border-color: #F1694B;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  />
+</div>
+`;

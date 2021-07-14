@@ -1,0 +1,478 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox /> should render a checkbox component (checked) 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 1.25rem;
+  height: 1.25rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0 .i-icon {
+  position: absolute;
+  display: none;
+}
+
+.emotion-2 {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.emotion-2:indeterminate+.emotion-5,
+.emotion-2:checked+.emotion-5 {
+  background-color: #F1694B;
+  color: rgba(255,255,255,1);
+}
+
+.emotion-2:indeterminate~.checkbox-icon-minus {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-2:checked~.checkbox-icon-check {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-4 {
+  background-color: white;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  top: 0;
+  -webkit-transition: all ease-in 0.15s;
+  transition: all ease-in 0.15s;
+  position: absolute;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  border-style: solid;
+  overflow: hidden;
+  border-color: #F1694B;
+}
+
+<div>
+  <label
+    class="emotion-0 emotion-1"
+  >
+    <input
+      checked=""
+      class="emotion-2 emotion-3"
+      type="checkbox"
+    />
+    <span
+      class="emotion-4 emotion-5"
+    />
+    <span
+      class="i-icon i-icon-check checkbox-icon-check"
+    >
+      <svg
+        fill="none"
+        height="10"
+        viewBox="0 0 48 48"
+        width="10"
+      >
+        <path
+          d="M43 11L16.875 37L5 25.1818"
+          stroke="#fff"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="8"
+        />
+      </svg>
+    </span>
+    <span
+      class="i-icon i-icon-minus checkbox-icon-minus"
+    >
+      <svg
+        fill="none"
+        height="10"
+        viewBox="0 0 48 48"
+        width="10"
+      >
+        <path
+          d="M10.5 24L38.5 24"
+          stroke="#fff"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="8"
+        />
+      </svg>
+    </span>
+  </label>
+</div>
+`;
+
+exports[`<Checkbox /> should render a checkbox component (custom color) 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 1.25rem;
+  height: 1.25rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0 .i-icon {
+  position: absolute;
+  display: none;
+}
+
+.emotion-2 {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.emotion-2:indeterminate+.emotion-5,
+.emotion-2:checked+.emotion-5 {
+  background-color: #EB5757;
+  color: rgba(255,255,255,1);
+}
+
+.emotion-2:indeterminate~.checkbox-icon-minus {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-2:checked~.checkbox-icon-check {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-4 {
+  background-color: white;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  top: 0;
+  -webkit-transition: all ease-in 0.15s;
+  transition: all ease-in 0.15s;
+  position: absolute;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  border-style: solid;
+  overflow: hidden;
+  border-color: #EB5757;
+}
+
+<div>
+  <label
+    class="emotion-0 emotion-1"
+  >
+    <input
+      class="emotion-2 emotion-3"
+      type="checkbox"
+    />
+    <span
+      class="emotion-4 emotion-5"
+    />
+    <span
+      class="i-icon i-icon-check checkbox-icon-check"
+    >
+      <svg
+        fill="none"
+        height="10"
+        viewBox="0 0 48 48"
+        width="10"
+      >
+        <path
+          d="M43 11L16.875 37L5 25.1818"
+          stroke="#fff"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="8"
+        />
+      </svg>
+    </span>
+    <span
+      class="i-icon i-icon-minus checkbox-icon-minus"
+    >
+      <svg
+        fill="none"
+        height="10"
+        viewBox="0 0 48 48"
+        width="10"
+      >
+        <path
+          d="M10.5 24L38.5 24"
+          stroke="#fff"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="8"
+        />
+      </svg>
+    </span>
+  </label>
+</div>
+`;
+
+exports[`<Checkbox /> should render a checkbox component (indeterminate) 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 1.25rem;
+  height: 1.25rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0 .i-icon {
+  position: absolute;
+  display: none;
+}
+
+.emotion-2 {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.emotion-2:indeterminate+.emotion-5,
+.emotion-2:checked+.emotion-5 {
+  background-color: #F1694B;
+  color: rgba(255,255,255,1);
+}
+
+.emotion-2:indeterminate~.checkbox-icon-minus {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-2:checked~.checkbox-icon-check {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-4 {
+  background-color: white;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  top: 0;
+  -webkit-transition: all ease-in 0.15s;
+  transition: all ease-in 0.15s;
+  position: absolute;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  border-style: solid;
+  overflow: hidden;
+  border-color: #F1694B;
+}
+
+<div>
+  <label
+    class="emotion-0 emotion-1"
+  >
+    <input
+      class="emotion-2 emotion-3"
+      type="checkbox"
+    />
+    <span
+      class="emotion-4 emotion-5"
+    />
+    <span
+      class="i-icon i-icon-check checkbox-icon-check"
+    >
+      <svg
+        fill="none"
+        height="10"
+        viewBox="0 0 48 48"
+        width="10"
+      >
+        <path
+          d="M43 11L16.875 37L5 25.1818"
+          stroke="#fff"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="8"
+        />
+      </svg>
+    </span>
+    <span
+      class="i-icon i-icon-minus checkbox-icon-minus"
+    >
+      <svg
+        fill="none"
+        height="10"
+        viewBox="0 0 48 48"
+        width="10"
+      >
+        <path
+          d="M10.5 24L38.5 24"
+          stroke="#fff"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="8"
+        />
+      </svg>
+    </span>
+  </label>
+</div>
+`;
+
+exports[`<Checkbox /> should render a checkbox component 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 1.25rem;
+  height: 1.25rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0 .i-icon {
+  position: absolute;
+  display: none;
+}
+
+.emotion-2 {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.emotion-2:indeterminate+.emotion-5,
+.emotion-2:checked+.emotion-5 {
+  background-color: #F1694B;
+  color: rgba(255,255,255,1);
+}
+
+.emotion-2:indeterminate~.checkbox-icon-minus {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-2:checked~.checkbox-icon-check {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-4 {
+  background-color: white;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  top: 0;
+  -webkit-transition: all ease-in 0.15s;
+  transition: all ease-in 0.15s;
+  position: absolute;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  border-style: solid;
+  overflow: hidden;
+  border-color: #F1694B;
+}
+
+<div>
+  <label
+    class="emotion-0 emotion-1"
+  >
+    <input
+      class="emotion-2 emotion-3"
+      type="checkbox"
+    />
+    <span
+      class="emotion-4 emotion-5"
+    />
+    <span
+      class="i-icon i-icon-check checkbox-icon-check"
+    >
+      <svg
+        fill="none"
+        height="10"
+        viewBox="0 0 48 48"
+        width="10"
+      >
+        <path
+          d="M43 11L16.875 37L5 25.1818"
+          stroke="#fff"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="8"
+        />
+      </svg>
+    </span>
+    <span
+      class="i-icon i-icon-minus checkbox-icon-minus"
+    >
+      <svg
+        fill="none"
+        height="10"
+        viewBox="0 0 48 48"
+        width="10"
+      >
+        <path
+          d="M10.5 24L38.5 24"
+          stroke="#fff"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="8"
+        />
+      </svg>
+    </span>
+  </label>
+</div>
+`;

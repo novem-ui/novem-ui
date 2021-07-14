@@ -35,6 +35,7 @@ module.exports = {
     '!**/node_modules/**',
     '!**/*.{spec,stories}.{ts,tsx}',
     '!packages/theme/*.ts',
+    '!packages/checkbox/*.ts',
     '!packages/badge/*.ts',
     '!packages/button/*.ts',
     '!packages/core/*.ts',

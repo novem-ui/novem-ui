@@ -25,6 +25,11 @@ describe('<Checkbox />', () => {
     expect(container).toMatchSnapshot()
   })
 
+  test('should render a checkbox component (indeterminate)', () => {
+    const { container } = setup({ indeterminate: true })
+    expect(container).toMatchSnapshot()
+  })
+
   test('should render a checkbox component (custom color)', () => {
     const { container } = setup({ baseColor: 'red' })
     expect(container).toMatchSnapshot()

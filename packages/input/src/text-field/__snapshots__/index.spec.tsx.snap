@@ -2,6 +2,7 @@
 
 exports[`input/text-field should render a TextField 1`] = `
 .emotion-0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12,18 +13,10 @@ exports[`input/text-field should render a TextField 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   position: relative;
-}
-
-.emotion-4 {
-  position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   border: 1px solid rgba(0, 0, 0, .25);
   border-radius: 1rem;
   box-sizing: border-box;
@@ -34,19 +27,19 @@ exports[`input/text-field should render a TextField 1`] = `
   transition: border ease-in 0.25s;
 }
 
-.emotion-4:focus,
-.emotion-4:hover {
+.emotion-2:focus,
+.emotion-2:hover {
   outline: unset;
   border-color: #F1694B;
   box-shadow: 0 2px 4px 0 rgba(241,105,75,0.15);
 }
 
-.emotion-4:disabled {
+.emotion-2:disabled {
   pointer-events: none;
   background-color: rgba(154,152,151,0.15);
 }
 
-.emotion-4:-moz-read-only {
+.emotion-2:-moz-read-only {
   background-color: white;
   border-color: white;
   margin-left: -2px;
@@ -54,7 +47,7 @@ exports[`input/text-field should render a TextField 1`] = `
   pointer-events: none;
 }
 
-.emotion-4:read-only {
+.emotion-2:read-only {
   background-color: white;
   border-color: white;
   margin-left: -2px;
@@ -68,10 +61,10 @@ exports[`input/text-field should render a TextField 1`] = `
     value="Default value"
   >
     <div
-      class="emotion-2 emotion-3"
+      style="position: relative; display: flex; width: 100%;"
     >
       <input
-        class="emotion-4 emotion-5"
+        class="emotion-2 emotion-3"
         value="Default value"
       />
     </div>
@@ -81,6 +74,7 @@ exports[`input/text-field should render a TextField 1`] = `
 
 exports[`input/text-field should render a TextField with a char counter 1`] = `
 .emotion-0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -91,18 +85,10 @@ exports[`input/text-field should render a TextField with a char counter 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   position: relative;
-}
-
-.emotion-4 {
-  position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   border: 1px solid rgba(0, 0, 0, .25);
   border-radius: 1rem;
   box-sizing: border-box;
@@ -113,19 +99,19 @@ exports[`input/text-field should render a TextField with a char counter 1`] = `
   transition: border ease-in 0.25s;
 }
 
-.emotion-4:focus,
-.emotion-4:hover {
+.emotion-2:focus,
+.emotion-2:hover {
   outline: unset;
   border-color: #F1694B;
   box-shadow: 0 2px 4px 0 rgba(241,105,75,0.15);
 }
 
-.emotion-4:disabled {
+.emotion-2:disabled {
   pointer-events: none;
   background-color: rgba(154,152,151,0.15);
 }
 
-.emotion-4:-moz-read-only {
+.emotion-2:-moz-read-only {
   background-color: white;
   border-color: white;
   margin-left: -2px;
@@ -133,7 +119,7 @@ exports[`input/text-field should render a TextField with a char counter 1`] = `
   pointer-events: none;
 }
 
-.emotion-4:read-only {
+.emotion-2:read-only {
   background-color: white;
   border-color: white;
   margin-left: -2px;
@@ -141,7 +127,7 @@ exports[`input/text-field should render a TextField with a char counter 1`] = `
   pointer-events: none;
 }
 
-.emotion-6 {
+.emotion-4 {
   color: rgba(154,152,151,0.85);
   font-size: 12px;
   margin: 0;
@@ -157,10 +143,10 @@ exports[`input/text-field should render a TextField with a char counter 1`] = `
     value="Default value"
   >
     <div
-      class="emotion-2 emotion-3"
+      style="position: relative; display: flex; width: 100%;"
     >
       <input
-        class="emotion-4 emotion-5"
+        class="emotion-2 emotion-3"
         value="Default value"
       />
     </div>
@@ -171,7 +157,7 @@ exports[`input/text-field should render a TextField with a char counter 1`] = `
         style="flex: 1;"
       />
       <p
-        class="emotion-6 emotion-7"
+        class="emotion-4 emotion-5"
         color="grey.400"
       >
         13
@@ -183,6 +169,7 @@ exports[`input/text-field should render a TextField with a char counter 1`] = `
 
 exports[`input/text-field should render a TextField with a helper 1`] = `
 .emotion-0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -193,18 +180,10 @@ exports[`input/text-field should render a TextField with a helper 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   position: relative;
-}
-
-.emotion-4 {
-  position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   border: 1px solid rgba(0, 0, 0, .25);
   border-radius: 1rem;
   box-sizing: border-box;
@@ -215,19 +194,19 @@ exports[`input/text-field should render a TextField with a helper 1`] = `
   transition: border ease-in 0.25s;
 }
 
-.emotion-4:focus,
-.emotion-4:hover {
+.emotion-2:focus,
+.emotion-2:hover {
   outline: unset;
   border-color: #F1694B;
   box-shadow: 0 2px 4px 0 rgba(241,105,75,0.15);
 }
 
-.emotion-4:disabled {
+.emotion-2:disabled {
   pointer-events: none;
   background-color: rgba(154,152,151,0.15);
 }
 
-.emotion-4:-moz-read-only {
+.emotion-2:-moz-read-only {
   background-color: white;
   border-color: white;
   margin-left: -2px;
@@ -235,7 +214,7 @@ exports[`input/text-field should render a TextField with a helper 1`] = `
   pointer-events: none;
 }
 
-.emotion-4:read-only {
+.emotion-2:read-only {
   background-color: white;
   border-color: white;
   margin-left: -2px;
@@ -243,7 +222,7 @@ exports[`input/text-field should render a TextField with a helper 1`] = `
   pointer-events: none;
 }
 
-.emotion-6 {
+.emotion-4 {
   color: rgba(154,152,151,0.85);
   font-size: 12px;
   margin: 0;
@@ -257,10 +236,10 @@ exports[`input/text-field should render a TextField with a helper 1`] = `
     value="value"
   >
     <div
-      class="emotion-2 emotion-3"
+      style="position: relative; display: flex; width: 100%;"
     >
       <input
-        class="emotion-4 emotion-5"
+        class="emotion-2 emotion-3"
         value="value"
       />
     </div>
@@ -271,7 +250,7 @@ exports[`input/text-field should render a TextField with a helper 1`] = `
         style="flex: 1;"
       >
         <p
-          class="emotion-6 emotion-7"
+          class="emotion-4 emotion-5"
           color="grey.400"
         >
           This is a helper text
@@ -284,6 +263,7 @@ exports[`input/text-field should render a TextField with a helper 1`] = `
 
 exports[`input/text-field should render a TextField with a limit 1`] = `
 .emotion-0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -294,18 +274,10 @@ exports[`input/text-field should render a TextField with a limit 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   position: relative;
-}
-
-.emotion-4 {
-  position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   border: 1px solid rgba(0, 0, 0, .25);
   border-radius: 1rem;
   box-sizing: border-box;
@@ -316,19 +288,19 @@ exports[`input/text-field should render a TextField with a limit 1`] = `
   transition: border ease-in 0.25s;
 }
 
-.emotion-4:focus,
-.emotion-4:hover {
+.emotion-2:focus,
+.emotion-2:hover {
   outline: unset;
   border-color: #F1694B;
   box-shadow: 0 2px 4px 0 rgba(241,105,75,0.15);
 }
 
-.emotion-4:disabled {
+.emotion-2:disabled {
   pointer-events: none;
   background-color: rgba(154,152,151,0.15);
 }
 
-.emotion-4:-moz-read-only {
+.emotion-2:-moz-read-only {
   background-color: white;
   border-color: white;
   margin-left: -2px;
@@ -336,7 +308,7 @@ exports[`input/text-field should render a TextField with a limit 1`] = `
   pointer-events: none;
 }
 
-.emotion-4:read-only {
+.emotion-2:read-only {
   background-color: white;
   border-color: white;
   margin-left: -2px;
@@ -344,7 +316,7 @@ exports[`input/text-field should render a TextField with a limit 1`] = `
   pointer-events: none;
 }
 
-.emotion-6 {
+.emotion-4 {
   color: rgba(154,152,151,0.85);
   font-size: 12px;
   margin: 0;
@@ -360,10 +332,10 @@ exports[`input/text-field should render a TextField with a limit 1`] = `
     value="value"
   >
     <div
-      class="emotion-2 emotion-3"
+      style="position: relative; display: flex; width: 100%;"
     >
       <input
-        class="emotion-4 emotion-5"
+        class="emotion-2 emotion-3"
         maxlength="10"
         value="value"
       />
@@ -375,7 +347,7 @@ exports[`input/text-field should render a TextField with a limit 1`] = `
         style="flex: 1;"
       />
       <p
-        class="emotion-6 emotion-7"
+        class="emotion-4 emotion-5"
         color="grey.400"
       >
         5
@@ -388,6 +360,7 @@ exports[`input/text-field should render a TextField with a limit 1`] = `
 
 exports[`input/text-field should render a TextField with a valid state 1`] = `
 .emotion-0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -398,49 +371,10 @@ exports[`input/text-field should render a TextField with a valid state 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   position: relative;
-}
-
-.emotion-2::before,
-.emotion-2::after {
-  content: '';
-  display: block;
-  top: 50%;
-  position: absolute;
-  right: 1rem;
-}
-
-.emotion-2::before {
-  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 0H0V16H16V0Z' fill='white' fill-opacity='0.01'/%3E%3Cpath d='M3.33301 7.99996L6.66634 11.3333L13.333 4.66663' stroke='white' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-  height: 1rem;
-  -webkit-transform: translate(-14%, -50%);
-  -moz-transform: translate(-14%, -50%);
-  -ms-transform: translate(-14%, -50%);
-  transform: translate(-14%, -50%);
-  width: 1rem;
-  z-index: 1;
-}
-
-.emotion-2::after {
-  background-color: #59BC6F;
-  border-radius: 0.625rem;
-  height: 1.25rem;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 1.25rem;
-}
-
-.emotion-4 {
-  position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   border: 1px solid rgba(0, 0, 0, .25);
   border-radius: 1rem;
   border-color: #59BC6F;
@@ -452,8 +386,8 @@ exports[`input/text-field should render a TextField with a valid state 1`] = `
   transition: border ease-in 0.25s;
 }
 
-.emotion-4:focus,
-.emotion-4:hover {
+.emotion-2:focus,
+.emotion-2:hover {
   outline: unset;
   border-color: #F1694B;
   border-color: #59BC6F;
@@ -461,12 +395,12 @@ exports[`input/text-field should render a TextField with a valid state 1`] = `
   box-shadow: 0 2px 4px 0 rgba(89,188,111,0.15);
 }
 
-.emotion-4:disabled {
+.emotion-2:disabled {
   pointer-events: none;
   background-color: rgba(154,152,151,0.15);
 }
 
-.emotion-4:-moz-read-only {
+.emotion-2:-moz-read-only {
   background-color: white;
   border-color: white;
   margin-left: -2px;
@@ -474,12 +408,45 @@ exports[`input/text-field should render a TextField with a valid state 1`] = `
   pointer-events: none;
 }
 
-.emotion-4:read-only {
+.emotion-2:read-only {
   background-color: white;
   border-color: white;
   margin-left: -2px;
   padding: 0.5rem;
   pointer-events: none;
+}
+
+.emotion-4 {
+  top: 1.5rem;
+  right: 1rem;
+  position: absolute;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #59BC6F;
+  border-radius: 0.625rem;
+  height: 1.25rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 1.25rem;
+}
+
+.emotion-4 .i-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 <div>
@@ -488,12 +455,34 @@ exports[`input/text-field should render a TextField with a valid state 1`] = `
     value="value"
   >
     <div
-      class="emotion-2 emotion-3"
+      style="position: relative; display: flex; width: 100%;"
     >
       <input
-        class="emotion-4 emotion-5"
+        class="emotion-2 emotion-3"
         value="value"
       />
+      <div
+        class="emotion-4 emotion-5"
+      >
+        <span
+          class="i-icon i-icon-check"
+        >
+          <svg
+            fill="none"
+            height="10"
+            viewBox="0 0 48 48"
+            width="10"
+          >
+            <path
+              d="M43 11L16.875 37L5 25.1818"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="8"
+            />
+          </svg>
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -501,6 +490,7 @@ exports[`input/text-field should render a TextField with a valid state 1`] = `
 
 exports[`input/text-field should render a TextField with an error message (from error object) 1`] = `
 .emotion-0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -511,49 +501,10 @@ exports[`input/text-field should render a TextField with an error message (from 
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   position: relative;
-}
-
-.emotion-2::before,
-.emotion-2::after {
-  content: '';
-  display: block;
-  top: 50%;
-  position: absolute;
-  right: 1rem;
-}
-
-.emotion-2::before {
-  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 0H0V16H16V0Z' fill='white' fill-opacity='0.01'/%3E%3Cpath d='M4.66699 4.66663L11.3337 11.3333' stroke='white' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M4.66699 11.3333L11.3337 4.66663' stroke='white' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-  height: 1rem;
-  -webkit-transform: translate(-14%, -50%);
-  -moz-transform: translate(-14%, -50%);
-  -ms-transform: translate(-14%, -50%);
-  transform: translate(-14%, -50%);
-  width: 1rem;
-  z-index: 1;
-}
-
-.emotion-2::after {
-  background-color: #EB5757;
-  border-radius: 0.625rem;
-  height: 1.25rem;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 1.25rem;
-}
-
-.emotion-4 {
-  position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   border: 1px solid rgba(0, 0, 0, .25);
   border-radius: 1rem;
   border-color: #EB5757;
@@ -565,8 +516,8 @@ exports[`input/text-field should render a TextField with an error message (from 
   transition: border ease-in 0.25s;
 }
 
-.emotion-4:focus,
-.emotion-4:hover {
+.emotion-2:focus,
+.emotion-2:hover {
   outline: unset;
   border-color: #F1694B;
   border-color: #EB5757;
@@ -574,12 +525,12 @@ exports[`input/text-field should render a TextField with an error message (from 
   box-shadow: 0 2px 4px 0 rgba(235,87,87,0.15);
 }
 
-.emotion-4:disabled {
+.emotion-2:disabled {
   pointer-events: none;
   background-color: rgba(154,152,151,0.15);
 }
 
-.emotion-4:-moz-read-only {
+.emotion-2:-moz-read-only {
   background-color: white;
   border-color: white;
   margin-left: -2px;
@@ -587,12 +538,45 @@ exports[`input/text-field should render a TextField with an error message (from 
   pointer-events: none;
 }
 
-.emotion-4:read-only {
+.emotion-2:read-only {
   background-color: white;
   border-color: white;
   margin-left: -2px;
   padding: 0.5rem;
   pointer-events: none;
+}
+
+.emotion-4 {
+  top: 1.5rem;
+  right: 1rem;
+  position: absolute;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #EB5757;
+  border-radius: 0.625rem;
+  height: 1.25rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 1.25rem;
+}
+
+.emotion-4 .i-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-6 {
@@ -609,12 +593,41 @@ exports[`input/text-field should render a TextField with an error message (from 
     value="value"
   >
     <div
-      class="emotion-2 emotion-3"
+      style="position: relative; display: flex; width: 100%;"
     >
       <input
-        class="emotion-4 emotion-5"
+        class="emotion-2 emotion-3"
         value="value"
       />
+      <div
+        class="emotion-4 emotion-5"
+      >
+        <span
+          class="i-icon i-icon-close"
+        >
+          <svg
+            fill="none"
+            height="10"
+            viewBox="0 0 48 48"
+            width="10"
+          >
+            <path
+              d="M8 8L40 40"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="8"
+            />
+            <path
+              d="M8 40L40 8"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="8"
+            />
+          </svg>
+        </span>
+      </div>
     </div>
     <div
       style="display: flex;"
@@ -636,6 +649,7 @@ exports[`input/text-field should render a TextField with an error message (from 
 
 exports[`input/text-field should render a TextField with an error message (from string) 1`] = `
 .emotion-0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -646,49 +660,10 @@ exports[`input/text-field should render a TextField with an error message (from 
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   position: relative;
-}
-
-.emotion-2::before,
-.emotion-2::after {
-  content: '';
-  display: block;
-  top: 50%;
-  position: absolute;
-  right: 1rem;
-}
-
-.emotion-2::before {
-  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 0H0V16H16V0Z' fill='white' fill-opacity='0.01'/%3E%3Cpath d='M4.66699 4.66663L11.3337 11.3333' stroke='white' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M4.66699 11.3333L11.3337 4.66663' stroke='white' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-  height: 1rem;
-  -webkit-transform: translate(-14%, -50%);
-  -moz-transform: translate(-14%, -50%);
-  -ms-transform: translate(-14%, -50%);
-  transform: translate(-14%, -50%);
-  width: 1rem;
-  z-index: 1;
-}
-
-.emotion-2::after {
-  background-color: #EB5757;
-  border-radius: 0.625rem;
-  height: 1.25rem;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 1.25rem;
-}
-
-.emotion-4 {
-  position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   border: 1px solid rgba(0, 0, 0, .25);
   border-radius: 1rem;
   border-color: #EB5757;
@@ -700,8 +675,8 @@ exports[`input/text-field should render a TextField with an error message (from 
   transition: border ease-in 0.25s;
 }
 
-.emotion-4:focus,
-.emotion-4:hover {
+.emotion-2:focus,
+.emotion-2:hover {
   outline: unset;
   border-color: #F1694B;
   border-color: #EB5757;
@@ -709,12 +684,12 @@ exports[`input/text-field should render a TextField with an error message (from 
   box-shadow: 0 2px 4px 0 rgba(235,87,87,0.15);
 }
 
-.emotion-4:disabled {
+.emotion-2:disabled {
   pointer-events: none;
   background-color: rgba(154,152,151,0.15);
 }
 
-.emotion-4:-moz-read-only {
+.emotion-2:-moz-read-only {
   background-color: white;
   border-color: white;
   margin-left: -2px;
@@ -722,12 +697,45 @@ exports[`input/text-field should render a TextField with an error message (from 
   pointer-events: none;
 }
 
-.emotion-4:read-only {
+.emotion-2:read-only {
   background-color: white;
   border-color: white;
   margin-left: -2px;
   padding: 0.5rem;
   pointer-events: none;
+}
+
+.emotion-4 {
+  top: 1.5rem;
+  right: 1rem;
+  position: absolute;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #EB5757;
+  border-radius: 0.625rem;
+  height: 1.25rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 1.25rem;
+}
+
+.emotion-4 .i-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-6 {
@@ -744,12 +752,41 @@ exports[`input/text-field should render a TextField with an error message (from 
     value="value"
   >
     <div
-      class="emotion-2 emotion-3"
+      style="position: relative; display: flex; width: 100%;"
     >
       <input
-        class="emotion-4 emotion-5"
+        class="emotion-2 emotion-3"
         value="value"
       />
+      <div
+        class="emotion-4 emotion-5"
+      >
+        <span
+          class="i-icon i-icon-close"
+        >
+          <svg
+            fill="none"
+            height="10"
+            viewBox="0 0 48 48"
+            width="10"
+          >
+            <path
+              d="M8 8L40 40"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="8"
+            />
+            <path
+              d="M8 40L40 8"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="8"
+            />
+          </svg>
+        </span>
+      </div>
     </div>
     <div
       style="display: flex;"
@@ -771,6 +808,7 @@ exports[`input/text-field should render a TextField with an error message (from 
 
 exports[`input/text-field should render a TextField with error 1`] = `
 .emotion-0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -781,49 +819,10 @@ exports[`input/text-field should render a TextField with error 1`] = `
 }
 
 .emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   position: relative;
-}
-
-.emotion-2::before,
-.emotion-2::after {
-  content: '';
-  display: block;
-  top: 50%;
-  position: absolute;
-  right: 1rem;
-}
-
-.emotion-2::before {
-  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 0H0V16H16V0Z' fill='white' fill-opacity='0.01'/%3E%3Cpath d='M4.66699 4.66663L11.3337 11.3333' stroke='white' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M4.66699 11.3333L11.3337 4.66663' stroke='white' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-  height: 1rem;
-  -webkit-transform: translate(-14%, -50%);
-  -moz-transform: translate(-14%, -50%);
-  -ms-transform: translate(-14%, -50%);
-  transform: translate(-14%, -50%);
-  width: 1rem;
-  z-index: 1;
-}
-
-.emotion-2::after {
-  background-color: #EB5757;
-  border-radius: 0.625rem;
-  height: 1.25rem;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 1.25rem;
-}
-
-.emotion-4 {
-  position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   border: 1px solid rgba(0, 0, 0, .25);
   border-radius: 1rem;
   border-color: #EB5757;
@@ -835,8 +834,8 @@ exports[`input/text-field should render a TextField with error 1`] = `
   transition: border ease-in 0.25s;
 }
 
-.emotion-4:focus,
-.emotion-4:hover {
+.emotion-2:focus,
+.emotion-2:hover {
   outline: unset;
   border-color: #F1694B;
   border-color: #EB5757;
@@ -844,12 +843,12 @@ exports[`input/text-field should render a TextField with error 1`] = `
   box-shadow: 0 2px 4px 0 rgba(235,87,87,0.15);
 }
 
-.emotion-4:disabled {
+.emotion-2:disabled {
   pointer-events: none;
   background-color: rgba(154,152,151,0.15);
 }
 
-.emotion-4:-moz-read-only {
+.emotion-2:-moz-read-only {
   background-color: white;
   border-color: white;
   margin-left: -2px;
@@ -857,12 +856,45 @@ exports[`input/text-field should render a TextField with error 1`] = `
   pointer-events: none;
 }
 
-.emotion-4:read-only {
+.emotion-2:read-only {
   background-color: white;
   border-color: white;
   margin-left: -2px;
   padding: 0.5rem;
   pointer-events: none;
+}
+
+.emotion-4 {
+  top: 1.5rem;
+  right: 1rem;
+  position: absolute;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #EB5757;
+  border-radius: 0.625rem;
+  height: 1.25rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 1.25rem;
+}
+
+.emotion-4 .i-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-6 {
@@ -879,12 +911,41 @@ exports[`input/text-field should render a TextField with error 1`] = `
     value="Default value"
   >
     <div
-      class="emotion-2 emotion-3"
+      style="position: relative; display: flex; width: 100%;"
     >
       <input
-        class="emotion-4 emotion-5"
+        class="emotion-2 emotion-3"
         value="Default value"
       />
+      <div
+        class="emotion-4 emotion-5"
+      >
+        <span
+          class="i-icon i-icon-close"
+        >
+          <svg
+            fill="none"
+            height="10"
+            viewBox="0 0 48 48"
+            width="10"
+          >
+            <path
+              d="M8 8L40 40"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="8"
+            />
+            <path
+              d="M8 40L40 8"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="8"
+            />
+          </svg>
+        </span>
+      </div>
     </div>
     <div
       style="display: flex;"
@@ -906,6 +967,7 @@ exports[`input/text-field should render a TextField with error 1`] = `
 
 exports[`input/text-field should render a TextField with label 1`] = `
 .emotion-0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -923,103 +985,10 @@ exports[`input/text-field should render a TextField with label 1`] = `
 }
 
 .emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   position: relative;
-}
-
-.emotion-6 {
-  position: relative;
-  border: 1px solid rgba(0, 0, 0, .25);
-  border-radius: 1rem;
-  box-sizing: border-box;
-  height: 3rem;
-  font-size: 16px;
-  padding: 1rem;
-  -webkit-transition: border ease-in 0.25s;
-  transition: border ease-in 0.25s;
-}
-
-.emotion-6:focus,
-.emotion-6:hover {
-  outline: unset;
-  border-color: #F1694B;
-  box-shadow: 0 2px 4px 0 rgba(241,105,75,0.15);
-}
-
-.emotion-6:disabled {
-  pointer-events: none;
-  background-color: rgba(154,152,151,0.15);
-}
-
-.emotion-6:-moz-read-only {
-  background-color: white;
-  border-color: white;
-  margin-left: -2px;
-  padding: 0.5rem;
-  pointer-events: none;
-}
-
-.emotion-6:read-only {
-  background-color: white;
-  border-color: white;
-  margin-left: -2px;
-  padding: 0.5rem;
-  pointer-events: none;
-}
-
-<div>
-  <div
-    class="emotion-0 emotion-1"
-    value="Default value"
-  >
-    <label
-      class="emotion-2 emotion-3"
-      style="display: block;"
-    >
-      TextField Label
-    </label>
-    <div
-      class="emotion-4 emotion-5"
-    >
-      <input
-        class="emotion-6 emotion-7"
-        value="Default value"
-      />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`input/text-field should render a disabled TextField 1`] = `
-.emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: relative;
-}
-
-.emotion-4 {
-  position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   border: 1px solid rgba(0, 0, 0, .25);
   border-radius: 1rem;
   box-sizing: border-box;
@@ -1061,14 +1030,91 @@ exports[`input/text-field should render a disabled TextField 1`] = `
 <div>
   <div
     class="emotion-0 emotion-1"
-    value="value"
+    value="Default value"
   >
-    <div
+    <label
       class="emotion-2 emotion-3"
-      disabled=""
+      style="display: block;"
+    >
+      TextField Label
+    </label>
+    <div
+      style="position: relative; display: flex; width: 100%;"
     >
       <input
         class="emotion-4 emotion-5"
+        value="Default value"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`input/text-field should render a disabled TextField 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  position: relative;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border: 1px solid rgba(0, 0, 0, .25);
+  border-radius: 1rem;
+  box-sizing: border-box;
+  height: 3rem;
+  font-size: 16px;
+  padding: 1rem;
+  -webkit-transition: border ease-in 0.25s;
+  transition: border ease-in 0.25s;
+}
+
+.emotion-2:focus,
+.emotion-2:hover {
+  outline: unset;
+  border-color: #F1694B;
+  box-shadow: 0 2px 4px 0 rgba(241,105,75,0.15);
+}
+
+.emotion-2:disabled {
+  pointer-events: none;
+  background-color: rgba(154,152,151,0.15);
+}
+
+.emotion-2:-moz-read-only {
+  background-color: white;
+  border-color: white;
+  margin-left: -2px;
+  padding: 0.5rem;
+  pointer-events: none;
+}
+
+.emotion-2:read-only {
+  background-color: white;
+  border-color: white;
+  margin-left: -2px;
+  padding: 0.5rem;
+  pointer-events: none;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    value="value"
+  >
+    <div
+      style="position: relative; display: flex; width: 100%;"
+    >
+      <input
+        class="emotion-2 emotion-3"
         disabled=""
         value="value"
       />

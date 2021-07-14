@@ -7,13 +7,16 @@ const HiddenInput = styled.input<Omit<SolidColorWithHierarchyProps, 'hierarchy'>
   width: 0;
   height: 0;
 
-  &:checked + ${CheckboxElement} {
+  &:indeterminate + ${CheckboxElement}, &:checked + ${CheckboxElement} {
     ${({ theme, baseColor }) => solidColorWithHierarchy({ theme, baseColor, hierarchy: 'loud' })}
+  }
 
-    &::after {
-      content: '';
-      display: block;
-    }
+  &:indeterminate ~ .checkbox-icon-minus {
+    display: flex;
+  }
+
+  &:checked ~ .checkbox-icon-check {
+    display: flex;
   }
 `
 

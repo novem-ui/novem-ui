@@ -99,3 +99,13 @@ export interface LayoutProps {
   right?: Property.Right
   width?: Property.Width
 }
+
+// border
+
+export interface BorderProps {
+  borderColor: Property.BorderColor
+  borderRadius: Property.BorderRadius
+  borderStyle: Property.BorderStyle
+  borderWidth: Property.BorderWidth
+
+}

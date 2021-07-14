@@ -1,0 +1,1230 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Message /> should match snapshot with different baseColors 1`] = `
+.emotion-0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 1rem;
+  border-color: #F1694B;
+}
+
+.emotion-2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-4 {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #F1694B;
+  border-radius: 1.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-4 span {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-4 svg path {
+  color: white;
+}
+
+.emotion-4 .remove-circle path :first-child {
+  color: transparent;
+}
+
+.emotion-6 {
+  display: grid;
+  gap: 0.25rem;
+  margin: 0 0 0 1rem;
+}
+
+.emotion-8 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.emotion-10 {
+  font-size: 12px;
+  margin: 0;
+}
+
+.emotion-12 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-14 {
+  background-color: rgba(0,0,0,0);
+  color: #F1694B;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0.28rem 0.75rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-14:hover {
+  box-shadow: 0 0 0.25rem transparent;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-14:disabled {
+  background-color: transparent;
+}
+
+.emotion-14:disabled:hover {
+  box-shadow: 0 0 0.25rem transparent;
+}
+
+.emotion-16 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0.75rem;
+  margin-left: 1rem;
+  width: 0.75rem;
+}
+
+.emotion-16 svg {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    >
+      <div
+        class="emotion-4 emotion-5"
+      >
+        <span
+          class="i-icon i-icon-info remove-circle"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            viewBox="0 0 48 48"
+            width="1em"
+          >
+            <path
+              d="M24 44C29.5228 44 34.5228 41.7614 38.1421 38.1421C41.7614 34.5228 44 29.5228 44 24C44 18.4772 41.7614 13.4772 38.1421 9.85786C34.5228 6.23858 29.5228 4 24 4C18.4772 4 13.4772 6.23858 9.85786 9.85786C6.23858 13.4772 4 18.4772 4 24C4 29.5228 6.23858 34.5228 9.85786 38.1421C13.4772 41.7614 18.4772 44 24 44Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+            <path
+              clip-rule="evenodd"
+              d="M24 11C25.3807 11 26.5 12.1193 26.5 13.5C26.5 14.8807 25.3807 16 24 16C22.6193 16 21.5 14.8807 21.5 13.5C21.5 12.1193 22.6193 11 24 11Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+            />
+            <path
+              d="M24.5 34V20H23.5H22.5"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+            <path
+              d="M21 34H28"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+          </svg>
+        </span>
+      </div>
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <p
+          class="emotion-8 emotion-9"
+        >
+          dummy message
+        </p>
+        <p
+          class="emotion-10 emotion-11"
+        >
+          dummy message
+        </p>
+      </div>
+    </div>
+    <div
+      class="emotion-12 emotion-13"
+    >
+      <button
+        class="emotion-14 emotion-15"
+      >
+        dummy button
+      </button>
+      <div
+        class="emotion-16 emotion-17"
+      >
+        <span
+          class="i-icon i-icon-close"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            viewBox="0 0 48 48"
+            width="1em"
+          >
+            <path
+              d="M8 8L40 40"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+            <path
+              d="M8 40L40 8"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Message /> should match snapshot with different baseColors 2`] = `
+.emotion-0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 1rem;
+  border-color: #EB5757;
+}
+
+.emotion-2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-4 {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #EB5757;
+  border-radius: 1.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-4 span {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-4 svg path {
+  color: white;
+}
+
+.emotion-4 .remove-circle path :first-child {
+  color: transparent;
+}
+
+.emotion-6 {
+  display: grid;
+  gap: 0.25rem;
+  margin: 0 0 0 1rem;
+}
+
+.emotion-8 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.emotion-10 {
+  font-size: 12px;
+  margin: 0;
+}
+
+.emotion-12 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-14 {
+  background-color: rgba(0,0,0,0);
+  color: #F1694B;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0.28rem 0.75rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-14:hover {
+  box-shadow: 0 0 0.25rem transparent;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-14:disabled {
+  background-color: transparent;
+}
+
+.emotion-14:disabled:hover {
+  box-shadow: 0 0 0.25rem transparent;
+}
+
+.emotion-16 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0.75rem;
+  margin-left: 1rem;
+  width: 0.75rem;
+}
+
+.emotion-16 svg {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    >
+      <div
+        class="emotion-4 emotion-5"
+      >
+        <span
+          class="i-icon i-icon-close-small"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            viewBox="0 0 48 48"
+            width="1em"
+          >
+            <path
+              d="M14 14L34 34"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+            <path
+              d="M14 34L34 14"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+          </svg>
+        </span>
+      </div>
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <p
+          class="emotion-8 emotion-9"
+        >
+          dummy message
+        </p>
+        <p
+          class="emotion-10 emotion-11"
+        >
+          dummy message
+        </p>
+      </div>
+    </div>
+    <div
+      class="emotion-12 emotion-13"
+    >
+      <button
+        class="emotion-14 emotion-15"
+      >
+        dummy button
+      </button>
+      <div
+        class="emotion-16 emotion-17"
+      >
+        <span
+          class="i-icon i-icon-close"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            viewBox="0 0 48 48"
+            width="1em"
+          >
+            <path
+              d="M8 8L40 40"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+            <path
+              d="M8 40L40 8"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Message /> should match snapshot with different baseColors 3`] = `
+.emotion-0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 1rem;
+  border-color: #FF9900;
+}
+
+.emotion-2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-4 {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #FF9900;
+  border-radius: 1.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-4 span {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-4 svg path {
+  color: white;
+}
+
+.emotion-4 .remove-circle path :first-child {
+  color: transparent;
+}
+
+.emotion-6 {
+  display: grid;
+  gap: 0.25rem;
+  margin: 0 0 0 1rem;
+}
+
+.emotion-8 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.emotion-10 {
+  font-size: 12px;
+  margin: 0;
+}
+
+.emotion-12 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-14 {
+  background-color: rgba(0,0,0,0);
+  color: #F1694B;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0.28rem 0.75rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-14:hover {
+  box-shadow: 0 0 0.25rem transparent;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-14:disabled {
+  background-color: transparent;
+}
+
+.emotion-14:disabled:hover {
+  box-shadow: 0 0 0.25rem transparent;
+}
+
+.emotion-16 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0.75rem;
+  margin-left: 1rem;
+  width: 0.75rem;
+}
+
+.emotion-16 svg {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    >
+      <div
+        class="emotion-4 emotion-5"
+      >
+        <span
+          class="i-icon i-icon-attention remove-circle"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            viewBox="0 0 48 48"
+            width="1em"
+          >
+            <path
+              d="M24 44C29.5228 44 34.5228 41.7614 38.1421 38.1421C41.7614 34.5228 44 29.5228 44 24C44 18.4772 41.7614 13.4772 38.1421 9.85786C34.5228 6.23858 29.5228 4 24 4C18.4772 4 13.4772 6.23858 9.85786 9.85786C6.23858 13.4772 4 18.4772 4 24C4 29.5228 6.23858 34.5228 9.85786 38.1421C13.4772 41.7614 18.4772 44 24 44Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+            <path
+              clip-rule="evenodd"
+              d="M24 37C25.3807 37 26.5 35.8807 26.5 34.5C26.5 33.1193 25.3807 32 24 32C22.6193 32 21.5 33.1193 21.5 34.5C21.5 35.8807 22.6193 37 24 37Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+            />
+            <path
+              d="M24 12V28"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+          </svg>
+        </span>
+      </div>
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <p
+          class="emotion-8 emotion-9"
+        >
+          dummy message
+        </p>
+        <p
+          class="emotion-10 emotion-11"
+        >
+          dummy message
+        </p>
+      </div>
+    </div>
+    <div
+      class="emotion-12 emotion-13"
+    >
+      <button
+        class="emotion-14 emotion-15"
+      >
+        dummy button
+      </button>
+      <div
+        class="emotion-16 emotion-17"
+      >
+        <span
+          class="i-icon i-icon-close"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            viewBox="0 0 48 48"
+            width="1em"
+          >
+            <path
+              d="M8 8L40 40"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+            <path
+              d="M8 40L40 8"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Message /> should match snapshot with different baseColors 4`] = `
+.emotion-0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 1rem;
+  border-color: #59BC6F;
+}
+
+.emotion-2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-4 {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #59BC6F;
+  border-radius: 1.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-4 span {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-4 svg path {
+  color: white;
+}
+
+.emotion-4 .remove-circle path :first-child {
+  color: transparent;
+}
+
+.emotion-6 {
+  display: grid;
+  gap: 0.25rem;
+  margin: 0 0 0 1rem;
+}
+
+.emotion-8 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.emotion-10 {
+  font-size: 12px;
+  margin: 0;
+}
+
+.emotion-12 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-14 {
+  background-color: rgba(0,0,0,0);
+  color: #F1694B;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0.28rem 0.75rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-14:hover {
+  box-shadow: 0 0 0.25rem transparent;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-14:disabled {
+  background-color: transparent;
+}
+
+.emotion-14:disabled:hover {
+  box-shadow: 0 0 0.25rem transparent;
+}
+
+.emotion-16 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0.75rem;
+  margin-left: 1rem;
+  width: 0.75rem;
+}
+
+.emotion-16 svg {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    >
+      <div
+        class="emotion-4 emotion-5"
+      >
+        <span
+          class="i-icon i-icon-check"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            viewBox="0 0 48 48"
+            width="1em"
+          >
+            <path
+              d="M43 11L16.875 37L5 25.1818"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+          </svg>
+        </span>
+      </div>
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <p
+          class="emotion-8 emotion-9"
+        >
+          dummy message
+        </p>
+        <p
+          class="emotion-10 emotion-11"
+        >
+          dummy message
+        </p>
+      </div>
+    </div>
+    <div
+      class="emotion-12 emotion-13"
+    >
+      <button
+        class="emotion-14 emotion-15"
+      >
+        dummy button
+      </button>
+      <div
+        class="emotion-16 emotion-17"
+      >
+        <span
+          class="i-icon i-icon-close"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            viewBox="0 0 48 48"
+            width="1em"
+          >
+            <path
+              d="M8 8L40 40"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+            <path
+              d="M8 40L40 8"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Message /> should not render title if prop is null 1`] = `
+.emotion-0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 1rem;
+  border-color: #F1694B;
+}
+
+.emotion-2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-4 {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #9A9897;
+  border-radius: 1.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-4 span {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-4 svg path {
+  color: white;
+}
+
+.emotion-4 .remove-circle path :first-child {
+  color: transparent;
+}
+
+.emotion-6 {
+  display: grid;
+  gap: 0.25rem;
+  margin: 0 0 0 1rem;
+}
+
+.emotion-8 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.emotion-10 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.emotion-12 {
+  background-color: rgba(0,0,0,0);
+  color: #F1694B;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0.28rem 0.75rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-12:hover {
+  box-shadow: 0 0 0.25rem transparent;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.emotion-12:disabled {
+  background-color: transparent;
+}
+
+.emotion-12:disabled:hover {
+  box-shadow: 0 0 0.25rem transparent;
+}
+
+.emotion-14 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0.75rem;
+  margin-left: 1rem;
+  width: 0.75rem;
+}
+
+.emotion-14 svg {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    >
+      <div
+        class="emotion-4 emotion-5"
+      >
+        <span
+          class="i-icon i-icon-info remove-circle"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            viewBox="0 0 48 48"
+            width="1em"
+          >
+            <path
+              d="M24 44C29.5228 44 34.5228 41.7614 38.1421 38.1421C41.7614 34.5228 44 29.5228 44 24C44 18.4772 41.7614 13.4772 38.1421 9.85786C34.5228 6.23858 29.5228 4 24 4C18.4772 4 13.4772 6.23858 9.85786 9.85786C6.23858 13.4772 4 18.4772 4 24C4 29.5228 6.23858 34.5228 9.85786 38.1421C13.4772 41.7614 18.4772 44 24 44Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+            <path
+              clip-rule="evenodd"
+              d="M24 11C25.3807 11 26.5 12.1193 26.5 13.5C26.5 14.8807 25.3807 16 24 16C22.6193 16 21.5 14.8807 21.5 13.5C21.5 12.1193 22.6193 11 24 11Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+            />
+            <path
+              d="M24.5 34V20H23.5H22.5"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+            <path
+              d="M21 34H28"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+          </svg>
+        </span>
+      </div>
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <p
+          class="emotion-8 emotion-9"
+        >
+          dummy message
+        </p>
+      </div>
+    </div>
+    <div
+      class="emotion-10 emotion-11"
+    >
+      <button
+        class="emotion-12 emotion-13"
+      >
+        dummy button
+      </button>
+      <div
+        class="emotion-14 emotion-15"
+      >
+        <span
+          class="i-icon i-icon-close"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            viewBox="0 0 48 48"
+            width="1em"
+          >
+            <path
+              d="M8 8L40 40"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+            <path
+              d="M8 40L40 8"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

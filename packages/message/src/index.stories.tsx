@@ -1,7 +1,7 @@
 import React from 'react'
 import { Story, Meta } from '@storybook/react'
 
-import Message from '.'
+import Message from './index'
 
 export default {
   title: 'Components/Message',

@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.json",
+  "files": [],
+  "compilerOptions": {
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "declarationDir": "../../dist/input",
+    "declarationMap": true,
+    "types": ["novem-theme"]
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules/**", "dist/**", "**/*.spec.ts", "**/*.spec.tsx", "**/*.stories.tsx"]
+}

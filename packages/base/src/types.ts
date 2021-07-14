@@ -86,3 +86,16 @@ export interface InputElementProps {
   disabled?: boolean
   readOnly?: boolean
 }
+
+// Layout
+
+export interface LayoutProps {
+  display?: Property.Display
+  position?: Property.Position
+  top?: Property.Top
+  bottom?: Property.Bottom
+  height?: Property.Height
+  left?: Property.Left
+  right?: Property.Right
+  width?: Property.Width
+}

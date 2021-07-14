@@ -6,6 +6,8 @@ export { default as Button, ButtonProps } from '@novem-ui/button'
 
 export { default as Switch, SwitchProps } from '@novem-ui/switch'
 
+export { default as Checkbox, CheckboxProps } from '@novem-ui/checkbox'
+
 export { Heading, Label, Paragraph, HeadingProps, LabelProps, ParagraphProps } from '@novem-ui/text'
 
 export { Input, TextField, TextFieldProps } from '@novem-ui/input'

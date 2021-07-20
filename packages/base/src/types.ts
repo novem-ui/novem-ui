@@ -103,9 +103,59 @@ export interface LayoutProps {
 // border
 
 export interface BorderProps {
-  borderColor: Property.BorderColor
-  borderRadius: Property.BorderRadius
-  borderStyle: Property.BorderStyle
-  borderWidth: Property.BorderWidth
-
+  border?: Property.Border
+  borderBlock?: Property.BorderBlock
+  borderBlockColor?: Property.BorderBlockColor
+  borderBlockEnd?: Property.BorderBlockEnd
+  borderBlockEndColor?: Property.BorderBlockEndColor
+  borderBlockEndStyle?: Property.BorderBlockEndStyle
+  borderBlockEndWidth?: Property.BorderBlockEndWidth
+  borderBlockStart?: Property.BorderBlockStart
+  borderBlockStartColor?: Property.BorderBlockStartColor
+  borderBlockStartStyle?: Property.BorderBlockStartStyle
+  borderBlockStartWidth?: Property.BorderBlockStartWidth
+  borderBlockStyle?: Property.BorderBlockStyle
+  borderBlockWidth?: Property.BorderBlockWidth
+  borderBottom?: Property.BorderBottom
+  borderBottomColor?: Property.BorderBottomColor
+  borderBottomLeftRadius?: Property.BorderBottomLeftRadius
+  borderBottomRightRadius?: Property.BorderBottomRightRadius
+  borderBottomStyle?: Property.BorderBottomStyle
+  borderBottomWidth?: Property.BorderBottomWidth
+  borderCollapse?: Property.BorderCollapse
+  borderColor?: Property.BorderColor
+  borderEndEndRadius?: Property.BorderEndEndRadius
+  borderEndStartRadius?: Property.BorderEndStartRadius
+  borderInline?: Property.BorderInline
+  borderInlineColor?: Property.BorderInlineColor
+  borderInlineEnd?: Property.BorderInlineEnd
+  borderInlineEndColor?: Property.BorderInlineEndColor
+  borderInlineEndStyle?: Property.BorderInlineEndStyle
+  borderInlineEndWidth?: Property.BorderInlineEndWidth
+  borderInlineStart?: Property.BorderInlineStart
+  borderInlineStartColor?: Property.BorderInlineStartColor
+  borderInlineStartStyle?: Property.BorderInlineStartStyle
+  borderInlineStartWidth?: Property.BorderInlineStartWidth
+  borderInlineStyle?: Property.BorderInlineStyle
+  borderInlineWidth?: Property.BorderInlineWidth
+  borderLeft?: Property.BorderLeft
+  borderLeftColor?: Property.BorderLeftColor
+  borderLeftStyle?: Property.BorderLeftStyle
+  borderLeftWidth?: Property.BorderLeftWidth
+  borderRadius?: Property.BorderRadius
+  borderRight?: Property.BorderRight
+  borderRightColor?: Property.BorderRightColor
+  borderRightStyle?: Property.BorderRightStyle
+  borderRightWidth?: Property.BorderRightWidth
+  borderSpacing?: Property.BorderSpacing
+  borderStartEndRadius?: Property.BorderStartEndRadius
+  borderStartStartRadius?: Property.BorderStartStartRadius
+  borderStyle?: Property.BorderStyle
+  borderTop?: Property.BorderTop
+  borderTopColor?: Property.BorderTopColor
+  borderTopLeftRadius?: Property.BorderTopLeftRadius
+  borderTopRightRadius?: Property.BorderTopRightRadius
+  borderTopStyle?: Property.BorderTopStyle
+  borderTopWidth?: Property.BorderTopWidth
+  borderWidth?: Property.BorderWidth
 }

@@ -1,4 +1,4 @@
-import React, { useMemo, VoidFunctionComponent } from 'react'
+import React, { Ref, useMemo } from 'react'
 import styled from '@emotion/styled'
 import { Check, Close } from '@icon-park/react'
 import { iconProps, layout, LayoutProps, spacing, SpacingProps } from '@novem-ui/base'
@@ -25,14 +25,14 @@ const ColoredCircle = styled.div<FeedbackBadgeProps>`
   }
 `
 
-const FeedbackBadge: VoidFunctionComponent<FeedbackBadgeProps> = ({ variant, ...props }) => {
+const FeedbackBadge = ({ variant, ...props }: FeedbackBadgeProps, ref: Ref<HTMLDivElement>): JSX.Element => {
   const Icon = useMemo(() => (variant === 'success' ? Check : Close), [variant])
 
   return (
-    <ColoredCircle variant={variant} {...props}>
+    <ColoredCircle variant={variant} {...props} ref={ref}>
       <Icon {...iconProps} />
     </ColoredCircle>
   )
 }
 
-export default FeedbackBadge
+export default React.forwardRef<HTMLDivElement, FeedbackBadgeProps>(FeedbackBadge)

@@ -1,4 +1,5 @@
-import React, { HTMLProps, useEffect, useMemo, useRef, VoidFunctionComponent } from 'react'
+import React, { HTMLProps, Ref, useEffect, useMemo, useRef } from 'react'
+import mergeRefs from 'merge-refs'
 import { iconProps, separateSpacingProps, SolidColorWithHierarchyProps, SpacingProps } from '@novem-ui/base'
 import { Check, Minus } from '@icon-park/react'
 
@@ -12,11 +13,15 @@ export type CheckboxProps = Omit<HTMLProps<HTMLInputElement>, 'type' | 'as'> &
     indeterminate?: boolean
   }
 
-const Checkbox: VoidFunctionComponent<CheckboxProps> = ({ baseColor, indeterminate, checked, ...checkboxProps }) => {
+const Checkbox = (
+  { baseColor, indeterminate, checked, ...checkboxProps }: CheckboxProps,
+  ref: Ref<HTMLInputElement>
+): JSX.Element => {
   const { props, spacingProps } = useMemo(() => separateSpacingProps<typeof checkboxProps>(checkboxProps), [
     checkboxProps
   ])
   const checkboxRef = useRef<HTMLInputElement>(null)
+  const internalCheckboxRef = useMemo(() => mergeRefs(checkboxRef, ref), [checkboxRef, ref])
 
   useEffect(() => {
     checkboxRef.current.indeterminate = indeterminate
@@ -24,7 +29,7 @@ const Checkbox: VoidFunctionComponent<CheckboxProps> = ({ baseColor, indetermina
 
   return (
     <CheckboxLabel {...spacingProps}>
-      <HiddenInput {...props} ref={checkboxRef} type="checkbox" baseColor={baseColor} checked={checked} />
+      <HiddenInput {...props} ref={internalCheckboxRef} type="checkbox" baseColor={baseColor} checked={checked} />
       <CheckboxElement baseColor={baseColor} />
       <Check className="checkbox-icon-check" {...iconProps} />
       <Minus className="checkbox-icon-minus" {...iconProps} />
@@ -32,4 +37,4 @@ const Checkbox: VoidFunctionComponent<CheckboxProps> = ({ baseColor, indetermina
   )
 }
 
-export default Checkbox
+export default React.forwardRef<HTMLInputElement, CheckboxProps>(Checkbox)

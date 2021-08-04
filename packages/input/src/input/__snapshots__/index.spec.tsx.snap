@@ -28,7 +28,7 @@ exports[`input/input should render a themed input 1`] = `
   background-color: rgba(154,152,151,0.15);
 }
 
-.emotion-0:-moz-read-only {
+.emotion-0:-moz-read-only:not(:disabled) {
   background-color: white;
   border-color: white;
   margin-left: -2px;
@@ -36,7 +36,7 @@ exports[`input/input should render a themed input 1`] = `
   pointer-events: none;
 }
 
-.emotion-0:read-only {
+.emotion-0:read-only:not(:disabled) {
   background-color: white;
   border-color: white;
   margin-left: -2px;

@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`layout should create a css fragment with the mapped props (partial) 1`] = `
+.emotion-0 {
+  -webkit-background-clip: revert;
+  background-clip: revert;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  />
+</div>
+`;
+
+exports[`layout should create a css fragment with the mapped props 1`] = `
+.emotion-0 {
+  background: ThreeDFace;
+  background-attachment: initial;
+  background-blend-mode: soft-light;
+  -webkit-background-clip: revert;
+  background-clip: revert;
+  background-color: red.800;
+  background-image: url(image);
+  background-origin: inherit;
+  -webkit-background-position: right;
+  background-position: right;
+  background-position-x: x-start;
+  background-position-y: y-end;
+  background-repeat: repeat-y;
+  -webkit-background-size: unset;
+  background-size: unset;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  />
+</div>
+`;

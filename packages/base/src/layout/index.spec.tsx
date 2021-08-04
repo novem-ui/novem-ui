@@ -24,7 +24,9 @@ describe('layout', () => {
       right: '10px',
       bottom: '10px',
       position: 'relative',
-      display: 'flex'
+      display: 'flex',
+      width: '10px',
+      height: '10px'
     }
 
     const { container } = render(<ComponentWithLayoutProps {...props} />)

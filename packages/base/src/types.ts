@@ -2,6 +2,8 @@ import { Property } from 'csstype'
 import { BaseColor, Color, SpacingValue } from '@novem-ui/theme'
 import { Theme } from '@emotion/react'
 
+export type NovemColor = Color | Property.Color
+
 // Spacing types
 export type SpacingPropName =
   | 'm'
@@ -88,7 +90,6 @@ export interface InputElementProps {
 }
 
 // Layout
-
 export interface LayoutProps {
   display?: Property.Display
   position?: Property.Position
@@ -101,50 +102,49 @@ export interface LayoutProps {
 }
 
 // border
-
 export interface BorderProps {
   border?: Property.Border
   borderBlock?: Property.BorderBlock
-  borderBlockColor?: Property.BorderBlockColor
+  borderBlockColor?: NovemColor
   borderBlockEnd?: Property.BorderBlockEnd
-  borderBlockEndColor?: Property.BorderBlockEndColor
+  borderBlockEndColor?: NovemColor
   borderBlockEndStyle?: Property.BorderBlockEndStyle
   borderBlockEndWidth?: Property.BorderBlockEndWidth
   borderBlockStart?: Property.BorderBlockStart
-  borderBlockStartColor?: Property.BorderBlockStartColor
+  borderBlockStartColor?: NovemColor
   borderBlockStartStyle?: Property.BorderBlockStartStyle
   borderBlockStartWidth?: Property.BorderBlockStartWidth
   borderBlockStyle?: Property.BorderBlockStyle
   borderBlockWidth?: Property.BorderBlockWidth
   borderBottom?: Property.BorderBottom
-  borderBottomColor?: Property.BorderBottomColor
+  borderBottomColor?: NovemColor
   borderBottomLeftRadius?: Property.BorderBottomLeftRadius
   borderBottomRightRadius?: Property.BorderBottomRightRadius
   borderBottomStyle?: Property.BorderBottomStyle
   borderBottomWidth?: Property.BorderBottomWidth
   borderCollapse?: Property.BorderCollapse
-  borderColor?: Property.BorderColor
+  borderColor?: NovemColor
   borderEndEndRadius?: Property.BorderEndEndRadius
   borderEndStartRadius?: Property.BorderEndStartRadius
   borderInline?: Property.BorderInline
-  borderInlineColor?: Property.BorderInlineColor
+  borderInlineColor?: NovemColor
   borderInlineEnd?: Property.BorderInlineEnd
-  borderInlineEndColor?: Property.BorderInlineEndColor
+  borderInlineEndColor?: NovemColor
   borderInlineEndStyle?: Property.BorderInlineEndStyle
   borderInlineEndWidth?: Property.BorderInlineEndWidth
   borderInlineStart?: Property.BorderInlineStart
-  borderInlineStartColor?: Property.BorderInlineStartColor
+  borderInlineStartColor?: NovemColor
   borderInlineStartStyle?: Property.BorderInlineStartStyle
   borderInlineStartWidth?: Property.BorderInlineStartWidth
   borderInlineStyle?: Property.BorderInlineStyle
   borderInlineWidth?: Property.BorderInlineWidth
   borderLeft?: Property.BorderLeft
-  borderLeftColor?: Property.BorderLeftColor
+  borderLeftColor?: NovemColor
   borderLeftStyle?: Property.BorderLeftStyle
   borderLeftWidth?: Property.BorderLeftWidth
   borderRadius?: Property.BorderRadius
   borderRight?: Property.BorderRight
-  borderRightColor?: Property.BorderRightColor
+  borderRightColor?: NovemColor
   borderRightStyle?: Property.BorderRightStyle
   borderRightWidth?: Property.BorderRightWidth
   borderSpacing?: Property.BorderSpacing
@@ -152,10 +152,37 @@ export interface BorderProps {
   borderStartStartRadius?: Property.BorderStartStartRadius
   borderStyle?: Property.BorderStyle
   borderTop?: Property.BorderTop
-  borderTopColor?: Property.BorderTopColor
+  borderTopColor?: NovemColor
   borderTopLeftRadius?: Property.BorderTopLeftRadius
   borderTopRightRadius?: Property.BorderTopRightRadius
   borderTopStyle?: Property.BorderTopStyle
   borderTopWidth?: Property.BorderTopWidth
   borderWidth?: Property.BorderWidth
+}
+
+// background
+export interface BackgroundProps {
+  background?: Property.Background
+  backgroundAttachment?: Property.BackgroundAttachment
+  backgroundBlendMode?: Property.BackgroundBlendMode
+  backgroundClip?: Property.BackgroundClip
+  backgroundColor?: NovemColor
+  backgroundImage?: Property.BackgroundImage
+  backgroundOrigin?: Property.BackgroundOrigin
+  backgroundPosition?: Property.BackgroundPosition
+  backgroundPositionX?: Property.BackgroundPositionX
+  backgroundPositionY?: Property.BackgroundPositionY
+  backgroundRepeat?: Property.BackgroundRepeat
+  backgroundSize?: Property.BackgroundSize
+}
+
+// flex
+export interface FlexProps {
+  direction?: Property.FlexDirection
+  wrap?: Property.FlexWrap
+  basis?: Property.FlexBasis
+  grow?: Property.FlexGrow
+  shrink?: Property.FlexShrink
+  align?: Property.AlignItems
+  justify?: Property.JustifyContent
 }

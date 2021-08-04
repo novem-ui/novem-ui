@@ -1,4 +1,7 @@
 import { css } from '@emotion/react'
+import { Theme } from '@novem-ui/theme'
+
+import getColor from '../utils/get-color'
 import { BackgroundProps } from '../types'
 
 const background = ({
@@ -13,13 +16,14 @@ const background = ({
   backgroundPositionX,
   backgroundPositionY,
   backgroundRepeat,
-  backgroundSize
-}: BackgroundProps) => css`
+  backgroundSize,
+  theme
+}: BackgroundProps & { theme: Theme }) => css`
   ${background && `background: ${background};`}
   ${backgroundAttachment && `background-attachment: ${backgroundAttachment};`}
   ${backgroundAttachment && `background-blend-mode: ${backgroundBlendMode};`}
   ${backgroundClip && `background-clip: ${backgroundClip};`}
-  ${backgroundColor && `background-color: ${backgroundColor};`}
+  ${backgroundColor && `background-color: ${getColor(theme)(backgroundColor)};`}
   ${backgroundImage && `background-image: ${backgroundImage};`}
   ${backgroundOrigin && `background-origin: ${backgroundOrigin};`}
   ${backgroundPosition && `background-position: ${backgroundPosition};`}

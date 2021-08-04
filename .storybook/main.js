@@ -10,6 +10,9 @@ module.exports = {
     '@storybook/addon-controls',
     '@storybook/addon-a11y'
   ],
+  reactDocgenTypescriptOptions: {
+    propFilter: (prop) => (prop.parent ? !/node_modules\/(?!@novem-ui\/).*/.test(prop.parent.fileName) : true)
+  },
   babel: async (options) => ({
     ...options,
     plugins: [...options.plugins, 'emotion']

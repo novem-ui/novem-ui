@@ -20,7 +20,7 @@ exports[`layout should create a css fragment with the mapped props 1`] = `
   background-blend-mode: soft-light;
   -webkit-background-clip: revert;
   background-clip: revert;
-  background-color: red.800;
+  background-color: #9f1313;
   background-image: url(image);
   background-origin: inherit;
   -webkit-background-position: right;

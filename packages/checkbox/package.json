@@ -32,11 +32,13 @@
     "url": "https://github.com/jdrets/novem-ui/issues"
   },
   "devDependencies": {
+    "@types/merge-refs": "^1.0.0",
     "@types/novem-theme": "^0.0.1-alpha.1"
   },
   "dependencies": {
     "@novem-ui/base": "^0.0.1",
     "@novem-ui/theme": "^0.0.1-alpha.1",
+    "merge-refs": "^1.0.0",
     "polished": "^4.1.3"
   },
   "peerDependencies": {

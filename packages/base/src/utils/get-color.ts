@@ -20,8 +20,8 @@ const getColor = ({ colors }: Theme) => (color: NovemColor) => {
   const { value, weight } = determineColor(color)
 
   if (value && weight) {
-    const palette: WeightedColor | undefined = colors.palette[value as string]
-    const colorResult = palette && palette[weight]
+    const palette: WeightedColor | undefined = colors.palette[value as BaseColor]
+    const colorResult = palette && palette[weight as WeightedColorKey]
 
     /* istanbul ignore else */
     if (colorResult) {

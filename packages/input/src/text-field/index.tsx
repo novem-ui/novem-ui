@@ -41,6 +41,7 @@ const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
       const { length } = event.target.value
       setValueLength(length)
 
+      /* istanbul ignore else */
       if (onChange) {
         onChange(event)
       }

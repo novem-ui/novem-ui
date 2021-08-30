@@ -1,14 +1,10 @@
+import { ReactElement } from 'react'
 import theme from "@novem-ui/theme";
-
-export interface ButtonActionTypes {
-  text: string
-  action: () => void
-}
 
 export interface MessageTypes {
   title?: string
   message: string
   onClose?: () => void
-  button?: ButtonActionTypes
+  action?: ReactElement
   baseColor?: keyof typeof theme.colors.palette
 }

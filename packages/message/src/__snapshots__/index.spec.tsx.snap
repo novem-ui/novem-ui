@@ -220,7 +220,7 @@ exports[`<Message /> should match snapshot with different baseColors 1`] = `
       <button
         class="emotion-14 emotion-15"
       >
-        dummy button
+        Dummy button
       </button>
       <div
         class="emotion-16 emotion-17"
@@ -463,7 +463,7 @@ exports[`<Message /> should match snapshot with different baseColors 2`] = `
       <button
         class="emotion-14 emotion-15"
       >
-        dummy button
+        Dummy button
       </button>
       <div
         class="emotion-16 emotion-17"
@@ -712,7 +712,7 @@ exports[`<Message /> should match snapshot with different baseColors 3`] = `
       <button
         class="emotion-14 emotion-15"
       >
-        dummy button
+        Dummy button
       </button>
       <div
         class="emotion-16 emotion-17"
@@ -948,7 +948,7 @@ exports[`<Message /> should match snapshot with different baseColors 4`] = `
       <button
         class="emotion-14 emotion-15"
       >
-        dummy button
+        Dummy button
       </button>
       <div
         class="emotion-16 emotion-17"
@@ -1193,7 +1193,7 @@ exports[`<Message /> should not render title if prop is null 1`] = `
       <button
         class="emotion-12 emotion-13"
       >
-        dummy button
+        Dummy button
       </button>
       <div
         class="emotion-14 emotion-15"

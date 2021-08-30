@@ -1,7 +1,14 @@
 import React from 'react'
 import { Story, Meta } from '@storybook/react'
 
+import Button from '@novem-ui/button'
 import Message from './index'
+
+const action = () => (
+  <Button hierarchy="link" size="sm" onClick={() => true}>
+    Button
+  </Button>
+)
 
 export default {
   title: 'Components/Message',
@@ -44,11 +51,7 @@ WithTitle.args = {
   baseColor: 'green',
   title: 'Success title',
   message: 'Success message',
-  onClose: (f) => f,
-  button: {
-    text: 'Button',
-    action: (f) => f
-  }
+  onClose: (f) => f
 }
 
 export const Default = Template.bind({})
@@ -69,5 +72,6 @@ export const WithButton = Template.bind({})
 WithButton.args = {
   baseColor: 'grey',
   title: 'Info title',
-  message: 'Info message'
+  message: 'Info message',
+  action: action()
 }

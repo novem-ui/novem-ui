@@ -1,11 +1,10 @@
 import React, { FunctionComponent } from 'react'
-import Button from '@novem-ui/button'
 import { Close as CloseIcon, CloseSmall, Check, Attention, Info } from '@icon-park/react'
 
 import { Wrapper, Content, Actions, IconWrapper, Text, Title, ContentWrapper, CloseWrapper } from './styles'
 import { MessageTypes } from './types'
 
-const Message: FunctionComponent<MessageTypes> = ({ title, message, onClose, button, baseColor }) => {
+const Message: FunctionComponent<MessageTypes> = ({ title, message, onClose, action, baseColor }) => {
   const Icon = () => {
     if (baseColor === 'red') {
       return <CloseSmall />
@@ -40,11 +39,7 @@ const Message: FunctionComponent<MessageTypes> = ({ title, message, onClose, but
         </ContentWrapper>
       </Content>
       <Actions>
-        {button && (
-          <Button hierarchy="link" size="sm" onClick={button.action}>
-            {button.text}
-          </Button>
-        )}
+        {action && action}
         {onClose && (
           <CloseWrapper onClick={onClose}>
             <CloseIcon />

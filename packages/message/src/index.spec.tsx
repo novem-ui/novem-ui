@@ -1,7 +1,8 @@
 import React from 'react'
 
+import Button from '@novem-ui/button'
 import withTheme from '@novem-ui/theme/src/utils/with-theme'
-import { cleanup, fireEvent, render } from '@testing-library/react'
+import { cleanup, render } from '@testing-library/react'
 
 import Message from '.'
 
@@ -10,10 +11,11 @@ const setup = (mockData = {}) => {
     title: 'dummy title',
     message: 'dummy message',
     onClose: jest.fn(),
-    button: {
-      text: 'dummy button',
-      action: jest.fn()
-    }
+    action: (
+      <Button hierarchy="link" size="sm" onClick={() => true}>
+        Dummy button
+      </Button>
+    )
   }
 
   const Component = () => <Message {...mock} {...mockData} />
@@ -45,21 +47,5 @@ describe('<Message />', () => {
     const { container } = setup(mockData)
 
     expect(container).toMatchSnapshot()
-  })
-
-  test('should call onClick action function when button is clicked', () => {
-    const actionMock = jest.fn()
-    const mockData = {
-      button: {
-        text: 'dummy button',
-        action: actionMock
-      }
-    }
-    const { getByText } = setup(mockData)
-    const button = getByText('dummy button')
-
-    fireEvent.click(button)
-
-    expect(actionMock).toHaveBeenCalled()
   })
 })

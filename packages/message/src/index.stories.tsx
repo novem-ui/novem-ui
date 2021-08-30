@@ -51,13 +51,15 @@ WithTitle.args = {
   baseColor: 'green',
   title: 'Success title',
   message: 'Success message',
+  variant: 'success',
   onClose: (f) => f
 }
 
 export const Default = Template.bind({})
 Default.args = {
   baseColor: 'green',
-  message: 'Success message'
+  message: 'Success message',
+  variant: 'success'
 }
 
 export const Closable = Template.bind({})
@@ -65,7 +67,8 @@ Closable.args = {
   baseColor: 'red',
   title: 'Error title',
   message: 'Error message',
-  onClose: (f) => f
+  onClose: (f) => f,
+  variant: 'error'
 }
 
 export const WithButton = Template.bind({})
@@ -73,5 +76,6 @@ WithButton.args = {
   baseColor: 'grey',
   title: 'Info title',
   message: 'Info message',
-  action: action()
+  action: action(),
+  variant: 'error'
 }

@@ -10,11 +10,12 @@ export interface IconWrapperTypes {
   baseColor: keyof typeof theme.colors.palette
 }
 
-export const Wrapper = styled.div<BorderColorProps>`
+export const MessageWrapper = styled.div<BorderColorProps>`
   align-items: center;
   border-radius: 1rem;
   border-style: solid;
   border-width: 1px;
+  box-shadow: 0 0.125rem 0.375rem rgba(31, 26, 24, 0.12);
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -44,28 +45,8 @@ export const Title = styled.p`
   margin: 0;
 `
 
-export const IconWrapper = styled.div<IconWrapperTypes>`
-  align-items: center;
-  background-color: ${(props) => props.theme.colors.palette[props.baseColor || 'grey'][500]};
-  border-radius: 1.25rem;
-  display: flex;
-  height: 1.25rem;
-  justify-content: center;
-  width: 1.25rem;
-
-  span {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
-
-  svg path {
-    color: white;
-  }
-
-  .remove-circle path :first-child {
-    color: transparent;
-  }
+export const IconWrapper = styled.div`
+  margin-top: 1.125rem;
 `
 
 export const ContentWrapper = styled.div`

@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`borderColor should return a component with all the props 1`] = `
+.emotion-0 {
+  border: 1px solid;
+  border-block: AppWorkspace;
+  border-block-color: #378949;
+  border-block-end: unset;
+  border-block-end-color: rgba(255,153,0,0.3833);
+  border-block-end-style: outset;
+  border-block-end-width: thick;
+  border-block-start: 1px solid;
+  border-block-start-color: #2c2489;
+  border-block-start-style: revert;
+  border-block-start-width: 1px solid;
+  border-block-style: double;
+  border-block-width: 1px solid;
+  border-bottom: 1px solid;
+  border-bottom-color: #2c2489;
+  border-bottom-left-radius: 1px solid;
+  border-bottom-right-radius: 1px solid;
+  border-bottom-style: hidden;
+  border-bottom-width: 1px solid;
+  border-collapse: collapse;
+  border-color: #2c2489;
+  border-end-end-radius: inherit;
+  border-end-start-radius: unset;
+  border-inline: 1px solid;
+  border-inline-color: #2c2489;
+  border-inline-end: antiquewhite;
+  border-inline-end-color: #2c2489;
+  border-inline-end-style: initial;
+  border-inline-end-width: initial;
+  border-inline-start: initial;
+  border-inline-start-color: #2c2489;
+  border-inline-start-style: outset;
+  border-inline-start-width: outset;
+  border-inline-style: outset;
+  border-inline-width: outset;
+  border-left: outset;
+  border-left-color: #2c2489;
+  border-left-style: outset;
+  border-left-width: outset;
+  border-radius: outset;
+  border-right: outset;
+  border-right-color: #2c2489;
+  border-right-style: ridge;
+  border-right-width: thick;
+  border-spacing: unset;
+  border-start-end-radius: 1px;
+  border-start-start-radius: 1px;
+  border-style: hidden;
+  border-top: hidden;
+  border-top-color: #2c2489;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-top-style: ridge;
+  border-top-width: thin;
+  border-width: inherit;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  />
+</div>
+`;
+
+exports[`borderColor should return a component with the correct border color and 1px width 1`] = `
+.emotion-0 {
+  border: 1px solid;
+  border-color: #3564e3;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  />
+</div>
+`;
+
+exports[`borderColor should return a component with unmapped colors 1`] = `
+.emotion-0 {
+  border-block-color: violet;
+  border-color: blu.e.500;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  />
+</div>
+`;

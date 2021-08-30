@@ -1,14 +1,16 @@
 import { css } from '@emotion/react'
 import { LayoutProps } from '../types'
 
-const layout = ({ display, top, left, right, bottom, position }: LayoutProps) => {
+const layout = ({ display, top, left, right, bottom, position, height, width }: LayoutProps) => {
   const style = css`
-    ${display && `display: ${display};`}
-    ${top && `top: ${top};`}
-    ${left && `left: ${left};`}
-    ${right && `right: ${right};`}
     ${bottom && `bottom: ${bottom};`}
+    ${display && `display: ${display};`}
+    ${height && `height: ${height};`}
+    ${left && `left: ${left};`}
     ${position && `position: ${position};`}
+    ${right && `right: ${right};`}
+    ${top && `top: ${top};`}
+    ${width && `width: ${width};`}
   `
 
   return style

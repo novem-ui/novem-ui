@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Flex /> should match snapshot (default) 1`] = `
+.emotion-0 {
+  border: 1px solid;
+  border-color: #9f1313;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    Dummy text
+  </div>
+</div>
+`;
+
+exports[`<Flex /> should match snapshot (inline) 1`] = `
+.emotion-0 {
+  border: 1px solid;
+  border-color: #9f1313;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    Dummy text
+  </div>
+</div>
+`;

@@ -7,18 +7,6 @@ export default {
   title: 'Components/Button',
   component: Button,
   argTypes: {
-    hierarchy: {
-      type: 'radio',
-      options: ['loud', 'quiet', 'link']
-    },
-    size: {
-      type: 'radio',
-      options: ['sm', 'md', 'lg']
-    },
-    baseColor: {
-      type: 'radio',
-      options: ['red', 'green', 'orange', 'grey', 'yellow']
-    },
     as: {
       table: {
         disable: true

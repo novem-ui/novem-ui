@@ -4,8 +4,12 @@ export { default as solidColorWithHierarchy, SolidColorWithHierarchyProps } from
 export { default as borderColor, BorderColorProps } from './src/border-color'
 export { default as spacing } from './src/spacing'
 export { default as layout } from './src/layout'
+export { default as border } from './src/border'
+export { default as background } from './src/background'
+export { default as flex } from './src/flex'
 export { default as separateSpacingProps } from './src/spacing/separate-props'
 export { default as typography } from './src/typography'
 export { default as inputElement } from './src/input-element'
 export { default as iconProps } from './src/icon-props'
+
 export * from './src/types'

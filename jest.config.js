@@ -43,6 +43,7 @@ module.exports = {
     '!packages/text/*.ts',
     '!packages/input/*.ts',
     '!packages/switch/*.ts',
+    '!packages/layout/*.ts',
     '!packages/message/*.ts',
     '!packages/**/types.ts',
   ],

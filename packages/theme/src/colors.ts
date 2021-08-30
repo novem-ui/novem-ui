@@ -8,6 +8,8 @@ const baseGreen = '#59BC6F'
 const baseRed = '#EB5757'
 const baseGrey = '#9A9897'
 const baseYellow = '#FF9900'
+const baseBlue = '#3564e3'
+const baseIndigo = '#4338CA'
 
 // single colors
 const darkGrey = '#1F1A18'
@@ -32,7 +34,9 @@ const palette = {
   green: createColorMap(baseGreen),
   red: createColorMap(baseRed),
   yellow: createColorMap(baseYellow),
-  grey: createColorMap(baseGrey)
+  grey: createColorMap(baseGrey),
+  blue: createColorMap(baseBlue),
+  indigo: createColorMap(baseIndigo)
 }
 
 const colors = {

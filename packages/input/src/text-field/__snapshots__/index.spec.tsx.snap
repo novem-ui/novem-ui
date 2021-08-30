@@ -417,9 +417,9 @@ exports[`input/text-field should render a TextField with a valid state 1`] = `
 }
 
 .emotion-4 {
-  top: 1.5rem;
-  right: 1rem;
   position: absolute;
+  right: 1rem;
+  top: 1.5rem;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -547,9 +547,9 @@ exports[`input/text-field should render a TextField with an error message (from 
 }
 
 .emotion-4 {
-  top: 1.5rem;
-  right: 1rem;
   position: absolute;
+  right: 1rem;
+  top: 1.5rem;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -706,9 +706,9 @@ exports[`input/text-field should render a TextField with an error message (from 
 }
 
 .emotion-4 {
-  top: 1.5rem;
-  right: 1rem;
   position: absolute;
+  right: 1rem;
+  top: 1.5rem;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -865,9 +865,9 @@ exports[`input/text-field should render a TextField with error 1`] = `
 }
 
 .emotion-4 {
-  top: 1.5rem;
-  right: 1rem;
   position: absolute;
+  right: 1rem;
+  top: 1.5rem;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;

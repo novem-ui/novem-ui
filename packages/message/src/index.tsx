@@ -1,11 +1,11 @@
 import React, { FunctionComponent } from 'react'
 import { Close as CloseIcon } from '@icon-park/react'
 import { FeedbackBadge } from '@novem-ui/badge'
-import { Box } from '@novem-ui/layout'
+import { Box, Flex } from '@novem-ui/layout'
 import { Paragraph } from '@novem-ui/text'
 import Button from '@novem-ui/button'
 
-import { Content, Actions, MessageWrapper } from './styles'
+import { MessageWrapper } from './styles'
 import { MessageTypes } from './types'
 
 const Message: FunctionComponent<MessageTypes> = ({ title, message, onClose, action, baseColor, variant }) => {
@@ -14,7 +14,7 @@ const Message: FunctionComponent<MessageTypes> = ({ title, message, onClose, act
 
   return (
     <MessageWrapper baseColor={baseColor}>
-      <Content>
+      <Flex align="center">
         <FeedbackBadge variant={variant} mt={4.5} />
         <Box ml={4}>
           {!!hasTitle && (
@@ -24,15 +24,16 @@ const Message: FunctionComponent<MessageTypes> = ({ title, message, onClose, act
           )}
           <Paragraph size={messageSize}>{message}</Paragraph>
         </Box>
-      </Content>
-      <Actions>
+      </Flex>
+      <Flex align="center">
         {action && action}
         {onClose && (
-          <Button onClick={onClose}>
-            <CloseIcon />
+          // TODO: i18n this aria-label
+          <Button onClick={onClose} aria-label="close" hierarchy="link" m="0px" p="4px 0px 0px 0px">
+            <CloseIcon size={16} />
           </Button>
         )}
-      </Actions>
+      </Flex>
     </MessageWrapper>
   )
 }

@@ -37,7 +37,7 @@ function inputElement({ theme, baseColor, error, valid, disabled }: InputElement
       background-color: ${grey[100]};
     }
 
-    &:read-only {
+    &:read-only:not(:disabled) {
       background-color: white;
       border-color: white;
       margin-left: -2px;

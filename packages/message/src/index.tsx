@@ -6,9 +6,9 @@ import { Paragraph } from '@novem-ui/text'
 import Button from '@novem-ui/button'
 
 import { MessageWrapper } from './styles'
-import { MessageTypes } from './types'
+import { MessageProps } from './types'
 
-const Message: FunctionComponent<MessageTypes> = ({ title, message, onClose, action, baseColor, variant }) => {
+const Message: FunctionComponent<MessageProps> = ({ title, message, onClose, action, baseColor, variant }) => {
   const hasTitle = !!title
   const messageSize = hasTitle ? 'xs' : 'sm'
 

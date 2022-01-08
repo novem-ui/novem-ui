@@ -3,16 +3,14 @@ import { SpacingProps } from '@novem-ui/base'
 import { Paragraph } from '@novem-ui/text'
 
 import { FeedbackBadge } from '@novem-ui/badge'
-import Input from '../input'
+import Input, { ExtendedInputProps } from '../input'
 import TextFieldWrapper from '../text-field-wrapper'
 import BottomText from '../bottom-text'
 import InputLabel from '../input-label'
 
-export interface ExtendedTextFieldProps {
+export interface ExtendedTextFieldProps extends ExtendedInputProps {
   label?: string
   count?: boolean
-  error?: boolean | Error | string
-  valid?: boolean
   helper?: string
   readOnly?: boolean
 }

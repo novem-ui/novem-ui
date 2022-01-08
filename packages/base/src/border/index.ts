@@ -63,7 +63,7 @@ const border = ({
   theme
 }: BorderProps & { theme: Theme }) => {
   const getColor = getColorFactory(theme)
-  
+
   return css`
     ${border && `border: ${border};`}
     ${borderBlock && `border-block: ${borderBlock};`}

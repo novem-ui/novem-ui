@@ -1,4 +1,4 @@
-import { IIconProps } from "@icon-park/react/lib/runtime"
+import { IIconProps } from '@icon-park/react/lib/runtime'
 
 const iconProps: IIconProps = {
   theme: 'outline',

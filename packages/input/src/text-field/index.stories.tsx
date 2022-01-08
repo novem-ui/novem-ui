@@ -41,6 +41,14 @@ Default.args = {
   placeholder: 'Username'
 }
 
+export const CustomColor = Template.bind({})
+
+CustomColor.args = {
+  label: 'Username',
+  placeholder: 'Username',
+  baseColor: 'blue'
+}
+
 export const CharacterCounter = Template.bind({})
 
 CharacterCounter.args = {

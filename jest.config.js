@@ -44,6 +44,7 @@ module.exports = {
     '!packages/input/*.ts',
     '!packages/switch/*.ts',
     '!packages/layout/*.ts',
+    '!packages/message/*.ts',
     '!packages/**/types.ts',
   ],
   coverageDirectory: path.resolve(__dirname, 'coverage', basename),

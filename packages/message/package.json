@@ -1,0 +1,47 @@
+{
+  "name": "@novem-ui/message",
+  "version": "0.0.1",
+  "description": "Message component from novem-ui",
+  "keywords": [
+    "message",
+    "ui",
+    "component",
+    "react",
+    "orange"
+  ],
+  "author": "Julián Drets <juliandrets@gmail.com>",
+  "homepage": "https://github.com/jdrets/novem-ui/tree/main/packages/message#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../dist/message"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdrets/novem-ui.git"
+  },
+  "scripts": {
+    "test": "jest --env=jsdom --passWithNoTests",
+    "build": "yarn build:esm && yarn build:types && yarn build:package-json",
+    "build:esm": "../../node_modules/.bin/babel . --root-mode upward --extensions .ts,.tsx -d ../../dist/message --source-maps",
+    "build:types": "tsc -p ./tsconfig.types.json",
+    "build:package-json": "../../scripts/create-package.js"
+  },
+  "bugs": {
+    "url": "https://github.com/jdrets/novem-ui/issues"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@novem-ui/theme": "^0.0.1-alpha.1",
+    "@types/novem-theme": "^0.0.1-alpha.1"
+  },
+  "dependencies": {
+    "@novem-ui/base": "^0.0.1"
+  }
+}

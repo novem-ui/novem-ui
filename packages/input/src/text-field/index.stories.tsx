@@ -46,9 +46,8 @@ export const CustomColor = Template.bind({})
 CustomColor.args = {
   label: 'Username',
   placeholder: 'Username',
-  baseColor: "blue"
+  baseColor: 'blue'
 }
-
 
 export const CharacterCounter = Template.bind({})
 

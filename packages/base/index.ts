@@ -9,7 +9,7 @@ export { default as background } from './src/background'
 export { default as flex } from './src/flex'
 export { default as separateSpacingProps } from './src/spacing/separate-props'
 export { default as typography } from './src/typography'
-export { default as inputElement } from './src/input-element'
+export { default as inputElement, genericInput } from './src/input-element'
 export { default as iconProps } from './src/icon-props'
 
 export * from './src/types'

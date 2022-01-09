@@ -1,16 +1,45 @@
 import { css } from '@emotion/react'
-import { LayoutProps } from '../types'
+import { Theme } from '@novem-ui/theme'
+import { LayoutProps, SpacingPropValue } from '../types'
 
-const layout = ({ display, top, left, right, bottom, position, height, width }: LayoutProps) => {
+const layout = ({
+  theme,
+  display,
+  top,
+  left,
+  right,
+  bottom,
+  position,
+  height,
+  width,
+  zIndex
+}: LayoutProps & { theme: Theme }) => {
+  const getPropertyValue = (value: SpacingPropValue) => {
+    const isString = typeof value === 'string'
+
+    if (isString) {
+      return value
+    }
+
+    const isNumber = typeof value === 'number'
+
+    if (isNumber) {
+      return `${theme.spacing[value]}rem`
+    }
+
+    throw new TypeError(`value argument expected a number or a value expressed in CSS units but got ${value} instead`)
+  }
+
   const style = css`
-    ${bottom && `bottom: ${bottom};`}
+    ${bottom && `bottom: ${getPropertyValue(bottom)};`}
     ${display && `display: ${display};`}
-    ${height && `height: ${height};`}
-    ${left && `left: ${left};`}
+    ${height && `height: ${getPropertyValue(height)};`}
+    ${left && `left: ${getPropertyValue(left)};`}
     ${position && `position: ${position};`}
-    ${right && `right: ${right};`}
-    ${top && `top: ${top};`}
-    ${width && `width: ${width};`}
+    ${right && `right: ${getPropertyValue(right)};`}
+    ${top && `top: ${getPropertyValue(top)};`}
+    ${width && `width: ${getPropertyValue(width)};`}
+    ${zIndex && `z-index: ${zIndex};`}
   `
 
   return style

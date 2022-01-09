@@ -93,12 +93,13 @@ export interface InputElementProps {
 export interface LayoutProps {
   display?: Property.Display
   position?: Property.Position
-  top?: Property.Top
-  bottom?: Property.Bottom
-  height?: Property.Height
-  left?: Property.Left
-  right?: Property.Right
-  width?: Property.Width
+  top?: Property.Top | SpacingPropValue
+  bottom?: Property.Bottom | SpacingPropValue
+  height?: Property.Height | SpacingPropValue
+  left?: Property.Left | SpacingPropValue
+  right?: Property.Right | SpacingPropValue
+  width?: Property.Width | SpacingPropValue
+  zIndex?: Property.ZIndex
 }
 
 // border

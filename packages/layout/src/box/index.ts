@@ -13,6 +13,7 @@ import {
 export type BoxProps = BorderProps & BackgroundProps & LayoutProps & SpacingProps
 
 export const Box = styled.div<BoxProps>`
+  box-sizing: border-box;
   ${border}
   ${background}
   ${layout}

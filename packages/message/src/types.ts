@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import theme from "@novem-ui/theme";
+import theme from '@novem-ui/theme'
 
 export interface MessageTypes {
   title?: string

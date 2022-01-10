@@ -7,10 +7,12 @@ import {
   BorderProps,
   BackgroundProps,
   LayoutProps,
-  SpacingProps
+  SpacingProps,
+  shadows,
+  ShadowProps
 } from '@novem-ui/base'
 
-export type BoxProps = BorderProps & BackgroundProps & LayoutProps & SpacingProps
+export type BoxProps = BorderProps & BackgroundProps & LayoutProps & SpacingProps & ShadowProps
 
 export const Box = styled.div<BoxProps>`
   box-sizing: border-box;
@@ -18,4 +20,5 @@ export const Box = styled.div<BoxProps>`
   ${background}
   ${layout}
   ${spacing}
+  ${shadows}
 `

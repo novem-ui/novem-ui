@@ -8,7 +8,7 @@ import { Box } from '.'
 describe('<Box />', () => {
   test('should match snapshot (default)', () => {
     const Component = () => (
-      <Box display="block" border="1px solid" borderColor="red.800">
+      <Box display="block" border="1px solid" borderColor="red.800" shadow="sm">
         Dummy text
       </Box>
     )

@@ -21,3 +21,16 @@ Default.args = {
   borderStyle: 'solid',
   borderColor: 'orange.700'
 }
+
+export const Shadow = Template.bind({})
+
+Shadow.args = {
+  backgroundColor: 'blue.100',
+  width: '100%',
+  height: '100px',
+  borderRadius: '10px',
+  borderWidth: '1px',
+  borderStyle: 'solid',
+  borderColor: 'blue.300',
+  shadow: 'md'
+}

@@ -11,5 +11,6 @@ export { default as separateSpacingProps } from './src/spacing/separate-props'
 export { default as typography } from './src/typography'
 export { default as inputElement, genericInput } from './src/input-element'
 export { default as iconProps } from './src/icon-props'
+export { default as shadows, ShadowProps } from './src/shadows'
 
 export * from './src/types'

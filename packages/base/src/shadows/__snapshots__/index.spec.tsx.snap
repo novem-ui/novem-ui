@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shadows should render a component with a small shadow 1`] = `
+.emotion-0 {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  />
+</div>
+`;
+
+exports[`shadows should return nothing if there's no shadow value 1`] = `
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  />
+</div>
+`;

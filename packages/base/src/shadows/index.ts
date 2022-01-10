@@ -8,7 +8,7 @@ export interface ShadowProps {
 
 const shadows = ({ theme, shadow }: ShadowProps & { theme: Theme }) => {
   let shadowValue = shadow
-  const valueFromTheme = shadow && theme.shadows[shadow]
+  const valueFromTheme = shadow && theme.shadows[shadow as Shadows]
 
   if (valueFromTheme) {
     shadowValue = valueFromTheme

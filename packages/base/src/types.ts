@@ -97,6 +97,8 @@ export interface LayoutProps {
   bottom?: Property.Bottom | SpacingPropValue
   height?: Property.Height | SpacingPropValue
   left?: Property.Left | SpacingPropValue
+  maxHeight?: Property.Height | SpacingPropValue
+  maxWidth?: Property.Width | SpacingPropValue
   right?: Property.Right | SpacingPropValue
   width?: Property.Width | SpacingPropValue
   zIndex?: Property.ZIndex

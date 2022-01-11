@@ -3,6 +3,12 @@ import { WeightedColor, WeightedColorKey } from '@novem-ui/theme/types'
 
 import { NovemColor } from '../types'
 
+export interface GetWeightedColorFromBaseProps {
+  theme: Theme
+  weight: WeightedColorKey
+  baseColor?: BaseColor
+}
+
 const determineColor = (color: NovemColor) => {
   if (color.includes('.')) {
     const parsedColor = color.split('.')
@@ -30,6 +36,12 @@ const getColor = ({ colors }: Theme) => (color: NovemColor) => {
   }
 
   return color
+}
+
+export const getWeightedColorFromBase = ({ theme, baseColor, weight }: GetWeightedColorFromBaseProps) => {
+  const color = `${baseColor || theme.colors.base}.${weight}`
+
+  return getColor(theme)(color)
 }
 
 export default getColor

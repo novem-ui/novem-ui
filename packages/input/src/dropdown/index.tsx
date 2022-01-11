@@ -1,21 +1,50 @@
-import { useEffect, useRef, useState } from 'react'
-import { genericInput } from '@novem-ui/base'
-import { Box } from '@novem-ui/layout'
+/* eslint-disable eqeqeq */
+import { ComponentType, FunctionComponent, HTMLProps, KeyboardEventHandler, useEffect, useRef, useState } from 'react'
 import styled from '@emotion/styled'
+
+import { genericInput, getColor } from '@novem-ui/base'
+import { Box, Flex } from '@novem-ui/layout'
+import { BaseColor, useTheme } from '@novem-ui/theme'
+import { Paragraph } from '@novem-ui/text'
+
+import { Up } from '@icon-park/react'
+
 import { nanoid } from 'nanoid'
 
+import withWrappedInput, { WrapperProps } from '../with-wrapped-input'
+
+import { DropdownProvider, useDropdownState } from './context'
+
+export type DropdownProps = HTMLProps<HTMLSelectElement> & {
+  baseColor?: BaseColor
+}
+
 const Wrapper = styled.div`
+  align-items: center;
   appearance: none;
-  position: relative;
+  display: flex;
   flex: 1;
-  ${genericInput};
   padding-top: ${({ theme }) => theme.spacing[2]}rem;
   padding-bottom: ${({ theme }) => theme.spacing[2]}rem;
+  position: relative;
+  user-select: none;
+  ${genericInput};
+
+  select {
+    display: none;
+  }
 `
 
-const Dropdown = ({ children }) => {
+const InnerDropdown: FunctionComponent<DropdownProps> = ({ children, baseColor, className = '', ...props }) => {
   const [isOpen, setIsOpen] = useState(false)
+  const [state] = useDropdownState()
   const componentId = useRef(nanoid())
+  const theme = useTheme()
+  const selectRef = useRef<HTMLSelectElement>(null)
+  const listRef = useRef<HTMLUListElement>(null)
+
+  const color = getColor({ theme, baseColor })
+  const selectedOption = state.selected || state.options[0]
 
   const closeDropdown = (event: MouseEvent) => {
     const target = event.target as HTMLDivElement
@@ -26,7 +55,25 @@ const Dropdown = ({ children }) => {
   }
 
   const toggleDropdown = () => {
-    setIsOpen(true)
+    setIsOpen(!isOpen)
+  }
+
+  const handleSelectKeypress: KeyboardEventHandler = (event) => {
+    event.preventDefault()
+    const shouldOpen = ['Enter', 'Space'].includes(event.code) && !isOpen
+
+    if (shouldOpen) {
+      setIsOpen(true)
+      listRef.current?.focus()
+    }
+  }
+
+  const handleListKeypress: KeyboardEventHandler = (event) => {
+    const shouldClose = event.code == 'Escape' && isOpen
+
+    if (shouldClose) {
+      setIsOpen(false)
+    }
   }
 
   useEffect(() => {
@@ -38,25 +85,92 @@ const Dropdown = ({ children }) => {
     }
   }, [])
 
+  useEffect(() => {
+    if (selectRef.current) {
+      const changeEvent = new Event('change', { bubbles: true })
+      selectRef.current.dispatchEvent(changeEvent)
+    }
+  }, [state.selected])
+
+  // TODO: enhance accesibility
+  // TODO: some events will not be mapped to the input component, fix that
+
   return (
-    <Wrapper onClick={toggleDropdown} data-component-id={componentId.current}>
-      {isOpen && (
+    <Wrapper
+      baseColor={baseColor}
+      className={className}
+      data-component-id={componentId.current}
+      onClick={toggleDropdown}
+      onKeyPress={handleSelectKeypress}
+      tabIndex={0}
+    >
+      <select ref={selectRef} {...props}>
+        {state.options.map((option) => (
+          <option key={option.id} value={option.value}>
+            {option.children}
+          </option>
+        ))}
+      </select>
+      <Flex
+        align="center"
+        position="absolute"
+        right={4}
+        height="100%"
+        display="flex"
+        justify="center"
+        top="0"
+        paddingTop={1}
+        style={{
+          // TODO: make an animation component and remove style prop
+          transition: 'transform .25s ease',
+          transform: isOpen ? '' : 'rotate(180deg)'
+        }}
+      >
+        <Up theme="outline" size="24" fill={color} />
+      </Flex>
+      <Paragraph>{selectedOption?.children}</Paragraph>
+      {children && (
         <Box
-          width="100%"
-          position="absolute"
-          top={14}
-          left="0"
-          background="white"
-          zIndex={10}
-          border="1px solid"
-          p={4}
+          backgroundColor="#fefdfd"
           borderRadius="1rem"
+          left="0"
+          top={14}
+          position="absolute"
+          shadow="md"
+          width="100%"
+          style={{
+            // TODO: add overflow props to layout
+            overflow: 'hidden',
+            overflowY: 'scroll'
+          }}
+          maxHeight={36}
+          display={isOpen ? 'block' : 'none'}
         >
-          {children}
+          {/* TODO: create list component */}
+          <ul
+            style={{ listStyle: 'none', margin: 0, padding: 0 }}
+            role="listbox"
+            tabIndex={0}
+            onKeyPress={handleListKeypress}
+            ref={listRef}
+          >
+            {children}
+          </ul>
         </Box>
       )}
     </Wrapper>
   )
 }
 
-export default Dropdown
+const WrappedDropdown = (props) => {
+  return (
+    <DropdownProvider selected={props.value || props.defaultValue}>
+      <InnerDropdown {...props} />
+    </DropdownProvider>
+  )
+}
+
+export default withWrappedInput(WrappedDropdown) as ComponentType<
+  DropdownProps & Omit<WrapperProps, 'maxLen' | 'count'>
+>
+export { Option } from './option'

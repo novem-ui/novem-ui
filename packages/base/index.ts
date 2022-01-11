@@ -1,3 +1,4 @@
+export { getWeightedColorFromBase } from './src/utils/get-color'
 export { default as getBackgroundColor } from './src/get-background-color'
 export { default as getColor } from './src/get-color'
 export { default as solidColorWithHierarchy, SolidColorWithHierarchyProps } from './src/solid-color-with-hierarchy'

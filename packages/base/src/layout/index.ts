@@ -10,6 +10,8 @@ const layout = ({
   right,
   bottom,
   position,
+  maxWidth,
+  maxHeight,
   height,
   width,
   zIndex
@@ -37,6 +39,8 @@ const layout = ({
     ${left && `left: ${getPropertyValue(left)};`}
     ${position && `position: ${position};`}
     ${right && `right: ${getPropertyValue(right)};`}
+    ${maxHeight && `max-height: ${getPropertyValue(maxHeight)};`}
+    ${maxWidth && `max-width: ${getPropertyValue(maxWidth)};`}
     ${top && `top: ${getPropertyValue(top)};`}
     ${width && `width: ${getPropertyValue(width)};`}
     ${zIndex && `z-index: ${zIndex};`}

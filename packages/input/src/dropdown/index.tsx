@@ -2,24 +2,32 @@
 import { ComponentType, FunctionComponent, HTMLProps, KeyboardEventHandler, useEffect, useRef, useState } from 'react'
 import styled from '@emotion/styled'
 
-import { genericInput, getColor } from '@novem-ui/base'
-import { Box, Flex } from '@novem-ui/layout'
-import { BaseColor, ComponentBaseColorProvider, useTheme } from '@novem-ui/theme'
+import { genericInput } from '@novem-ui/base'
+import { Box } from '@novem-ui/layout'
+import { BaseColor, ComponentBaseColorProvider } from '@novem-ui/theme'
 import { Paragraph } from '@novem-ui/text'
-
-import { Up } from '@icon-park/react'
 
 import { nanoid } from 'nanoid'
 
+import css from '@emotion/css'
 import withWrappedInput, { WrapperProps } from '../with-wrapped-input'
 
 import { DropdownProvider, useDropdownState } from './context'
+import Arrow from './arrow'
 
-export type DropdownProps = HTMLProps<HTMLSelectElement> & {
+export type DropdownProps = HTMLProps<HTMLSelectElement> &
+  Omit<WrapperProps, 'maxLen' | 'count' | 'valid'> & {
+    baseColor?: BaseColor
+    disabled?: boolean
+  }
+
+interface StyleWrapperProps {
+  disabled?: boolean
+  error: DropdownProps['error']
   baseColor?: BaseColor
 }
 
-const Wrapper = styled.div`
+const StyleWrapper = styled.div<StyleWrapperProps>`
   align-items: center;
   appearance: none;
   display: flex;
@@ -28,22 +36,28 @@ const Wrapper = styled.div`
   padding-bottom: ${({ theme }) => theme.spacing[2]}rem;
   position: relative;
   user-select: none;
-  ${genericInput};
 
   select {
     display: none;
   }
+
+  ${genericInput};
+  ${({ disabled, theme }) =>
+    disabled &&
+    css`
+      background-color: ${theme.colors.palette.grey['100']};
+      cursor: not-allowed;
+      pointer-events: none;
+    `};
 `
 
 const InnerDropdown: FunctionComponent<DropdownProps> = ({ children, baseColor, className = '', ...props }) => {
   const [isOpen, setIsOpen] = useState(false)
   const [state] = useDropdownState()
   const componentId = useRef(nanoid())
-  const theme = useTheme()
   const selectRef = useRef<HTMLSelectElement>(null)
   const listRef = useRef<HTMLUListElement>(null)
 
-  const color = getColor({ theme, baseColor })
   const selectedOption = state.selected || state.options[0]
 
   const closeDropdown = (event: MouseEvent) => {
@@ -96,7 +110,9 @@ const InnerDropdown: FunctionComponent<DropdownProps> = ({ children, baseColor, 
   // TODO: some events will not be mapped to the input component, fix that
 
   return (
-    <Wrapper
+    <StyleWrapper
+      disabled={props.disabled}
+      error={props.error}
       baseColor={baseColor}
       className={className}
       data-component-id={componentId.current}
@@ -111,23 +127,7 @@ const InnerDropdown: FunctionComponent<DropdownProps> = ({ children, baseColor, 
           </option>
         ))}
       </select>
-      <Flex
-        align="center"
-        position="absolute"
-        right={4}
-        height="100%"
-        display="flex"
-        justify="center"
-        top="0"
-        paddingTop={1}
-        style={{
-          // TODO: make an animation component and remove style prop
-          transition: 'transform .25s ease',
-          transform: isOpen ? '' : 'rotate(180deg)'
-        }}
-      >
-        <Up theme="outline" size="24" fill={color} />
-      </Flex>
+      <Arrow error={props.error} disabled={props.disabled} isOpen={isOpen} />
       <Paragraph>{selectedOption?.children}</Paragraph>
       {children && (
         <Box
@@ -158,7 +158,7 @@ const InnerDropdown: FunctionComponent<DropdownProps> = ({ children, baseColor, 
           </ul>
         </Box>
       )}
-    </Wrapper>
+    </StyleWrapper>
   )
 }
 
@@ -172,7 +172,5 @@ const WrappedDropdown = (props) => {
   )
 }
 
-export default withWrappedInput(WrappedDropdown) as ComponentType<
-  DropdownProps & Omit<WrapperProps, 'maxLen' | 'count'>
->
-export { Option } from './option'
+export default withWrappedInput(WrappedDropdown, true) as ComponentType<DropdownProps>
+export { Option, OptionProps } from './option'

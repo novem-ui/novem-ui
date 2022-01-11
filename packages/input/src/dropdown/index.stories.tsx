@@ -50,3 +50,19 @@ WithHelper.args = {
   helper: 'lorem ipsum',
   baseColor: 'blue'
 }
+
+export const WithError = Template.bind({})
+
+WithError.args = {
+  label: 'Select your option',
+  error: 'lorem ipsum',
+  baseColor: 'blue'
+}
+
+export const Disabled = Template.bind({})
+
+Disabled.args = {
+  label: 'Select your option',
+  disabled: true,
+  baseColor: 'blue'
+}

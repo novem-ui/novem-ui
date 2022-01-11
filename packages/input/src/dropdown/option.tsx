@@ -8,6 +8,11 @@ import { nanoid } from 'nanoid'
 import { useEffect, useRef } from 'react'
 import { useDropdownState } from './context'
 
+export interface OptionProps {
+  value: string | number
+  children: JSX.Element
+}
+
 const OptionStyle = styled.li<{ baseColor?: BaseColor; selected?: Boolean }>`
   height: ${({ theme }) => theme.spacing[12]}rem;
   padding: ${({ theme }) => `${theme.spacing[2]}rem ${theme.spacing[4]}rem`};

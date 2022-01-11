@@ -17,7 +17,7 @@ export interface WrapperProps {
   disabled?: boolean
 }
 
-function withWrappedInput<T = Record<string, any>>(Component: ComponentType<any>) {
+function withWrappedInput<T = Record<string, any>>(Component: ComponentType<any>, noBadge?: boolean) {
   // TODO: Write better typings
   const AdvancedInputWrapper = forwardRef<HTMLInputElement, T & WrapperProps & Record<string, any>>(
     ({ label, maxLength, count, onChange, error, helper, id, valid, disabled, ...props }, ref) => {
@@ -25,8 +25,6 @@ function withWrappedInput<T = Record<string, any>>(Component: ComponentType<any>
       const feedbackBadgeVariant = useMemo(() => {
         const hasError = !!error
         const isValid = !!valid
-
-        console.log(label)
 
         if (hasError) {
           return 'error'
@@ -67,7 +65,7 @@ function withWrappedInput<T = Record<string, any>>(Component: ComponentType<any>
               disabled={disabled}
               onChange={onChangeFunction}
             />
-            {feedbackBadgeVariant && (
+            {!noBadge && feedbackBadgeVariant && (
               <FeedbackBadge variant={feedbackBadgeVariant} position="absolute" top="1.5rem" right="1rem" />
             )}
           </div>

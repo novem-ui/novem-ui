@@ -3,7 +3,7 @@ import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 import { getWeightedColorFromBase } from '@novem-ui/base'
 import { Paragraph } from '@novem-ui/text'
-import { BaseColor } from '@novem-ui/theme'
+import { BaseColor, useComponentBaseColor } from '@novem-ui/theme'
 import { nanoid } from 'nanoid'
 import { useEffect, useRef } from 'react'
 import { useDropdownState } from './context'
@@ -39,6 +39,7 @@ const OptionStyle = styled.li<{ baseColor?: BaseColor; selected?: Boolean }>`
 
 export const Option = ({ children, value }) => {
   const [{ selected }, { selectOption, addOption, removeOption }] = useDropdownState()
+  const baseColor = useComponentBaseColor()
   const componentId = useRef(nanoid())
 
   const isSelected = selected?.value == value
@@ -53,7 +54,7 @@ export const Option = ({ children, value }) => {
   const interactionHandler = () => selectOption({ id: componentId.current, value, children })
 
   return (
-    <OptionStyle onClick={interactionHandler} role="option" selected={isSelected}>
+    <OptionStyle onClick={interactionHandler} role="option" selected={isSelected} baseColor={baseColor}>
       <Paragraph ml={0}>{children}</Paragraph>
     </OptionStyle>
   )

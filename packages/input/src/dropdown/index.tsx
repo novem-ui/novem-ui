@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 
 import { genericInput, getColor } from '@novem-ui/base'
 import { Box, Flex } from '@novem-ui/layout'
-import { BaseColor, useTheme } from '@novem-ui/theme'
+import { BaseColor, ComponentBaseColorProvider, useTheme } from '@novem-ui/theme'
 import { Paragraph } from '@novem-ui/text'
 
 import { Up } from '@icon-park/react'
@@ -165,7 +165,9 @@ const InnerDropdown: FunctionComponent<DropdownProps> = ({ children, baseColor, 
 const WrappedDropdown = (props) => {
   return (
     <DropdownProvider selected={props.value || props.defaultValue}>
-      <InnerDropdown {...props} />
+      <ComponentBaseColorProvider value={props.baseColor}>
+        <InnerDropdown {...props} />
+      </ComponentBaseColorProvider>
     </DropdownProvider>
   )
 }

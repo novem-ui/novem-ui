@@ -1,5 +1,5 @@
 import React, { createContext, FunctionComponent, useContext } from 'react'
-import { BaseColor } from '..'
+import { BaseColor, useTheme } from '..'
 
 export interface ComponentBaseColorProps {
   value: BaseColor
@@ -34,7 +34,10 @@ export const ComponentBaseColorProvider: FunctionComponent<ComponentBaseColorPro
  * ```
  */
 export const useComponentBaseColor = () => {
-  const color = useContext(ComponentBaseColorContext) as BaseColor
+  const componentBaseColor = useContext(ComponentBaseColorContext) as BaseColor
+  const {
+    colors: { base: themeBaseColor }
+  } = useTheme()
 
-  return color
+  return componentBaseColor || themeBaseColor
 }

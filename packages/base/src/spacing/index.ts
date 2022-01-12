@@ -25,7 +25,7 @@ const spacing = ({ theme, ...spacingProps }: { theme?: Theme } & CSSSpacingProps
     const isNumber = typeof value === 'number'
 
     if (isNumber) {
-      return `${theme.spacing[value]}rem`
+      return `${theme.spacing[value as keyof Theme['spacing']]}rem`
     }
 
     return value

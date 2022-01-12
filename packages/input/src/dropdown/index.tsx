@@ -178,9 +178,9 @@ const InnerDropdown: FunctionComponent<DropdownProps> = ({ children, baseColor, 
   )
 }
 
-const WrappedDropdown = (props) => {
+const WrappedDropdown: FunctionComponent<PropsWithRef<DropdownProps>> = (props) => {
   return (
-    <DropdownProvider selected={props.value || props.defaultValue}>
+    <DropdownProvider selected={(props.value || props.defaultValue) as string}>
       <ComponentBaseColorProvider value={props.baseColor}>
         <InnerDropdown {...props} />
       </ComponentBaseColorProvider>

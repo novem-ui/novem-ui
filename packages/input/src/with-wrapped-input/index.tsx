@@ -89,7 +89,7 @@ function withWrappedInput<T = Record<string, any>>(Component: ComponentType<any>
 
   AdvancedInputWrapper.displayName = Component.displayName
 
-  return AdvancedInputWrapper as ComponentType<T & WrapperProps>
+  return (AdvancedInputWrapper as undefined) as ComponentType<T & WrapperProps>
 }
 
 export default withWrappedInput

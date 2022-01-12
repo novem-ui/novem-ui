@@ -2,14 +2,20 @@ import { Up } from '@icon-park/react'
 import { getWeightedColorFromBase } from '@novem-ui/base'
 import { Flex } from '@novem-ui/layout'
 import { useComponentBaseColor, useTheme } from '@novem-ui/theme'
-import React from 'react'
+import React, { VoidFunctionComponent } from 'react'
 
-const Arrow = ({ isOpen, disabled, error }) => {
+export interface ArrowProps {
+  isOpen: boolean
+  disabled?: boolean
+  error?: boolean | string | Error
+}
+
+const Arrow: VoidFunctionComponent<ArrowProps> = ({ isOpen, disabled, error }) => {
   const theme = useTheme()
   const baseColor = useComponentBaseColor()
   const color = getWeightedColorFromBase({ theme, baseColor, weight: '500' })
 
-  const getArrowColor = ({ error, disabled, isOpen }) => {
+  const getArrowColor = ({ error, disabled, isOpen }: ArrowProps) => {
     if (disabled) {
       return theme.colors.palette.grey['500']
     }
@@ -20,6 +26,8 @@ const Arrow = ({ isOpen, disabled, error }) => {
 
     return color
   }
+
+  const fill = getArrowColor({ error, disabled, isOpen })
 
   return (
     <Flex
@@ -37,7 +45,7 @@ const Arrow = ({ isOpen, disabled, error }) => {
         transform: isOpen ? '' : 'rotate(180deg)'
       }}
     >
-      <Up theme="outline" size="24" fill={getArrowColor({ error, disabled, isOpen })} />
+      <Up theme="outline" size="24" fill={fill} />
     </Flex>
   )
 }

@@ -5,15 +5,20 @@ import { getWeightedColorFromBase } from '@novem-ui/base'
 import { Paragraph } from '@novem-ui/text'
 import { BaseColor, useComponentBaseColor } from '@novem-ui/theme'
 import { nanoid } from 'nanoid'
-import React, { useEffect, useRef } from 'react'
+import React, { FunctionComponent, useEffect, useRef } from 'react'
 import { useDropdownState } from './context'
+
+interface OptionStyleProps {
+  baseColor?: BaseColor
+  selected?: Boolean
+}
 
 export interface OptionProps {
   value: string | number
   children: JSX.Element
 }
 
-const OptionStyle = styled.li<{ baseColor?: BaseColor; selected?: Boolean }>`
+const OptionStyle = styled.li<OptionStyleProps>`
   height: ${({ theme }) => theme.spacing[12]}rem;
   padding: ${({ theme }) => `${theme.spacing[2]}rem ${theme.spacing[4]}rem`};
   box-sizing: border-box;
@@ -42,7 +47,7 @@ const OptionStyle = styled.li<{ baseColor?: BaseColor; selected?: Boolean }>`
     `}
 `
 
-export const Option = ({ children, value }) => {
+export const Option: FunctionComponent<OptionProps> = ({ children, value }) => {
   const [{ selected }, { selectOption, addOption, removeOption }] = useDropdownState()
   const baseColor = useComponentBaseColor()
   const componentId = useRef(nanoid())

@@ -17,19 +17,13 @@ const layout = ({
   zIndex
 }: LayoutProps & { theme: Theme }) => {
   const getPropertyValue = (value: SpacingPropValue) => {
-    const isString = typeof value === 'string'
-
-    if (isString) {
-      return value
-    }
-
     const isNumber = typeof value === 'number'
 
     if (isNumber) {
       return `${theme.spacing[value]}rem`
     }
 
-    throw new TypeError(`value argument expected a number or a value expressed in CSS units but got ${value} instead`)
+    return value
   }
 
   const style = css`

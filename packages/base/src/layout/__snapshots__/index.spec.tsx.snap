@@ -11,8 +11,11 @@ exports[`layout should create a css fragment with the mapped props (including al
   left: 10px;
   position: relative;
   right: 10px;
+  max-height: 50px;
+  max-width: 100px;
   top: 10px;
   width: 10px;
+  z-index: 10;
 }
 
 <div>

@@ -1,5 +1,5 @@
 /* eslint-disable eqeqeq */
-import { createContext, FunctionComponent, useContext, useEffect, useReducer, useRef } from 'react'
+import React, { createContext, FunctionComponent, useContext, useEffect, useReducer, useRef } from 'react'
 import compare from 'react-fast-compare'
 import dropdownReducer, { DropdownActions, DropdownProviderState, Option } from './reducer'
 

@@ -5,7 +5,7 @@ import { getWeightedColorFromBase } from '@novem-ui/base'
 import { Paragraph } from '@novem-ui/text'
 import { BaseColor, useComponentBaseColor } from '@novem-ui/theme'
 import { nanoid } from 'nanoid'
-import { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useDropdownState } from './context'
 
 export interface OptionProps {
@@ -51,6 +51,7 @@ export const Option = ({ children, value }) => {
 
   useEffect(() => {
     addOption({ id: componentId.current, value, children })
+
     return () => {
       removeOption(componentId.current)
     }

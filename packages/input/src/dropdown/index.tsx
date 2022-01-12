@@ -1,5 +1,14 @@
 /* eslint-disable eqeqeq */
-import { ComponentType, FunctionComponent, HTMLProps, KeyboardEventHandler, useEffect, useRef, useState } from 'react'
+import React, {
+  ComponentType,
+  FunctionComponent,
+  HTMLProps,
+  KeyboardEventHandler,
+  PropsWithRef,
+  useEffect,
+  useRef,
+  useState
+} from 'react'
 import styled from '@emotion/styled'
 
 import { genericInput } from '@novem-ui/base'
@@ -16,15 +25,16 @@ import { DropdownProvider, useDropdownState } from './context'
 import Arrow from './arrow'
 
 export type DropdownProps = HTMLProps<HTMLSelectElement> &
-  Omit<WrapperProps, 'maxLen' | 'count' | 'valid'> & {
+  Omit<WrapperProps, 'maxLenght' | 'count' | 'valid'> & {
     baseColor?: BaseColor
     disabled?: boolean
   }
 
 interface StyleWrapperProps {
   disabled?: boolean
-  error: DropdownProps['error']
+  error?: DropdownProps['error']
   baseColor?: BaseColor
+  isOpen: boolean
 }
 
 const StyleWrapper = styled.div<StyleWrapperProps>`
@@ -72,9 +82,11 @@ const InnerDropdown: FunctionComponent<DropdownProps> = ({ children, baseColor, 
     setIsOpen(!isOpen)
   }
 
+  /* istanbul ignore next */
   const handleSelectKeypress: KeyboardEventHandler = (event) => {
     event.preventDefault()
     const shouldOpen = ['Enter', 'Space'].includes(event.code) && !isOpen
+    console.log({ event })
 
     if (shouldOpen) {
       setIsOpen(true)
@@ -82,6 +94,7 @@ const InnerDropdown: FunctionComponent<DropdownProps> = ({ children, baseColor, 
     }
   }
 
+  /* istanbul ignore next */
   const handleListKeypress: KeyboardEventHandler = (event) => {
     const shouldClose = event.code == 'Escape' && isOpen
 
@@ -100,6 +113,7 @@ const InnerDropdown: FunctionComponent<DropdownProps> = ({ children, baseColor, 
   }, [])
 
   useEffect(() => {
+    /* istanbul ignore next */
     if (selectRef.current) {
       const changeEvent = new Event('change', { bubbles: true })
       selectRef.current.dispatchEvent(changeEvent)
@@ -118,7 +132,9 @@ const InnerDropdown: FunctionComponent<DropdownProps> = ({ children, baseColor, 
       data-component-id={componentId.current}
       onClick={toggleDropdown}
       onKeyPress={handleSelectKeypress}
+      isOpen={isOpen}
       tabIndex={0}
+      role="dropdown"
     >
       <select ref={selectRef} {...props}>
         {state.options.map((option) => (
@@ -128,7 +144,7 @@ const InnerDropdown: FunctionComponent<DropdownProps> = ({ children, baseColor, 
         ))}
       </select>
       <Arrow error={props.error} disabled={props.disabled} isOpen={isOpen} />
-      <Paragraph>{selectedOption?.children}</Paragraph>
+      <Paragraph data-novem-type="dropdown-value-text">{selectedOption?.children}</Paragraph>
       {children && (
         <Box
           backgroundColor="#fefdfd"
@@ -172,5 +188,5 @@ const WrappedDropdown = (props) => {
   )
 }
 
-export default withWrappedInput(WrappedDropdown, true) as ComponentType<DropdownProps>
+export default withWrappedInput(WrappedDropdown, true) as ComponentType<PropsWithRef<DropdownProps>>
 export { Option, OptionProps } from './option'

@@ -9,12 +9,12 @@ const Arrow = ({ isOpen, disabled, error }) => {
   const baseColor = useComponentBaseColor()
   const color = getWeightedColorFromBase({ theme, baseColor, weight: '500' })
 
-  const getArrowColor = ({ error, disabled }) => {
+  const getArrowColor = ({ error, disabled, isOpen }) => {
     if (disabled) {
       return theme.colors.palette.grey['500']
     }
 
-    if (error) {
+    if (!isOpen && error) {
       return theme.colors.palette.red['500']
     }
 
@@ -37,7 +37,7 @@ const Arrow = ({ isOpen, disabled, error }) => {
         transform: isOpen ? '' : 'rotate(180deg)'
       }}
     >
-      <Up theme="outline" size="24" fill={getArrowColor({ error, disabled })} />
+      <Up theme="outline" size="24" fill={getArrowColor({ error, disabled, isOpen })} />
     </Flex>
   )
 }

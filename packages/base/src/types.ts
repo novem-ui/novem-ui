@@ -87,6 +87,7 @@ export interface InputElementProps {
   valid?: boolean
   disabled?: boolean
   readOnly?: boolean
+  isOpen?: boolean // dropdown specific
 }
 
 // Layout

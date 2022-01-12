@@ -2,6 +2,7 @@
 
 exports[`<Box /> should match snapshot (default) 1`] = `
 .emotion-0 {
+  box-sizing: border-box;
   border: 1px solid;
   border-color: #9f1313;
   display: block;

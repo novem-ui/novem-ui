@@ -1,0 +1,2063 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`input/dropdown should render a Dropdown 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid rgba(0, 0, 0, .25);
+  border-radius: 1rem;
+  box-sizing: border-box;
+  height: 3rem;
+  font-size: 16px;
+  padding: 1rem;
+  -webkit-transition: border ease-in 0.25s;
+  transition: border ease-in 0.25s;
+}
+
+.emotion-2 select {
+  display: none;
+}
+
+.emotion-2:focus,
+.emotion-2:hover {
+  outline: unset;
+  border-color: #F1694B;
+  box-shadow: 0 2px 4px 0 rgba(241,105,75,0.15);
+}
+
+.emotion-2:disabled {
+  pointer-events: none;
+  background-color: rgba(154,152,151,0.15);
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  padding-top: 0.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-6 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-color: #fefdfd;
+  display: none;
+  left: 0;
+  position: absolute;
+  max-height: 9rem;
+  top: 3.5rem;
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.emotion-10 {
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-10:hover {
+  background-color: rgba(241,105,75,0.0333);
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    value="Default value"
+  >
+    <div
+      style="position: relative; display: flex; width: 100%;"
+    >
+      <div
+        class=" emotion-2 emotion-3"
+        data-component-id="mocked-id"
+        role="dropdown"
+        tabindex="0"
+      >
+        <select>
+          <option
+            value="1"
+          >
+            Opt 1
+          </option>
+          <option
+            value="2"
+          >
+            Opt 2
+          </option>
+        </select>
+        <div
+          class="emotion-4 emotion-5"
+          display="flex"
+          height="100%"
+          style="transition: transform .25s ease; transform: rotate(180deg);"
+        >
+          <span
+            class="i-icon i-icon-up"
+          >
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 48 48"
+              width="24"
+            >
+              <path
+                d="M13 30L25 18L37 30"
+                stroke="#F1694B"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="4"
+              />
+            </svg>
+          </span>
+        </div>
+        <p
+          class="emotion-6 emotion-7"
+          data-novem-type="dropdown-value-text"
+        >
+          Opt 1
+        </p>
+        <div
+          class="emotion-8 emotion-9"
+          display="none"
+          style="overflow: hidden; overflow-y: scroll;"
+          width="100%"
+        >
+          <ul
+            role="listbox"
+            style="list-style: none; margin: 0px; padding: 0px;"
+            tabindex="0"
+          >
+            <li
+              class="emotion-10 emotion-11"
+              role="option"
+            >
+              <p
+                class="emotion-6 emotion-7"
+              >
+                Opt 1
+              </p>
+            </li>
+            <li
+              class="emotion-10 emotion-11"
+              role="option"
+            >
+              <p
+                class="emotion-6 emotion-7"
+              >
+                Opt 2
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`input/dropdown should render a Dropdown with a helper 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid rgba(0, 0, 0, .25);
+  border-radius: 1rem;
+  box-sizing: border-box;
+  height: 3rem;
+  font-size: 16px;
+  padding: 1rem;
+  -webkit-transition: border ease-in 0.25s;
+  transition: border ease-in 0.25s;
+}
+
+.emotion-2 select {
+  display: none;
+}
+
+.emotion-2:focus,
+.emotion-2:hover {
+  outline: unset;
+  border-color: #F1694B;
+  box-shadow: 0 2px 4px 0 rgba(241,105,75,0.15);
+}
+
+.emotion-2:disabled {
+  pointer-events: none;
+  background-color: rgba(154,152,151,0.15);
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  padding-top: 0.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-6 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-color: #fefdfd;
+  display: none;
+  left: 0;
+  position: absolute;
+  max-height: 9rem;
+  top: 3.5rem;
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.emotion-10 {
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-10:hover {
+  background-color: rgba(241,105,75,0.0333);
+}
+
+.emotion-18 {
+  color: rgba(154,152,151,0.85);
+  font-size: 12px;
+  margin: 0;
+  margin-left: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    value="value"
+  >
+    <div
+      style="position: relative; display: flex; width: 100%;"
+    >
+      <div
+        class=" emotion-2 emotion-3"
+        data-component-id="mocked-id"
+        role="dropdown"
+        tabindex="0"
+      >
+        <select>
+          <option
+            value="1"
+          >
+            Opt 1
+          </option>
+          <option
+            value="2"
+          >
+            Opt 2
+          </option>
+        </select>
+        <div
+          class="emotion-4 emotion-5"
+          display="flex"
+          height="100%"
+          style="transition: transform .25s ease; transform: rotate(180deg);"
+        >
+          <span
+            class="i-icon i-icon-up"
+          >
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 48 48"
+              width="24"
+            >
+              <path
+                d="M13 30L25 18L37 30"
+                stroke="#F1694B"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="4"
+              />
+            </svg>
+          </span>
+        </div>
+        <p
+          class="emotion-6 emotion-7"
+          data-novem-type="dropdown-value-text"
+        >
+          Opt 1
+        </p>
+        <div
+          class="emotion-8 emotion-9"
+          display="none"
+          style="overflow: hidden; overflow-y: scroll;"
+          width="100%"
+        >
+          <ul
+            role="listbox"
+            style="list-style: none; margin: 0px; padding: 0px;"
+            tabindex="0"
+          >
+            <li
+              class="emotion-10 emotion-11"
+              role="option"
+            >
+              <p
+                class="emotion-6 emotion-7"
+              >
+                Opt 1
+              </p>
+            </li>
+            <li
+              class="emotion-10 emotion-11"
+              role="option"
+            >
+              <p
+                class="emotion-6 emotion-7"
+              >
+                Opt 2
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      style="display: flex;"
+    >
+      <div
+        style="flex: 1;"
+      >
+        <p
+          class="emotion-18 emotion-7"
+          color="grey.400"
+        >
+          This is a helper text
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`input/dropdown should render a Dropdown with an error message (from error object) 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid rgba(0, 0, 0, .25);
+  border-radius: 1rem;
+  border-color: #EB5757;
+  box-sizing: border-box;
+  height: 3rem;
+  font-size: 16px;
+  padding: 1rem;
+  -webkit-transition: border ease-in 0.25s;
+  transition: border ease-in 0.25s;
+}
+
+.emotion-2 select {
+  display: none;
+}
+
+.emotion-2:focus,
+.emotion-2:hover {
+  outline: unset;
+  border-color: #F1694B;
+  border-color: #EB5757;
+  box-shadow: 0 2px 4px 0 rgba(241,105,75,0.15);
+  box-shadow: 0 2px 4px 0 rgba(235,87,87,0.15);
+}
+
+.emotion-2:disabled {
+  pointer-events: none;
+  background-color: rgba(154,152,151,0.15);
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  padding-top: 0.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-6 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-color: #fefdfd;
+  display: none;
+  left: 0;
+  position: absolute;
+  max-height: 9rem;
+  top: 3.5rem;
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.emotion-10 {
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-10:hover {
+  background-color: rgba(241,105,75,0.0333);
+}
+
+.emotion-18 {
+  color: #EB5757;
+  font-size: 12px;
+  margin: 0;
+  margin-left: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    value="value"
+  >
+    <div
+      style="position: relative; display: flex; width: 100%;"
+    >
+      <div
+        class=" emotion-2 emotion-3"
+        data-component-id="mocked-id"
+        role="dropdown"
+        tabindex="0"
+      >
+        <select
+          error="Error: This is an error message"
+        >
+          <option
+            value="1"
+          >
+            Opt 1
+          </option>
+          <option
+            value="2"
+          >
+            Opt 2
+          </option>
+        </select>
+        <div
+          class="emotion-4 emotion-5"
+          display="flex"
+          height="100%"
+          style="transition: transform .25s ease; transform: rotate(180deg);"
+        >
+          <span
+            class="i-icon i-icon-up"
+          >
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 48 48"
+              width="24"
+            >
+              <path
+                d="M13 30L25 18L37 30"
+                stroke="#EB5757"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="4"
+              />
+            </svg>
+          </span>
+        </div>
+        <p
+          class="emotion-6 emotion-7"
+          data-novem-type="dropdown-value-text"
+        >
+          Opt 1
+        </p>
+        <div
+          class="emotion-8 emotion-9"
+          display="none"
+          style="overflow: hidden; overflow-y: scroll;"
+          width="100%"
+        >
+          <ul
+            role="listbox"
+            style="list-style: none; margin: 0px; padding: 0px;"
+            tabindex="0"
+          >
+            <li
+              class="emotion-10 emotion-11"
+              role="option"
+            >
+              <p
+                class="emotion-6 emotion-7"
+              >
+                Opt 1
+              </p>
+            </li>
+            <li
+              class="emotion-10 emotion-11"
+              role="option"
+            >
+              <p
+                class="emotion-6 emotion-7"
+              >
+                Opt 2
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      style="display: flex;"
+    >
+      <div
+        style="flex: 1;"
+      >
+        <p
+          class="emotion-18 emotion-7"
+          color="red.500"
+        >
+          This is an error message
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`input/dropdown should render a Dropdown with an error message (from string) 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid rgba(0, 0, 0, .25);
+  border-radius: 1rem;
+  border-color: #EB5757;
+  box-sizing: border-box;
+  height: 3rem;
+  font-size: 16px;
+  padding: 1rem;
+  -webkit-transition: border ease-in 0.25s;
+  transition: border ease-in 0.25s;
+}
+
+.emotion-2 select {
+  display: none;
+}
+
+.emotion-2:focus,
+.emotion-2:hover {
+  outline: unset;
+  border-color: #F1694B;
+  border-color: #EB5757;
+  box-shadow: 0 2px 4px 0 rgba(241,105,75,0.15);
+  box-shadow: 0 2px 4px 0 rgba(235,87,87,0.15);
+}
+
+.emotion-2:disabled {
+  pointer-events: none;
+  background-color: rgba(154,152,151,0.15);
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  padding-top: 0.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-6 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-color: #fefdfd;
+  display: none;
+  left: 0;
+  position: absolute;
+  max-height: 9rem;
+  top: 3.5rem;
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.emotion-10 {
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-10:hover {
+  background-color: rgba(241,105,75,0.0333);
+}
+
+.emotion-18 {
+  color: #EB5757;
+  font-size: 12px;
+  margin: 0;
+  margin-left: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    value="value"
+  >
+    <div
+      style="position: relative; display: flex; width: 100%;"
+    >
+      <div
+        class=" emotion-2 emotion-3"
+        data-component-id="mocked-id"
+        role="dropdown"
+        tabindex="0"
+      >
+        <select
+          error="This is an error message"
+        >
+          <option
+            value="1"
+          >
+            Opt 1
+          </option>
+          <option
+            value="2"
+          >
+            Opt 2
+          </option>
+        </select>
+        <div
+          class="emotion-4 emotion-5"
+          display="flex"
+          height="100%"
+          style="transition: transform .25s ease; transform: rotate(180deg);"
+        >
+          <span
+            class="i-icon i-icon-up"
+          >
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 48 48"
+              width="24"
+            >
+              <path
+                d="M13 30L25 18L37 30"
+                stroke="#EB5757"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="4"
+              />
+            </svg>
+          </span>
+        </div>
+        <p
+          class="emotion-6 emotion-7"
+          data-novem-type="dropdown-value-text"
+        >
+          Opt 1
+        </p>
+        <div
+          class="emotion-8 emotion-9"
+          display="none"
+          style="overflow: hidden; overflow-y: scroll;"
+          width="100%"
+        >
+          <ul
+            role="listbox"
+            style="list-style: none; margin: 0px; padding: 0px;"
+            tabindex="0"
+          >
+            <li
+              class="emotion-10 emotion-11"
+              role="option"
+            >
+              <p
+                class="emotion-6 emotion-7"
+              >
+                Opt 1
+              </p>
+            </li>
+            <li
+              class="emotion-10 emotion-11"
+              role="option"
+            >
+              <p
+                class="emotion-6 emotion-7"
+              >
+                Opt 2
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      style="display: flex;"
+    >
+      <div
+        style="flex: 1;"
+      >
+        <p
+          class="emotion-18 emotion-7"
+          color="red.500"
+        >
+          This is an error message
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`input/dropdown should render a Dropdown with error 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid rgba(0, 0, 0, .25);
+  border-radius: 1rem;
+  border-color: #EB5757;
+  box-sizing: border-box;
+  height: 3rem;
+  font-size: 16px;
+  padding: 1rem;
+  -webkit-transition: border ease-in 0.25s;
+  transition: border ease-in 0.25s;
+}
+
+.emotion-2 select {
+  display: none;
+}
+
+.emotion-2:focus,
+.emotion-2:hover {
+  outline: unset;
+  border-color: #F1694B;
+  border-color: #EB5757;
+  box-shadow: 0 2px 4px 0 rgba(241,105,75,0.15);
+  box-shadow: 0 2px 4px 0 rgba(235,87,87,0.15);
+}
+
+.emotion-2:disabled {
+  pointer-events: none;
+  background-color: rgba(154,152,151,0.15);
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  padding-top: 0.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-6 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-color: #fefdfd;
+  display: none;
+  left: 0;
+  position: absolute;
+  max-height: 9rem;
+  top: 3.5rem;
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.emotion-10 {
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-10:hover {
+  background-color: rgba(241,105,75,0.0333);
+}
+
+.emotion-18 {
+  color: #EB5757;
+  font-size: 12px;
+  margin: 0;
+  margin-left: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    value="Default value"
+  >
+    <div
+      style="position: relative; display: flex; width: 100%;"
+    >
+      <div
+        class=" emotion-2 emotion-3"
+        data-component-id="mocked-id"
+        role="dropdown"
+        tabindex="0"
+      >
+        <select
+          error="Error: error message"
+        >
+          <option
+            value="1"
+          >
+            Opt 1
+          </option>
+          <option
+            value="2"
+          >
+            Opt 2
+          </option>
+        </select>
+        <div
+          class="emotion-4 emotion-5"
+          display="flex"
+          height="100%"
+          style="transition: transform .25s ease; transform: rotate(180deg);"
+        >
+          <span
+            class="i-icon i-icon-up"
+          >
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 48 48"
+              width="24"
+            >
+              <path
+                d="M13 30L25 18L37 30"
+                stroke="#EB5757"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="4"
+              />
+            </svg>
+          </span>
+        </div>
+        <p
+          class="emotion-6 emotion-7"
+          data-novem-type="dropdown-value-text"
+        >
+          Opt 1
+        </p>
+        <div
+          class="emotion-8 emotion-9"
+          display="none"
+          style="overflow: hidden; overflow-y: scroll;"
+          width="100%"
+        >
+          <ul
+            role="listbox"
+            style="list-style: none; margin: 0px; padding: 0px;"
+            tabindex="0"
+          >
+            <li
+              class="emotion-10 emotion-11"
+              role="option"
+            >
+              <p
+                class="emotion-6 emotion-7"
+              >
+                Opt 1
+              </p>
+            </li>
+            <li
+              class="emotion-10 emotion-11"
+              role="option"
+            >
+              <p
+                class="emotion-6 emotion-7"
+              >
+                Opt 2
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      style="display: flex;"
+    >
+      <div
+        style="flex: 1;"
+      >
+        <p
+          class="emotion-18 emotion-7"
+          color="red.500"
+        >
+          error message
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`input/dropdown should render a Dropdown with label 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  font-size: 12px;
+  margin: 0;
+  margin-left: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.emotion-4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid rgba(0, 0, 0, .25);
+  border-radius: 1rem;
+  box-sizing: border-box;
+  height: 3rem;
+  font-size: 16px;
+  padding: 1rem;
+  -webkit-transition: border ease-in 0.25s;
+  transition: border ease-in 0.25s;
+}
+
+.emotion-4 select {
+  display: none;
+}
+
+.emotion-4:focus,
+.emotion-4:hover {
+  outline: unset;
+  border-color: #F1694B;
+  box-shadow: 0 2px 4px 0 rgba(241,105,75,0.15);
+}
+
+.emotion-4:disabled {
+  pointer-events: none;
+  background-color: rgba(154,152,151,0.15);
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  padding-top: 0.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-8 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-color: #fefdfd;
+  display: none;
+  left: 0;
+  position: absolute;
+  max-height: 9rem;
+  top: 3.5rem;
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.emotion-12 {
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-12:hover {
+  background-color: rgba(241,105,75,0.0333);
+}
+
+.emotion-16 {
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-16:hover {
+  background-color: rgba(241,105,75,0.0333);
+}
+
+.emotion-16:after {
+  position: absolute;
+  content: '';
+  background-color: #F1694B;
+  border-radius: 100%;
+  height: 0.25rem;
+  width: 0.25rem;
+  left: 0.5rem;
+  -webkit-transform: translateX(-25%);
+  -moz-transform: translateX(-25%);
+  -ms-transform: translateX(-25%);
+  transform: translateX(-25%);
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    value="2"
+  >
+    <label
+      class="emotion-2 emotion-3"
+      style="display: block;"
+    >
+      Dropdown Label
+    </label>
+    <div
+      style="position: relative; display: flex; width: 100%;"
+    >
+      <div
+        class=" emotion-4 emotion-5"
+        data-component-id="mocked-id"
+        role="dropdown"
+        tabindex="0"
+      >
+        <select>
+          <option
+            value="1"
+          >
+            Opt 1
+          </option>
+          <option
+            value="2"
+          >
+            Opt 2
+          </option>
+        </select>
+        <div
+          class="emotion-6 emotion-7"
+          display="flex"
+          height="100%"
+          style="transition: transform .25s ease; transform: rotate(180deg);"
+        >
+          <span
+            class="i-icon i-icon-up"
+          >
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 48 48"
+              width="24"
+            >
+              <path
+                d="M13 30L25 18L37 30"
+                stroke="#F1694B"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="4"
+              />
+            </svg>
+          </span>
+        </div>
+        <p
+          class="emotion-8 emotion-9"
+          data-novem-type="dropdown-value-text"
+        >
+          Opt 2
+        </p>
+        <div
+          class="emotion-10 emotion-11"
+          display="none"
+          style="overflow: hidden; overflow-y: scroll;"
+          width="100%"
+        >
+          <ul
+            role="listbox"
+            style="list-style: none; margin: 0px; padding: 0px;"
+            tabindex="0"
+          >
+            <li
+              class="emotion-12 emotion-13"
+              role="option"
+            >
+              <p
+                class="emotion-8 emotion-9"
+              >
+                Opt 1
+              </p>
+            </li>
+            <li
+              class="emotion-16 emotion-13"
+              role="option"
+            >
+              <p
+                class="emotion-8 emotion-9"
+              >
+                Opt 2
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`input/dropdown should render a Dropdown without children 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid rgba(0, 0, 0, .25);
+  border-radius: 1rem;
+  box-sizing: border-box;
+  height: 3rem;
+  font-size: 16px;
+  padding: 1rem;
+  -webkit-transition: border ease-in 0.25s;
+  transition: border ease-in 0.25s;
+}
+
+.emotion-2 select {
+  display: none;
+}
+
+.emotion-2:focus,
+.emotion-2:hover {
+  outline: unset;
+  border-color: #F1694B;
+  box-shadow: 0 2px 4px 0 rgba(241,105,75,0.15);
+}
+
+.emotion-2:disabled {
+  pointer-events: none;
+  background-color: rgba(154,152,151,0.15);
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  padding-top: 0.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-6 {
+  font-size: 16px;
+  margin: 0;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    value="Default value"
+  >
+    <div
+      style="position: relative; display: flex; width: 100%;"
+    >
+      <div
+        class=" emotion-2 emotion-3"
+        data-component-id="mocked-id"
+        role="dropdown"
+        tabindex="0"
+      >
+        <select />
+        <div
+          class="emotion-4 emotion-5"
+          display="flex"
+          height="100%"
+          style="transition: transform .25s ease; transform: rotate(180deg);"
+        >
+          <span
+            class="i-icon i-icon-up"
+          >
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 48 48"
+              width="24"
+            >
+              <path
+                d="M13 30L25 18L37 30"
+                stroke="#F1694B"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="4"
+              />
+            </svg>
+          </span>
+        </div>
+        <p
+          class="emotion-6 emotion-7"
+          data-novem-type="dropdown-value-text"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`input/dropdown should render a disabled Dropdown 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid rgba(0, 0, 0, .25);
+  border-radius: 1rem;
+  box-sizing: border-box;
+  height: 3rem;
+  font-size: 16px;
+  padding: 1rem;
+  -webkit-transition: border ease-in 0.25s;
+  transition: border ease-in 0.25s;
+  background-color: rgba(154,152,151,0.15);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.emotion-2 select {
+  display: none;
+}
+
+.emotion-2:focus,
+.emotion-2:hover {
+  outline: unset;
+  border-color: #F1694B;
+  box-shadow: 0 2px 4px 0 rgba(241,105,75,0.15);
+}
+
+.emotion-2:disabled {
+  pointer-events: none;
+  background-color: rgba(154,152,151,0.15);
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  padding-top: 0.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-6 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-color: #fefdfd;
+  display: none;
+  left: 0;
+  position: absolute;
+  max-height: 9rem;
+  top: 3.5rem;
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.emotion-10 {
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-10:hover {
+  background-color: rgba(241,105,75,0.0333);
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    value="value"
+  >
+    <div
+      style="position: relative; display: flex; width: 100%;"
+    >
+      <div
+        class=" emotion-2 emotion-3"
+        data-component-id="mocked-id"
+        disabled=""
+        role="dropdown"
+        tabindex="0"
+      >
+        <select
+          disabled=""
+        >
+          <option
+            value="1"
+          >
+            Opt 1
+          </option>
+          <option
+            value="2"
+          >
+            Opt 2
+          </option>
+        </select>
+        <div
+          class="emotion-4 emotion-5"
+          display="flex"
+          height="100%"
+          style="transition: transform .25s ease; transform: rotate(180deg);"
+        >
+          <span
+            class="i-icon i-icon-up"
+          >
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 48 48"
+              width="24"
+            >
+              <path
+                d="M13 30L25 18L37 30"
+                stroke="#9A9897"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="4"
+              />
+            </svg>
+          </span>
+        </div>
+        <p
+          class="emotion-6 emotion-7"
+          data-novem-type="dropdown-value-text"
+        >
+          Opt 1
+        </p>
+        <div
+          class="emotion-8 emotion-9"
+          display="none"
+          style="overflow: hidden; overflow-y: scroll;"
+          width="100%"
+        >
+          <ul
+            role="listbox"
+            style="list-style: none; margin: 0px; padding: 0px;"
+            tabindex="0"
+          >
+            <li
+              class="emotion-10 emotion-11"
+              role="option"
+            >
+              <p
+                class="emotion-6 emotion-7"
+              >
+                Opt 1
+              </p>
+            </li>
+            <li
+              class="emotion-10 emotion-11"
+              role="option"
+            >
+              <p
+                class="emotion-6 emotion-7"
+              >
+                Opt 2
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`input/dropdown should render an open dropdown 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid rgba(0, 0, 0, .25);
+  border-radius: 1rem;
+  box-sizing: border-box;
+  height: 3rem;
+  font-size: 16px;
+  padding: 1rem;
+  -webkit-transition: border ease-in 0.25s;
+  transition: border ease-in 0.25s;
+  background-color: rgba(154,152,151,0.15);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.emotion-2 select {
+  display: none;
+}
+
+.emotion-2:focus,
+.emotion-2:hover {
+  outline: unset;
+  border-color: #F1694B;
+  box-shadow: 0 2px 4px 0 rgba(241,105,75,0.15);
+}
+
+.emotion-2:disabled {
+  pointer-events: none;
+  background-color: rgba(154,152,151,0.15);
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  padding-top: 0.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-6 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background-color: #fefdfd;
+  display: block;
+  left: 0;
+  position: absolute;
+  max-height: 9rem;
+  top: 3.5rem;
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.emotion-10 {
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-10:hover {
+  background-color: rgba(241,105,75,0.0333);
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      style="position: relative; display: flex; width: 100%;"
+    >
+      <div
+        class=" emotion-2 emotion-3"
+        data-component-id="mocked-id"
+        disabled=""
+        role="dropdown"
+        tabindex="0"
+      >
+        <select
+          disabled=""
+        >
+          <option
+            value="1"
+          >
+            Opt 1
+          </option>
+          <option
+            value="2"
+          >
+            Opt 2
+          </option>
+        </select>
+        <div
+          class="emotion-4 emotion-5"
+          display="flex"
+          height="100%"
+          style="transition: transform .25s ease;"
+        >
+          <span
+            class="i-icon i-icon-up"
+          >
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 48 48"
+              width="24"
+            >
+              <path
+                d="M13 30L25 18L37 30"
+                stroke="#9A9897"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="4"
+              />
+            </svg>
+          </span>
+        </div>
+        <p
+          class="emotion-6 emotion-7"
+          data-novem-type="dropdown-value-text"
+        >
+          Opt 1
+        </p>
+        <div
+          class="emotion-8 emotion-9"
+          display="block"
+          style="overflow: hidden; overflow-y: scroll;"
+          width="100%"
+        >
+          <ul
+            role="listbox"
+            style="list-style: none; margin: 0px; padding: 0px;"
+            tabindex="0"
+          >
+            <li
+              class="emotion-10 emotion-11"
+              role="option"
+            >
+              <p
+                class="emotion-6 emotion-7"
+              >
+                Opt 1
+              </p>
+            </li>
+            <li
+              class="emotion-10 emotion-11"
+              role="option"
+            >
+              <p
+                class="emotion-6 emotion-7"
+              >
+                Opt 2
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

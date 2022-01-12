@@ -9,7 +9,7 @@ const darken = (weight: number, color: string) => pDarken(map(weight, 600, 900, 
 
 const createColorMap = (color: string) => {
   const colors: Partial<WeightedColor> = { '500': color }
-  const ligtherColors: WeightedColorKey[] = ['100', '200', '300', '400']
+  const ligtherColors: WeightedColorKey[] = ['50', '100', '200', '300', '400']
   const darkerColors: WeightedColorKey[] = ['600', '700', '800', '900']
 
   for (const lighterColorWeight of ligtherColors) {

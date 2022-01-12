@@ -1,3 +1,4 @@
+export { getWeightedColorFromBase } from './src/utils/get-color'
 export { default as getBackgroundColor } from './src/get-background-color'
 export { default as getColor } from './src/get-color'
 export { default as solidColorWithHierarchy, SolidColorWithHierarchyProps } from './src/solid-color-with-hierarchy'
@@ -9,7 +10,7 @@ export { default as background } from './src/background'
 export { default as flex } from './src/flex'
 export { default as separateSpacingProps } from './src/spacing/separate-props'
 export { default as typography } from './src/typography'
-export { default as inputElement } from './src/input-element'
+export { default as inputElement, genericInput } from './src/input-element'
 export { default as iconProps } from './src/icon-props'
 export { default as shadows, ShadowProps } from './src/shadows'
 

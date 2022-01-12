@@ -26,7 +26,10 @@ describe('layout', () => {
       position: 'relative',
       display: 'flex',
       width: '10px',
-      height: '10px'
+      height: '10px',
+      maxWidth: '100px',
+      maxHeight: '50px',
+      zIndex: 10
     }
 
     const { container } = render(<ComponentWithLayoutProps {...props} />)

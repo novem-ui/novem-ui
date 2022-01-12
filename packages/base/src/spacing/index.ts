@@ -21,8 +21,15 @@ const spacing = ({ theme, ...spacingProps }: { theme?: Theme } & CSSSpacingProps
     paddingRight,
     paddingTop
   } = SpacingUtils.validateProps(spacingProps)
-  const getPropertyValue = (value: SpacingPropValue) =>
-    typeof value === 'string' ? value : `${theme.spacing[value]}rem`
+  const getPropertyValue = (value: SpacingPropValue) => {
+    const isNumber = typeof value === 'number'
+
+    if (isNumber) {
+      return `${theme.spacing[value as keyof Theme['spacing']]}rem`
+    }
+
+    return value
+  }
 
   const style = css`
     ${margin && `margin: ${getPropertyValue(margin)};`}

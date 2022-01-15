@@ -1,6 +1,3 @@
-# novem-ui
-Novem UI
-
 # Novem UI
 
 Novem UI is a frontend components library for React. (Currently on alpha)

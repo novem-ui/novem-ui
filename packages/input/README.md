@@ -1,4 +1,4 @@
-# @novem-ui/checkbox
+# @novem-ui/input
 
 ## Usage
 

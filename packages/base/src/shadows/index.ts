@@ -6,6 +6,11 @@ export interface ShadowProps {
   shadow?: Shadows | Property.BoxShadow
 }
 
+/**
+ * this is an atomic css function to provide shadows to any component
+ * the values can be `sm`, `md`, `lg` and `xl`
+ */
+
 const shadows = ({ theme, shadow }: ShadowProps & { theme: Theme }) => {
   let shadowValue = shadow
   const valueFromTheme = shadow && theme.shadows[shadow as Shadows]

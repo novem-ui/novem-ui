@@ -40,6 +40,7 @@ yarn add @emotion/react@11.4.0 @emotion/styled@11.3.0 @icon-park/react@^1.3.3 @n
 
 - [@leonelv](https://www.github.com/leonelv)
 - [@jdrets](https://www.github.com/jdrets)
+- Camila Fernandez
 
 ## License
 

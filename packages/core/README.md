@@ -1,11 +1,3 @@
-# `index`
+# @novem-ui/core
 
-> TODO: description
-
-## Usage
-
-```
-const index = require('index');
-
-// TODO: DEMONSTRATE API
-```
+This lib exports all the Novem UI components

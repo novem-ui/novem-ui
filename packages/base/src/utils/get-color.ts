@@ -23,6 +23,10 @@ const determineColor = (color: NovemColor) => {
 }
 
 const getColor = ({ colors }: Theme) => (color: NovemColor) => {
+  if (color === 'theme') {
+    return colors.palette[colors.base][500]
+  }
+
   const { value, weight } = determineColor(color)
 
   if (value && weight) {

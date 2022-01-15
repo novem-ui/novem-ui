@@ -6,7 +6,7 @@ exports[`borderColor should return a component with all the props 1`] = `
   border-block: AppWorkspace;
   border-block-color: #378949;
   border-block-end: unset;
-  border-block-end-color: rgba(255,153,0,0.3833);
+  border-block-end-color: #F1694B;
   border-block-end-style: outset;
   border-block-end-width: thick;
   border-block-start: 1px solid;

@@ -4,7 +4,7 @@
 
 ### `<Input />`
 
-The component has the following props, plus `SpacingProps` and all the expected props from the native <input />:
+The component has the following props, plus [SpacingProps](../base/src/spacing/README.md) and all the expected props from the native <input />:
 
 - `baseColor` (Optional): It can be any color from the theme, uses `orange` by default.
 - `error` (Optional): It can be a `boolean`, a `string` or a `new Error`, just changes the color to red, doesnt show a message.
@@ -27,7 +27,7 @@ function App() {
 
 ### `<TextField />`
 
-The component has the following props, plus `SpacingProps` and all the expected props from the native <input />:
+The component has the following props, plus [SpacingProps](../base/src/spacing/README.md) and all the expected props from the native <input />:
 
 - `baseColor` (Optional): It can be any color from the theme, uses `orange` by default.
 - `error` (Optional): It can be a `boolean`, a `string` or a `new Error`.
@@ -54,7 +54,7 @@ function App() {
 
 ### `<Dropdown />`
 
-The component has the following props, plus `SpacingProps` and all the expected props from the native <input />:
+The component has the following props, plus [SpacingProps](../base/src/spacing/README.md) and all the expected props from the native <input />:
 
 - `baseColor` (Optional): It can be any color from the theme, uses `orange` by default.
 - `error` (Optional): It can be a `boolean`, a `string` or a `new Error`.

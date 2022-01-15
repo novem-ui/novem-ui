@@ -4,7 +4,7 @@
 
 ### `<Button />`
 
-The component has the following props, plus `SpacingProps` and all the expected props from the native <button />:
+The component has the following props, plus [SpacingProps](../base/src/spacing/README.md) and all the expected props from the native <button />:
 
 - `baseColor` (Optional): It can be any color from the theme, uses `orange` by default.
 - `size` (Optional): It can be `sm` or `lg`, uses `lg` by default.

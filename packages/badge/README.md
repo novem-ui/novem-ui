@@ -4,7 +4,7 @@
 
 ## Usage
 
-Both components have `SpacingProps`
+Both components have [SpacingProps](../base/src/spacing/README.md)
 
 ### `<Badge />`
 

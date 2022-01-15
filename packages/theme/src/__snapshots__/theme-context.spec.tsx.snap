@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ThemeContext /> should use the passed theme 1`] = `<DocumentFragment />`;
+
+exports[`<ThemeContext /> should use the passed theme 2`] = `<DocumentFragment />`;

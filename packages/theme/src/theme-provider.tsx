@@ -3,10 +3,10 @@
 
 import React, { FunctionComponent } from 'react'
 import { ThemeProvider as EmotionThemeProvider } from '@emotion/react'
-import { Theme } from './theme'
+import defaultTheme, { Theme } from './theme'
 import NovemThemeContext from './theme-context'
 
-const ThemeProvider: FunctionComponent<{ theme: Theme }> = ({ theme, children }) => {
+const ThemeProvider: FunctionComponent<{ theme: Theme }> = ({ theme = defaultTheme, children }) => {
   return (
     <NovemThemeContext.Provider value={theme}>
       <EmotionThemeProvider theme={theme}>{children}</EmotionThemeProvider>

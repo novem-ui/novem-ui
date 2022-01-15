@@ -2,7 +2,7 @@ import { Property } from 'csstype'
 import { BaseColor, Color, SpacingValue } from '@novem-ui/theme'
 import { Theme } from '@emotion/react'
 
-export type NovemColor = Color | Property.Color
+export type NovemColor = Color | Property.Color | 'theme'
 
 // Spacing types
 export type SpacingPropName =

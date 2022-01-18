@@ -1,6 +1,6 @@
 {
   "name": "@novem-ui/checkbox",
-  "version": "0.0.2-alpha.1",
+  "version": "0.0.2-alpha.2",
   "description": "Checkbox component from novem-ui",
   "keywords": [
     "checkbox",
@@ -33,11 +33,11 @@
   },
   "devDependencies": {
     "@types/merge-refs": "^1.0.0",
-    "@types/novem-theme": "^0.0.2-alpha.1"
+    "@types/novem-theme": "^0.0.2-alpha.2"
   },
   "dependencies": {
-    "@novem-ui/base": "^0.0.2-alpha.1",
-    "@novem-ui/theme": "^0.0.2-alpha.1",
+    "@novem-ui/base": "^0.0.2-alpha.2",
+    "@novem-ui/theme": "^0.0.2-alpha.2",
     "merge-refs": "^1.0.0",
     "polished": "^4.1.3"
   },

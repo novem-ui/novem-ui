@@ -1,11 +1,5 @@
 # `@novem-ui/base`
 
-> TODO: description
+## Description
 
-## Usage
-
-```
-const base = require('@novem-ui/base');
-
-// TODO: DEMONSTRATE API
-```
+Internal styles used by components, not to be used by the end user.

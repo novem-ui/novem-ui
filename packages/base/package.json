@@ -1,6 +1,6 @@
 {
   "name": "@novem-ui/base",
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.0",
   "description": "Shared styles among novem-ui",
   "keywords": [
     "base",
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@types/lodash.get": "^4.4.6",
-    "@types/novem-theme": "^0.0.1-alpha.1"
+    "@types/novem-theme": "^0.0.2-alpha.0"
   },
   "peerDependencies": {
     "@emotion/react": "^11.4.0",

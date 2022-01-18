@@ -10,6 +10,7 @@ import React, {
   useState
 } from 'react'
 import styled from '@emotion/styled'
+import { css } from '@emotion/react'
 
 import { genericInput } from '@novem-ui/base'
 import { Box } from '@novem-ui/layout'
@@ -18,7 +19,6 @@ import { Paragraph } from '@novem-ui/text'
 
 import { nanoid } from 'nanoid'
 
-import css from '@emotion/css'
 import withWrappedInput, { WrapperProps } from '../with-wrapped-input'
 
 import { DropdownProvider, useDropdownState } from './context'

@@ -1,12 +1,12 @@
 {
   "name": "@types/novem-theme",
-  "version": "0.0.2-alpha.2",
+  "version": "0.0.2-alpha.3",
   "license": "MIT",
   "main": "",
   "types": "index",
   "dependencies": {
     "@emotion/react": "^11.4.0",
-    "@novem-ui/theme": "^0.0.2-alpha.2"
+    "@novem-ui/theme": "^0.0.2-alpha.3"
   },
   "private": true
 }

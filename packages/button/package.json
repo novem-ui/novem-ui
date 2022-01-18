@@ -1,6 +1,6 @@
 {
   "name": "@novem-ui/button",
-  "version": "0.0.2-alpha.2",
+  "version": "0.0.2-alpha.3",
   "description": "Button component from novem-ui",
   "keywords": [
     "button",
@@ -32,11 +32,11 @@
     "url": "https://github.com/jdrets/novem-ui/issues"
   },
   "devDependencies": {
-    "@types/novem-theme": "^0.0.2-alpha.2"
+    "@types/novem-theme": "^0.0.2-alpha.3"
   },
   "dependencies": {
-    "@novem-ui/base": "^0.0.2-alpha.2",
-    "@novem-ui/theme": "^0.0.2-alpha.2"
+    "@novem-ui/base": "^0.0.2-alpha.3",
+    "@novem-ui/theme": "^0.0.2-alpha.3"
   },
   "peerDependencies": {
     "@emotion/react": "^11.1.5",

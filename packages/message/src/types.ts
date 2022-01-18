@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 import theme from '@novem-ui/theme'
 
-export interface MessageTypes {
+export interface MessageProps {
   title?: string
   message: string
   onClose?: () => void

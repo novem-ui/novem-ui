@@ -3,9 +3,9 @@ import { Close as CloseIcon } from '@icon-park/react'
 import { FeedbackBadge } from '@novem-ui/badge'
 
 import { Content, Actions, IconWrapper, Text, Title, ContentWrapper, CloseWrapper, MessageWrapper } from './styles'
-import { MessageTypes } from './types'
+import { MessageProps } from './types'
 
-const Message: FunctionComponent<MessageTypes> = ({ title, message, onClose, action, baseColor, variant }) => (
+const Message: FunctionComponent<MessageProps> = ({ title, message, onClose, action, baseColor, variant }) => (
   <MessageWrapper baseColor={baseColor}>
     <Content>
       <IconWrapper>

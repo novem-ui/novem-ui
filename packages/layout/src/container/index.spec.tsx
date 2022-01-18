@@ -3,7 +3,7 @@ import React from 'react'
 import theme, { withTheme } from '@novem-ui/theme'
 import { render } from '@testing-library/react'
 
-import Container from '.'
+import { Container } from '.'
 
 describe('<Container />', () => {
   test('should match snapshot (default)', () => {

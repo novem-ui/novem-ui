@@ -44,7 +44,7 @@ const breakpoints = css`
   }
 `
 
-const Container = styled.div<ContainerProps>`
+export const Container = styled.div<ContainerProps>`
   box-sizing: border-box;
   ${border}
   ${background}
@@ -56,5 +56,3 @@ const Container = styled.div<ContainerProps>`
 
   ${({ fluid }) => !fluid && breakpoints}
 `
-
-export default Container

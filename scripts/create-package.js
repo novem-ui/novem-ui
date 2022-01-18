@@ -16,7 +16,7 @@ const {
   repository,
   bugs,
   peerDependencies,
-  dependencies,
+  dependencies
 } = JSON.parse(fs.readFileSync(packageJsonPath))
 
 const folderName = path.basename(CWD)
@@ -35,6 +35,9 @@ const cleanPackage = {
   dependencies,
   main: './index.js',
   types: './index.d.ts',
+  publishConfig: {
+    access: 'public'
+  }
 }
 
 fs.writeFileSync(newPackageJsonPath, JSON.stringify(cleanPackage, null, 2))

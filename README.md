@@ -23,13 +23,13 @@ It's based on a monorepo architecture and it's built with babel, typescript and 
 
 With npm:
 ```bash
-npm install @emotion/react@11.4.0 @emotion/styled@11.3.0 @icon-park/react@^1.3.3 @novem-ui/core@0.0.1
+npm install @emotion/react@11.4.0 @emotion/styled@11.3.0 @icon-park/react@^1.3.3 @novem-ui/core
 ```
     
 or with yarn
 
 ```bash
-yarn add @emotion/react@11.4.0 @emotion/styled@11.3.0 @icon-park/react@^1.3.3 @novem-ui/core@0.0.1
+yarn add @emotion/react@11.4.0 @emotion/styled@11.3.0 @icon-park/react@^1.3.3 @novem-ui/core
 ```
 
 

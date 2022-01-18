@@ -1,6 +1,6 @@
 {
   "name": "@novem-ui/badge",
-  "version": "0.0.2-alpha.3",
+  "version": "0.0.2-alpha.4",
   "description": "Badge component from novem-ui",
   "keywords": [
     "badge",
@@ -32,11 +32,11 @@
     "url": "https://github.com/jdrets/novem-ui/issues"
   },
   "devDependencies": {
-    "@types/novem-theme": "^0.0.2-alpha.3"
+    "@types/novem-theme": "^0.0.2-alpha.4"
   },
   "dependencies": {
-    "@novem-ui/base": "^0.0.2-alpha.3",
-    "@novem-ui/theme": "^0.0.2-alpha.3"
+    "@novem-ui/base": "^0.0.2-alpha.4",
+    "@novem-ui/theme": "^0.0.2-alpha.4"
   },
   "peerDependencies": {
     "@emotion/react": "^11.1.5",

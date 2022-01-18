@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Container /> should match snapshot (default) 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  border: 1px solid;
+  border-color: #9f1313;
+  display: block;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),0 1px 2px -1px rgb(0 0 0 / 0.1);
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .emotion-0 {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .emotion-0 {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .emotion-0 {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .emotion-0 {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .emotion-0 {
+    max-width: 1320px;
+  }
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    display="block"
+  >
+    Dummy text
+  </div>
+</div>
+`;
+
+exports[`<Container /> should match snapshot (fluid) 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  border: 1px solid;
+  border-color: #9f1313;
+  display: block;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),0 1px 2px -1px rgb(0 0 0 / 0.1);
+  width: 100%;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    display="block"
+  >
+    Dummy text
+  </div>
+</div>
+`;

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Button from '@novem-ui/button'
-import withTheme from '@novem-ui/theme/src/utils/with-theme'
+import { withTheme } from '@novem-ui/theme'
 import { cleanup, render } from '@testing-library/react'
 
 import Message from '.'

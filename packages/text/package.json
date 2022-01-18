@@ -40,5 +40,8 @@
   "devDependencies": {
     "@novem-ui/theme": "^0.0.1-alpha.1",
     "@types/novem-theme": "^0.0.1-alpha.1"
+  },
+  "dependencies": {
+    "@novem-ui/base": "^0.0.1"
   }
 }

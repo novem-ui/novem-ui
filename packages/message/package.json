@@ -1,6 +1,6 @@
 {
   "name": "@novem-ui/message",
-  "version": "0.0.2-alpha.4",
+  "version": "0.0.2-alpha.5",
   "description": "Message component from novem-ui",
   "keywords": [
     "message",
@@ -42,7 +42,7 @@
     "@types/novem-theme": "^0.0.2-alpha.4"
   },
   "dependencies": {
-    "@novem-ui/badge": "^0.0.2-alpha.4",
-    "@novem-ui/base": "^0.0.2-alpha.4"
+    "@novem-ui/badge": "^0.0.2-alpha.5",
+    "@novem-ui/base": "^0.0.2-alpha.5"
   }
 }

@@ -35,7 +35,7 @@ export type SpacingPropName =
   | 'paddingBottom'
   | 'paddingLeft'
 
-export type SpacingPropValue = SpacingValue | string
+export type SpacingPropValue = SpacingValue | Property.Margin | Property.Padding
 
 export type SpacingPropEntry = [SpacingPropName, SpacingPropValue]
 

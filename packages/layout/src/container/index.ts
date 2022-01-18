@@ -46,6 +46,7 @@ const breakpoints = css`
 
 export const Container = styled.div<ContainerProps>`
   box-sizing: border-box;
+  padding: ${({ theme }) => `${theme.spacing[4]}rem`};
   ${border}
   ${background}
   ${flex}

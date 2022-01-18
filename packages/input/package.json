@@ -1,6 +1,6 @@
 {
   "name": "@novem-ui/input",
-  "version": "0.0.2-alpha.2",
+  "version": "0.0.2-alpha.3",
   "description": "input components from novem-ui",
   "keywords": [
     "input",
@@ -38,13 +38,13 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@novem-ui/theme": "^0.0.2-alpha.2",
-    "@types/novem-theme": "^0.0.2-alpha.2"
+    "@novem-ui/theme": "^0.0.2-alpha.3",
+    "@types/novem-theme": "^0.0.2-alpha.3"
   },
   "dependencies": {
-    "@novem-ui/badge": "^0.0.2-alpha.2",
-    "@novem-ui/base": "^0.0.2-alpha.2",
-    "@novem-ui/text": "^0.0.2-alpha.2",
+    "@novem-ui/badge": "^0.0.2-alpha.3",
+    "@novem-ui/base": "^0.0.2-alpha.3",
+    "@novem-ui/text": "^0.0.2-alpha.3",
     "fast-copy": "^2.1.1",
     "nanoid": "^3.1.30",
     "react-fast-compare": "^3.2.0"

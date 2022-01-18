@@ -10,9 +10,9 @@ You can use any color of the palette in the color props by doing <color>.<weight
 The color can be any from the theme, and the valid weights are `50 | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900`
 
 ```tsx
-import { Input, ThemeProvider } from '@novem-ui/core'
+import { Box, ThemeProvider } from '@novem-ui/core'
 // or
-import { Input } from '@novem-ui/input'
+import { Box } from '@novem-ui/layout'
 import { ThemeProvider } from '@novem-ui/theme'
 
 function App() {
@@ -29,9 +29,9 @@ function App() {
 It's the same as Box but includes [`FlexProps`](../base/src/types.ts)
 
 ```tsx
-import { Input, ThemeProvider } from '@novem-ui/core'
+import { Flex, ThemeProvider } from '@novem-ui/core'
 // or
-import { Input } from '@novem-ui/input'
+import { Flex } from '@novem-ui/layout'
 import { ThemeProvider } from '@novem-ui/theme'
 
 function App() {

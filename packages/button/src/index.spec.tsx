@@ -1,6 +1,6 @@
 import React from 'react'
 
-import withTheme from '@novem-ui/theme/src/utils/with-theme'
+import { withTheme } from '@novem-ui/theme'
 import { render } from '@testing-library/react'
 
 import Button from '.'

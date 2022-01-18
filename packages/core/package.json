@@ -1,6 +1,6 @@
 {
   "name": "@novem-ui/core",
-  "version": "0.0.2-alpha.5",
+  "version": "0.0.2-alpha.6",
   "description": "Core components",
   "homepage": "https://github.com/jdrets/novem-ui/tree/main/packages/core#readme",
   "license": "ISC",
@@ -27,7 +27,7 @@
     "@novem-ui/button": "^0.0.2-alpha.5",
     "@novem-ui/checkbox": "^0.0.2-alpha.5",
     "@novem-ui/input": "^0.0.2-alpha.5",
-    "@novem-ui/layout": "^0.0.2-alpha.5",
+    "@novem-ui/layout": "^0.0.2-alpha.6",
     "@novem-ui/message": "^0.0.2-alpha.5",
     "@novem-ui/switch": "^0.0.2-alpha.5",
     "@novem-ui/text": "^0.0.2-alpha.5",

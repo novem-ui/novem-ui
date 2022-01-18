@@ -3,6 +3,7 @@
 exports[`<Container /> should match snapshot (default) 1`] = `
 .emotion-0 {
   box-sizing: border-box;
+  padding: 1rem;
   border: 1px solid;
   border-color: #9f1313;
   display: block;
@@ -53,6 +54,7 @@ exports[`<Container /> should match snapshot (default) 1`] = `
 exports[`<Container /> should match snapshot (fluid) 1`] = `
 .emotion-0 {
   box-sizing: border-box;
+  padding: 1rem;
   border: 1px solid;
   border-color: #9f1313;
   display: block;

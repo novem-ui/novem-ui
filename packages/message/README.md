@@ -1,6 +1,6 @@
 # @novem-ui/message
 ## Usage
-### `<Box />`
+### `<Message />`
 
 The component props are :
 - `title` (Optional): A string that will be the message title

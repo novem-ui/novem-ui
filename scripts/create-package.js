@@ -39,7 +39,9 @@ const cleanPackage = {
   types: './index.d.ts',
   publishConfig: {
     access: 'public'
-  }
+  },
+
+  files: ['**/*.js', '**/*.ts', '**/*.map', 'README.md']
 }
 
 fs.writeFileSync(newPackageJsonPath, JSON.stringify(cleanPackage, null, 2))

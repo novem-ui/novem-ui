@@ -1,6 +1,6 @@
 {
   "name": "@novem-ui/layout",
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.1",
   "description": "layout components from novem-ui",
   "keywords": [
     "layout",
@@ -38,10 +38,10 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@novem-ui/theme": "^0.0.1-alpha.1",
-    "@types/novem-theme": "^0.0.1-alpha.1"
+    "@novem-ui/theme": "^0.0.2-alpha.1",
+    "@types/novem-theme": "^0.0.2-alpha.1"
   },
   "dependencies": {
-    "@novem-ui/base": "^0.0.1"
+    "@novem-ui/base": "^0.0.2-alpha.1"
   }
 }

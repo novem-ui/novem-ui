@@ -38,10 +38,10 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@novem-ui/theme": "^0.0.2-alpha.1",
     "@types/novem-theme": "^0.0.2-alpha.1"
   },
   "dependencies": {
+    "@novem-ui/theme": "^0.0.2-alpha.1",
     "@novem-ui/base": "^0.0.2-alpha.1"
   }
 }

@@ -33,6 +33,12 @@ describe('components/Avatar', () => {
     expect(asFragment()).toMatchSnapshot()
   })
 
+  test('should match snapshot (no lastname)', () => {
+    const { asFragment } = setup({ name: 'Person', size: 'sm' })
+
+    expect(asFragment()).toMatchSnapshot()
+  })
+
   test('should match snapshot (with description)', () => {
     const { asFragment } = setup({ image: 'a', name: 'Person Name', size: 'lg', description: 'Job description' })
 
@@ -49,5 +55,9 @@ describe('components/Avatar', () => {
     const { asFragment } = setup({ image: 'a', size: 'lg' })
 
     expect(asFragment()).toMatchSnapshot()
+  })
+
+  test('should match snapshot (no name or image)', () => {
+    expect(() => setup({ size: 'lg' })).toThrow(`Avatar should receive at least an image or a name prop`)
   })
 })

@@ -1,4 +1,4 @@
-import React, { useEffect, VoidFunctionComponent } from 'react'
+import React, { VoidFunctionComponent } from 'react'
 
 import { Flex } from '@novem-ui/layout'
 
@@ -8,13 +8,11 @@ import AvatarText from './avatar-text'
 import { getAvatarSize } from './utils'
 
 const Avatar: VoidFunctionComponent<AvatarProps> = ({ size = 'md', image, name, description }) => {
-  const avatarSize = getAvatarSize(size)
+  if (!image && !name) {
+    throw new Error(`Avatar should receive at least an image or a name prop`)
+  }
 
-  useEffect(() => {
-    if (!image && !name) {
-      throw new Error(`Avatar should receive at least an image or a name prop`)
-    }
-  }, [image, name])
+  const avatarSize = getAvatarSize(size)
 
   return (
     <Flex height={avatarSize}>

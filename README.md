@@ -7,6 +7,7 @@ It's based on a monorepo architecture and it's built with babel, typescript and 
 
 ## Packages
 
+- [@novem-ui/avatar](./packages/avatar/README.md)
 - [@novem-ui/badge](./packages/badge/README.md)
 - [@novem-ui/base](./packages/base/README.md)
 - [@novem-ui/button](./packages/button/README.md)

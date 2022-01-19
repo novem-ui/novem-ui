@@ -45,7 +45,7 @@ describe('typography', () => {
     const props: ParagraphProps = {
       align: 'right',
       as: 'b',
-      color: 'yellow.500',
+      color: 'theme',
       decoration: 'dotted',
       direction: 'rtl',
       family: 'monospace',

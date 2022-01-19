@@ -40,6 +40,10 @@ export function getFontSizes<As, Size>({
 }
 
 export function getColor({ theme, color }: TypographyProps<string, string>) {
+  if (color === 'theme') {
+    return theme.colors.palette[theme.colors.base]['500']
+  }
+
   const colorValue = get(theme.colors.palette, color)
 
   return colorValue || color

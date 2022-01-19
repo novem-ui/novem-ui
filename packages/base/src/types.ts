@@ -50,7 +50,7 @@ export type CSSSpacingProps = Omit<
 export interface TypographyProps<As, Size> {
   align?: Property.TextAlign
   as?: As
-  color?: Color | Property.Color
+  color?: Color | Property.Color | 'theme'
   decoration?: Property.TextDecoration
   direction?: Property.Direction
   family?: Property.FontFamily

@@ -3,7 +3,8 @@ const textFontSizes = {
   xs: 12,
   sm: 14,
   md: 16,
-  lg: 18
+  lg: 18,
+  xl: 24
 }
 const headingFontSizes = {
   xs: 20,

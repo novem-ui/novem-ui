@@ -23,6 +23,7 @@
     "url": "https://github.com/jdrets/novem-ui/issues"
   },
   "dependencies": {
+    "@novem-ui/avatar": "^0.0.2-alpha.5",
     "@novem-ui/badge": "^0.0.2-alpha.5",
     "@novem-ui/button": "^0.0.2-alpha.5",
     "@novem-ui/checkbox": "^0.0.2-alpha.5",

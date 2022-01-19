@@ -1,1 +1,2 @@
-export * from './src'
+export { default as Avatar } from './src'
+export * from './src/types'

@@ -2,6 +2,8 @@ export { default as NovemProvider } from './src/novem-provider'
 
 export * from '@novem-ui/badge'
 
+export * from '@novem-ui/avatar'
+
 export * from '@novem-ui/layout'
 
 export { default as Button, ButtonProps } from '@novem-ui/button'

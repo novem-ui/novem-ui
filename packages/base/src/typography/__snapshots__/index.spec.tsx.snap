@@ -38,7 +38,7 @@ exports[`typography should create a css fragment with the mapped props (partial)
 
 exports[`typography should create a css fragment with the mapped props 1`] = `
 .emotion-0 {
-  color: #FF9900;
+  color: #F1694B;
   font-size: 12px;
   font-weight: bolder;
   margin: 0;
@@ -71,7 +71,7 @@ exports[`typography should create a css fragment with the mapped props 1`] = `
 <div>
   <b
     class="emotion-0 emotion-1"
-    color="yellow.500"
+    color="theme"
     direction="rtl"
     font-style="italic"
     kerning="auto"

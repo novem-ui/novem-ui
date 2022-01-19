@@ -4,23 +4,23 @@
 
 ### `<Avatar />`
 
-The component has the following props, plus [TypographyProps](../base/src/types.ts):
+The component has the following props:
 
-- `as` (Optional): It can be `p`, `strong`, `span`, `mark`, `ins`, `del`, `sup`, `small`, `i` or `b`, it's `p` by default.
-- `size` (Optional): It can be `xs`, `sm`, `md` or `lg`.
+- `image` (Optional): An image source.
+- `name` (Optional): A name or full name.
+- `description` (Optional): Subject description.
+- `size` (Optional): It can be `sm`, `md`or`lg`.
 
 ```tsx
-import { Paragraph, ThemeProvider } from `@novem-ui/core'
+import { Avatar, ThemeProvider } from `@novem-ui/core'
 // or
-import { Paragraph } from '@novem-ui/text'
+import { Avatar } from '@novem-ui/avatar'
 import { ThemeProvider } from '@novem-ui/theme'
 
 function App() {
   return (
     <ThemeProvider>
-        <Paragraph as="span" size="sm" color="red.300" >
-          Text content
-        </Paragraph>
+        <Avatar size="sm" image="http://cat.pic" name="Michi" description="Cute"/>
     </ThemeProvider>
   )
 }

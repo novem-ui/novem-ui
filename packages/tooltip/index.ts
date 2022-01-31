@@ -1,2 +1,1 @@
-export { default as Avatar } from './src'
-export * from './src/types'
+export { default as Tooltip, TooltipProps } from './src'

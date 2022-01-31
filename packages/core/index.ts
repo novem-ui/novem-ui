@@ -22,3 +22,5 @@ export { Input, TextField, TextFieldProps, Option, OptionProps, Dropdown, Dropdo
 
 export { default as theme } from '@novem-ui/theme'
 export type { Theme } from '@novem-ui/theme'
+
+export * from '@novem-ui/tooltip'

@@ -1,0 +1,49 @@
+{
+  "name": "@novem-ui/tooltip",
+  "version": "0.0.2-alpha.5",
+  "description": "Tooltip components from novem-ui",
+  "keywords": [
+    "tooltip",
+    "ui",
+    "component",
+    "react",
+    "orange"
+  ],
+  "author": "Leonel Vieyra <me@leonelv.com>",
+  "homepage": "https://github.com/jdrets/novem-ui/tree/main/packages/tooltip#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../dist/tooltip"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdrets/novem-ui.git"
+  },
+  "scripts": {
+    "test": "jest --env=jsdom --passWithNoTests",
+    "build": "yarn build:esm && yarn build:types && yarn build:package-json",
+    "build:esm": "../../node_modules/.bin/babel . --root-mode upward --extensions .ts,.tsx -d ../../dist/tooltip --source-maps",
+    "build:types": "tsc -p ./tsconfig.types.json",
+    "build:package-json": "../../scripts/create-package.js"
+  },
+  "bugs": {
+    "url": "https://github.com/jdrets/novem-ui/issues"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/novem-theme": "^0.0.2-alpha.4"
+  },
+  "dependencies": {
+    "@novem-ui/base": "^0.0.2-alpha.5",
+    "@novem-ui/layout": "^0.0.2-alpha.6",
+    "@novem-ui/text": "^0.0.2-alpha.5",
+    "@novem-ui/theme": "^0.0.2-alpha.4"
+  }
+}

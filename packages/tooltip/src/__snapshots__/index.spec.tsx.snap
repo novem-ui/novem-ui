@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Tooltip should work on mousover and mouseout 1`] = `
+.emotion-0 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+<p
+  class="emotion-0 emotion-1"
+>
+  Tooltip Title
+</p>
+`;
+
+exports[`components/Tooltip should work on mousover and mouseout 2`] = `
+.emotion-0 {
+  font-size: 16px;
+  margin: 0;
+}
+
+<p
+  class="emotion-0 emotion-1"
+>
+  message
+</p>
+`;
+
+exports[`components/TooltipBubble should use the default theme bg 1`] = `
+.emotion-0 {
+  border-radius: 1rem;
+  -webkit-filter: drop-shadow(0 1px 3px rgb(0 0 0 / 0.1));
+  filter: drop-shadow(0 1px 3px rgb(0 0 0 / 0.1));
+  padding: 1rem;
+  top: -100%;
+  position: absolute;
+  width: 11rem;
+  -webkit-transform: translate(calc(-50% + 1rem), calc(-90%));
+  -moz-transform: translate(calc(-50% + 1rem), calc(-90%));
+  -ms-transform: translate(calc(-50% + 1rem), calc(-90%));
+  transform: translate(calc(-50% + 1rem), calc(-90%));
+  background-color: #F1694B;
+}
+
+.emotion-0::after {
+  bottom: -0.5rem;
+  content: ' ';
+  height: 1rem;
+  position: absolute;
+  -webkit-transform: rotate(45deg) translateY(-2px);
+  -moz-transform: rotate(45deg) translateY(-2px);
+  -ms-transform: rotate(45deg) translateY(-2px);
+  transform: rotate(45deg) translateY(-2px);
+  width: 1rem;
+  right: 50%;
+}
+
+.emotion-0 * {
+  color: white!important;
+}
+
+.emotion-0::after {
+  background-color: #F1694B;
+}
+
+<div
+  class="emotion-0 emotion-1"
+>
+  <p>
+    asd
+  </p>
+</div>
+`;
